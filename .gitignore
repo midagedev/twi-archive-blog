@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+src/*.egg-info/
+src/twi2blog.egg-info/
+
+drafts/
+!drafts/.gitkeep
+
+data/tweets.js
+blog/node_modules/
+blog/dist/
+blog/.astro/
