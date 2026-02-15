@@ -1,26 +1,117 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 0.8rem;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.card {
+				padding: 0.9rem;
+				border-radius: 0.9rem;
+				border: 1px solid rgba(var(--line), 0.78);
+				background: rgba(var(--surface), 0.9);
+				text-decoration: none;
+				display: grid;
+				gap: 0.5rem;
+				height: 100%;
+				transition: transform 140ms ease, border-color 140ms ease;
+			}
+			.thumb {
+				width: 100%;
+				aspect-ratio: 16 / 9;
+				object-fit: cover;
+				border-radius: 0.7rem;
+				border: 1px solid rgba(var(--line), 0.78);
+				background: rgba(var(--line), 0.3);
+			}
+			.card:hover {
+				transform: translateY(-2px);
+				border-color: rgba(var(--line), 1);
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--ink));
+				font-size: 1.03rem;
+				line-height: 1.28;
+			}
+			.desc {
+				margin: 0;
+				font-size: 0.92rem;
+			}
+			.meta {
+				display: flex;
+				justify-content: space-between;
+				gap: 0.55rem;
+				font-size: 0.82rem;
+				color: rgb(var(--ink-dim));
+			}
+			.tags {
+				display: flex;
+				gap: 0.3rem;
+				flex-wrap: wrap;
+			}
+			.tag {
+				font-size: 0.75rem;
+				border-radius: 999px;
+				padding: 0.1rem 0.42rem;
+				background: rgba(var(--line), 0.9);
+				color: rgb(var(--ink-dim));
+			}
+			@media (max-width: 860px) {
+				.grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>트윗을 커리어 자산으로</h1>
-			<p>
-				짧은 트윗에서 끝나지 않도록, 오래 남길 만한 생각을 글로 재구성해 기록합니다.
-				원문은 트위터에서 작성했고, 블로그에서 맥락과 결론을 보강합니다.
-			</p>
-			<p>
-				최근 글은 <a href="/blog">Blog</a>에서 볼 수 있습니다.
-			</p>
+			<ul class="grid">
+				{
+					posts.map((post) => (
+						<li>
+							<a class="card" href={`/blog/${post.id}/`}>
+								{post.data.thumbnail && (
+									<img class="thumb" src={post.data.thumbnail} alt={post.data.title} loading="lazy" />
+								)}
+								<p class="meta">
+									<span><FormattedDate date={post.data.pubDate} /></span>
+									<span>{post.data.source ?? 'note'}</span>
+								</p>
+								<h2 class="title">{post.data.title}</h2>
+								<p class="desc">{post.data.description}</p>
+								{post.data.tags.length > 0 && (
+									<div class="tags">
+										{post.data.tags.slice(0, 4).map((tag) => (
+											<span class="tag">#{tag}</span>
+										))}
+									</div>
+								)}
+							</a>
+						</li>
+					))
+				}
+			</ul>
 		</main>
 		<Footer />
 	</body>

@@ -1,15 +1,34 @@
 ---
+import { X_URL } from '../consts';
+
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} TWI Archive. All rights reserved.
+	<div class="footer-wrap">
+		<p>&copy; {today.getFullYear()} Midage Dev Notes</p>
+		<p class="small">
+			실행 가능한 기준과 근거를 남기는 실무 엔지니어링 기록.
+			<a href={X_URL} target="_blank" rel="noreferrer">@midagedev</a>
+		</p>
+	</div>
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
+		padding: 2.5rem 1rem 4rem;
+		color: rgb(var(--ink-dim));
+	}
+	.footer-wrap {
+		max-width: 1080px;
+		margin: 0 auto;
+		border-top: 1px solid rgba(var(--line), 0.8);
+		padding-top: 1rem;
+	}
+	.small {
+		font-size: 0.92rem;
+		margin-top: 0.35rem;
+	}
+	.small a {
+		font-weight: 700;
 	}
 </style>

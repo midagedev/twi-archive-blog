@@ -1,5 +1,5 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'TWI Archive';
-export const SITE_DESCRIPTION = '트위터에서 쌓은 인사이트를 블로그 자산으로 옮기는 기록';
+export const SITE_TITLE = 'Midage Dev Notes';
+export const SITE_DESCRIPTION =
+	'코드 품질, 팀 생산성, AI 활용의 트레이드오프를 실무 관점에서 정리하는 엔지니어링 노트';
+export const X_HANDLE = '@midagedev';
+export const X_URL = 'https://x.com/midagedev';

@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
@@ -13,75 +12,84 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} | Blog`} description={SITE_DESCRIPTION} />
 		<style>
-			main {
-				width: 960px;
-			}
-			ul {
+			.intro {
 				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
+				justify-content: space-between;
+				gap: 1rem;
+				align-items: end;
+				margin-bottom: 0.75rem;
+			}
+			.intro p {
 				margin: 0;
+				font-size: 0.92rem;
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 0.9rem;
+				list-style: none;
 				padding: 0;
+				margin: 0;
 			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
+			.card {
+				padding: 0.9rem;
+				border-radius: 0.9rem;
+				border: 1px solid rgba(var(--line), 0.78);
+				background: rgba(var(--surface), 0.9);
 				text-decoration: none;
-				transition: 0.2s ease;
+				display: grid;
+				gap: 0.55rem;
+				height: 100%;
+				transition: transform 140ms ease, border-color 140ms ease;
 			}
-			ul li:first-child {
+			.thumb {
 				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
+				aspect-ratio: 16 / 9;
+				object-fit: cover;
+				border-radius: 0.7rem;
+				border: 1px solid rgba(var(--line), 0.78);
+				background: rgba(var(--line), 0.3);
 			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
+			.card:hover {
+				transform: translateY(-2px);
+				border-color: rgba(var(--line), 1);
 			}
 			.title {
 				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
+				color: rgb(var(--ink));
+				font-size: 1.03rem;
+				line-height: 1.28;
 			}
-			.date {
+			.desc {
 				margin: 0;
-				color: rgb(var(--gray));
+				font-size: 0.92rem;
 			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
+			.meta {
+				display: flex;
+				justify-content: space-between;
+				gap: 0.6rem;
+				font-size: 0.82rem;
+				color: rgb(var(--ink-dim));
 			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
+			.tags {
+				display: flex;
+				gap: 0.35rem;
+				flex-wrap: wrap;
 			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+			.tag {
+				font-size: 0.75rem;
+				border-radius: 999px;
+				padding: 0.1rem 0.42rem;
+				background: rgba(var(--line), 0.9);
+				color: rgb(var(--ink-dim));
+			}
+			@media (max-width: 860px) {
+				.grid {
+					grid-template-columns: 1fr;
 				}
 			}
 		</style>
@@ -89,25 +97,39 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
+			<section class="intro">
+				<div>
+					<h1>Blog</h1>
+					<p>실무에서 맞닥뜨린 문제를 분석하고 의사결정 근거를 남긴 기록</p>
+				</div>
+				<p>{posts.length} posts</p>
 			</section>
+			<ul class="grid">
+				{
+					posts.map((post) => (
+						<li>
+							<a class="card" href={`/blog/${post.id}/`}>
+								{post.data.thumbnail && (
+									<img class="thumb" src={post.data.thumbnail} alt={post.data.title} loading="lazy" />
+								)}
+								<p class="meta">
+									<span><FormattedDate date={post.data.pubDate} /></span>
+									<span>{post.data.source ?? 'note'}</span>
+								</p>
+								<h2 class="title">{post.data.title}</h2>
+								<p class="desc">{post.data.description}</p>
+								{post.data.tags.length > 0 && (
+									<div class="tags">
+										{post.data.tags.slice(0, 4).map((tag) => (
+											<span class="tag">#{tag}</span>
+										))}
+									</div>
+								)}
+							</a>
+						</li>
+					))
+				}
+			</ul>
 		</main>
 		<Footer />
 	</body>

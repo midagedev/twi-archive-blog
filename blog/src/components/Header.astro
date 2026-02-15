@@ -1,5 +1,5 @@
 ---
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE, X_URL } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
@@ -7,41 +7,74 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+		<a class="x-link" href={X_URL} target="_blank" rel="noreferrer">X @midagedev</a>
 	</nav>
 </header>
 <style>
 	header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
 		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		padding: 0.75rem 1.1rem;
+		background: rgba(255, 255, 255, 0.85);
+		backdrop-filter: blur(8px);
+		border-bottom: 1px solid rgba(var(--line), 0.5);
 	}
 	h2 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 1rem;
+		letter-spacing: 0.03em;
 	}
-
-	h2 a,
-	h2 a.active {
+	h2 a {
 		text-decoration: none;
+		color: rgb(var(--ink));
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 0.8rem;
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+	.internal-links {
+		display: flex;
+		gap: 0.25rem;
+		align-items: center;
 	}
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+		padding: 0.42rem 0.62rem;
+		color: rgb(var(--ink-dim));
+		border-bottom: 2px solid transparent;
 		text-decoration: none;
+		border-radius: 0.5rem;
+		font-size: 0.9rem;
 	}
 	nav a.active {
-		text-decoration: none;
 		border-bottom-color: var(--accent);
+		color: rgb(var(--ink));
+		background: rgba(var(--line), 0.6);
+	}
+	.x-link {
+		font-size: 0.82rem;
+		font-weight: 650;
+		white-space: nowrap;
+		border: 1px solid rgba(var(--line), 0.9);
+		background: rgb(var(--surface));
+	}
+	.x-link:hover {
+		transform: translateY(-1px);
+	}
+	@media (max-width: 760px) {
+		nav {
+			flex-wrap: wrap;
+		}
+		.x-link {
+			margin-left: auto;
+		}
 	}
 </style>
