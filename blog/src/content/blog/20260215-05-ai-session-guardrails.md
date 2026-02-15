@@ -1,5 +1,5 @@
 ---
-title: "@nameEO gpt4에 비해 환각이 많은 느낌이었습니다."
+title: "gpt4에 비해 환각이 많은 느낌이었습니다."
 description: "LLM 코딩 작업에서 환각과 컨텍스트 붕괴를 줄이기 위해 세션 운영 방식을 바꾼 경험을 정리했다."
 pubDate: 2023-04-14T04:42:10+00:00
 source: twitter

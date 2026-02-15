@@ -1,5 +1,5 @@
 ---
-title: "@charsyam 맞습니다."
+title: "맞습니다."
 description: "기술 선택을 이념이 아니라 팀 역량, 운영 제약, 리스크 신호로 정리해 의사결정하는 방식에 대한 기록."
 pubDate: 2022-06-03T14:02:33+00:00
 source: twitter

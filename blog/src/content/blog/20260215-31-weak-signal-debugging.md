@@ -1,5 +1,5 @@
 ---
-title: "@babbuedababba 피드백 감사합니다."
+title: "피드백 감사합니다."
 description: "규칙성이 약한 장애를 다룰 때 범위를 좁히고 분석 단위를 재설계한 기록."
 pubDate: 2022-04-19T10:10:44+00:00
 source: twitter

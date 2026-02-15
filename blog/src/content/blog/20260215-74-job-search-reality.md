@@ -1,5 +1,5 @@
 ---
-title: "@jaeholee_dev 감사합니다."
+title: "감사합니다."
 description: "신호가 약한 구직 국면에서 지원을 멈추지 않고 기회를 스캔했던 과정을, 기대와 한계를 함께 정리한 기록."
 pubDate: 2024-07-29T21:54:17+00:00
 source: twitter
