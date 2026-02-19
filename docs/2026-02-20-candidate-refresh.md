@@ -33,13 +33,22 @@
   - `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
   - `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
 
-### 3) Regenerated outputs (100)
+### 3) Regenerated outputs
 
 - Candidate files:
   - `/Users/hckim/Documents/twi/docs/topic_candidates.json`
   - `/Users/hckim/Documents/twi/docs/topic_candidates.md`
 - Blog markdown:
-  - `/Users/hckim/Documents/twi/blog/src/content/blog/*.md` (100 files)
+  - `/Users/hckim/Documents/twi/blog/src/content/blog/*.md` (thread dedupe applied)
+
+### 4) Quality-oriented curation update
+
+- Duplicate selections within the same reply-connected thread are deduplicated.
+- A single post now includes the full thread component instead of only one tweet.
+- Candidate ranking is quality-first:
+  - longer thread and longer text are preferred
+  - engagement is reflected
+  - book/reading signals are boosted to include more reading-oriented posts
 
 ## Command Used
 
@@ -50,7 +59,7 @@ python3 scripts/agent_curation_pipeline.py \
   --candidate-json docs/topic_candidates.json \
   --candidate-md docs/topic_candidates.md \
   --draft-dir blog/src/content/blog \
-  --max-items 100 \
+  --max-items 0 \
   --clean-draft-dir
 ```
 

@@ -30,7 +30,7 @@ python3 scripts/agent_curation_pipeline.py \
   --candidate-json docs/topic_candidates.json \
   --candidate-md docs/topic_candidates.md \
   --draft-dir blog/src/content/blog \
-  --max-items 100 \
+  --max-items 0 \
   --clean-draft-dir
 ```
 

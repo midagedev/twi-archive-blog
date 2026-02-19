@@ -5,6 +5,7 @@ import argparse
 import json
 import re
 import zipfile
+from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -181,6 +182,40 @@ def _slugify(text: str) -> str:
     return value or "topic"
 
 
+BOOK_SIGNAL_KEYWORDS = (
+    "책",
+    "독서",
+    "완독",
+    "재독",
+    "읽고",
+    "읽은",
+    "인용",
+    "구절",
+    "저자",
+    "book",
+    "reading",
+    "author",
+    "chapter",
+    "quote",
+)
+
+
+def _book_signal_level(text: str) -> int:
+    lowered = text.lower()
+    keyword_hits = sum(1 for keyword in BOOK_SIGNAL_KEYWORDS if keyword in lowered)
+    quote_marker = bool(
+        re.search(r"[《〈][^》〉]+[》〉]", text)
+        or re.search(r"\b(?:p|pp)\.?\s*\d{1,4}\b", lowered)
+        or re.search(r"\b\d{1,4}쪽\b", text)
+    )
+
+    if keyword_hits == 0 and not quote_marker:
+        return 0
+    if keyword_hits >= 2 or (keyword_hits >= 1 and quote_marker):
+        return 2
+    return 1
+
+
 def load_archive_lookup(input_path: Path) -> dict[str, dict[str, Any]]:
     if input_path.suffix.lower() == ".zip":
         with zipfile.ZipFile(input_path, "r") as zf:
@@ -218,6 +253,7 @@ def load_archive_lookup(input_path: Path) -> dict[str, dict[str, Any]]:
             "date": created_at.strftime("%Y-%m-%d"),
             "favorite_count": _to_int(tw.get("favorite_count")),
             "retweet_count": _to_int(tw.get("retweet_count")),
+            "in_reply_to_status_id": tw.get("in_reply_to_status_id_str"),
             "text": text,
             "excerpt": _excerpt(text, 120),
             "hashtags": hashtags,
@@ -226,6 +262,45 @@ def load_archive_lookup(input_path: Path) -> dict[str, dict[str, Any]]:
             "url": f"https://x.com/i/web/status/{tweet_id}",
         }
     return lookup
+
+
+def _build_reply_component_map(archive_lookup: dict[str, dict[str, Any]]) -> dict[str, list[str]]:
+    adjacency: dict[str, set[str]] = defaultdict(set)
+
+    for tweet_id, source in archive_lookup.items():
+        parent_id = str(source.get("in_reply_to_status_id") or "").strip()
+        if parent_id and parent_id in archive_lookup:
+            adjacency[tweet_id].add(parent_id)
+            adjacency[parent_id].add(tweet_id)
+
+    component_map: dict[str, list[str]] = {}
+    visited: set[str] = set()
+    ordered_tweet_ids = sorted(archive_lookup.keys(), key=lambda item: str(archive_lookup[item].get("created_at", "")))
+
+    for start_id in ordered_tweet_ids:
+        if start_id in visited:
+            continue
+
+        stack = [start_id]
+        component: list[str] = []
+        while stack:
+            current = stack.pop()
+            if current in visited:
+                continue
+            visited.add(current)
+            component.append(current)
+            for neighbor in adjacency.get(current, set()):
+                if neighbor not in visited:
+                    stack.append(neighbor)
+
+        if len(component) <= 1:
+            continue
+
+        component.sort(key=lambda item: str(archive_lookup[item].get("created_at", "")))
+        for tweet_id in component:
+            component_map[tweet_id] = component
+
+    return component_map
 
 
 def load_selection(selection_path: Path) -> list[dict[str, str]]:
@@ -260,32 +335,53 @@ def build_candidates(
     max_items: int,
 ) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
-    limited = selection if max_items <= 0 else selection[:max_items]
+    reply_component_map = _build_reply_component_map(archive_lookup)
+    seen_components: set[tuple[str, ...]] = set()
 
-    for row in limited:
-        source = archive_lookup.get(row["id"])
-        if source is None:
+    for row in selection:
+        selected_source = archive_lookup.get(row["id"])
+        if selected_source is None:
             continue
-        topic_rule = _topic_for(source["text"], source["hashtags"])
-        engagement = source["favorite_count"] + (source["retweet_count"] * 2)
+        component_ids = reply_component_map.get(row["id"], [row["id"]])
+        component_key = tuple(component_ids)
+        if component_key in seen_components:
+            continue
+        seen_components.add(component_key)
+
+        sources = [archive_lookup[tweet_id] for tweet_id in component_ids if tweet_id in archive_lookup]
+        if not sources:
+            continue
+
+        first_source = sources[0]
+        topic_rule = _topic_for(first_source["text"], first_source["hashtags"])
+        engagement = sum((source["favorite_count"] + (source["retweet_count"] * 2)) for source in sources)
+        total_text_length = sum(min(len(source["text"]), 280) for source in sources)
+        thumbnail_source = next((source for source in sources if source.get("media_urls")), first_source)
+        source_book_levels = [_book_signal_level(source["text"]) for source in sources]
+        book_signal_total = sum(source_book_levels)
+        thread_bonus = max(len(sources) - 1, 0) * 2.4
+        book_bonus = (book_signal_total * 1.7) + (2.0 if book_signal_total > 0 else 0.0)
+        score_base = engagement / 10
+        score_length = total_text_length / 100
+        aggregate_score = round(score_base + score_length + thread_bonus + book_bonus, 3)
 
         candidates.append(
             {
                 "topic_id": topic_rule.topic_id,
                 "topic_label": topic_rule.label,
                 "tags": list(topic_rule.tags),
-                "suggested_title": _safe_title_excerpt(source["text"], row.get("title_excerpt", "")),
+                "suggested_title": _safe_title_excerpt(selected_source["text"], row.get("title_excerpt", "")),
                 "selection_reason": row.get("reason", ""),
-                "aggregate_score": round((engagement / 10) + min(len(source["text"]), 280) / 100, 3),
+                "aggregate_score": aggregate_score,
                 "engagement_sum": engagement,
-                "tweet_count": 1,
-                "tweet_ids": [source["tweet_id"]],
+                "tweet_count": len(sources),
+                "tweet_ids": [source["tweet_id"] for source in sources],
                 "sources": [
                     {
                         "tweet_id": source["tweet_id"],
-                        "score": round(engagement / 10, 3),
-                        "book_signal_level": 0,
-                        "book_bonus": 0.0,
+                        "score": round((source["favorite_count"] + (source["retweet_count"] * 2)) / 10, 3),
+                        "book_signal_level": source_book_levels[source_idx],
+                        "book_bonus": round(source_book_levels[source_idx] * 1.7, 3),
                         "has_media": source["has_media"],
                         "image_bonus": 1.1 if source["has_media"] else 0.0,
                         "created_at": source["created_at"],
@@ -297,9 +393,31 @@ def build_candidates(
                         "url": source["url"],
                         "media_urls": source["media_urls"],
                     }
+                    for source_idx, source in enumerate(sources)
                 ],
+                "selected_tweet_id": selected_source["tweet_id"],
+                "selected_tweet_url": selected_source["url"],
+                "primary_tweet_id": first_source["tweet_id"],
+                "primary_tweet_url": first_source["url"],
+                "thumbnail_url": (thumbnail_source.get("media_urls") or [None])[0],
+                "book_signal_total": book_signal_total,
+                "thread_bonus": round(thread_bonus, 3),
+                "book_bonus": round(book_bonus, 3),
             }
         )
+
+    candidates.sort(
+        key=lambda candidate: (
+            float(candidate.get("aggregate_score", 0.0)),
+            int(candidate.get("tweet_count", 1)),
+            int(candidate.get("book_signal_total", 0)),
+            int(candidate.get("engagement_sum", 0)),
+        ),
+        reverse=True,
+    )
+    if max_items > 0:
+        candidates = candidates[:max_items]
+
     return candidates
 
 
@@ -332,13 +450,18 @@ def write_candidates_markdown(candidates: list[dict[str, Any]], archive_path: Pa
         lines.append(f"## {idx}. {candidate['suggested_title']}")
         lines.append("")
         lines.append(f"- Topic: `{candidate['topic_label']}`")
-        lines.append(f"- Tweet ID: `{source['tweet_id']}`")
+        lines.append(f"- Aggregate score: `{candidate.get('aggregate_score', 0)}`")
+        lines.append(f"- Tweet count: `{candidate.get('tweet_count', 1)}`")
+        lines.append(f"- Primary Tweet ID: `{source['tweet_id']}`")
+        if candidate.get("selected_tweet_id") and candidate.get("selected_tweet_id") != source["tweet_id"]:
+            lines.append(f"- Selected Tweet ID: `{candidate['selected_tweet_id']}`")
         lines.append(f"- Date: `{source['created_at'][:10]}`")
-        lines.append(f"- Engagement: `❤ {source['favorite_count']} / RT {source['retweet_count']}`")
+        lines.append(f"- Engagement(sum): `{candidate.get('engagement_sum', 0)}`")
+        lines.append(f"- Book signal(sum): `{candidate.get('book_signal_total', 0)}`")
         lines.append(f"- URL: {source['url']}")
         if candidate.get("selection_reason"):
             lines.append(f"- Reason: {candidate['selection_reason']}")
-        lines.append(f"- Excerpt: {source['excerpt']}")
+        lines.append(f"- Excerpt: {candidate['sources'][0]['excerpt']}")
         lines.append("")
 
     output_path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
@@ -356,16 +479,32 @@ def write_drafts(candidates: list[dict[str, Any]], output_dir: Path, clean: bool
     date_prefix = datetime.now().strftime("%Y%m%d")
 
     for idx, candidate in enumerate(candidates, start=1):
-        source = candidate["sources"][0]
+        sources = candidate["sources"]
+        source = sources[0]
         title = str(candidate["suggested_title"]).replace('"', "'")
         description = str(source.get("excerpt", "")).replace('"', "'")
         pub_date = str(source.get("created_at", ""))[:10] or datetime.now().strftime("%Y-%m-%d")
         original_tweet_url = str(source.get("url", "")).replace('"', "'")
         tags_yaml = "\n".join(f"  - {tag}" for tag in candidate.get("tags", []))
-        media_urls = [str(url) for url in source.get("media_urls", []) if str(url).strip()]
-        thumbnail_yaml = f'thumbnail: "{media_urls[0]}"\n' if media_urls else ""
+        thumbnail_url = str(candidate.get("thumbnail_url") or "").strip()
+        thumbnail_yaml = f'thumbnail: "{thumbnail_url}"\n' if thumbnail_url else ""
 
-        body = str(source.get("text", "")).strip()
+        body_sections: list[str] = []
+        if len(sources) == 1:
+            body_sections.append(str(source.get("text", "")).strip())
+            for media_url in [str(url) for url in source.get("media_urls", []) if str(url).strip()]:
+                body_sections.append(f'<img class="tweet-image-inline" src="{media_url}" alt="tweet image" />')
+        else:
+            body_sections.append(str(source.get("url", "")).strip())
+            body_sections.append("")
+            for section_idx, section_source in enumerate(sources, start=1):
+                body_sections.append(f"### {section_idx}")
+                body_sections.append(str(section_source.get("text", "")).strip())
+                for media_url in [str(url) for url in section_source.get("media_urls", []) if str(url).strip()]:
+                    body_sections.append(f'<img class="tweet-image-inline" src="{media_url}" alt="tweet image" />')
+                body_sections.append("")
+        body = "\n".join(line for line in body_sections if line is not None).strip()
+
         frontmatter_lines = [
             "---",
             f'title: "{title}"',
@@ -384,11 +523,7 @@ def write_drafts(candidates: list[dict[str, Any]], output_dir: Path, clean: bool
             ]
         )
 
-        content = "\n".join(frontmatter_lines) + "\n\n" + body
-        if media_urls:
-            for media_url in media_urls:
-                content += f'\n\n<img class="tweet-image-inline" src="{media_url}" alt="tweet image" />'
-        content += "\n"
+        content = "\n".join(frontmatter_lines) + "\n\n" + body + "\n"
 
         slug = _slugify(candidate["topic_id"])
         file_name = f"{date_prefix}-{idx:03d}-{slug}.md"
@@ -413,7 +548,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--candidate-json", type=Path, default=Path("docs/topic_candidates.json"), help="Output candidate JSON")
     parser.add_argument("--candidate-md", type=Path, default=Path("docs/topic_candidates.md"), help="Output candidate markdown")
     parser.add_argument("--draft-dir", type=Path, default=Path("blog/src/content/blog"), help="Output markdown folder")
-    parser.add_argument("--max-items", type=int, default=100, help="Maximum selected items to write")
+    parser.add_argument("--max-items", type=int, default=0, help="Maximum selected items to write (0 = no limit)")
     parser.add_argument("--clean-draft-dir", action="store_true", help="Delete existing .md/.mdx files in draft-dir before writing")
     return parser.parse_args()
 

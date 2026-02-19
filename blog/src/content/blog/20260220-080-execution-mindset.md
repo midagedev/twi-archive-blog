@@ -1,16 +1,13 @@
 ---
-title: "언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안..."
-description: "언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안바꿈 클라우드 갈아 -&gt; 안갈아탐 깃헙 엔터프라이즈엔 확장성을 위해 두배의 코드를..."
-pubDate: 2025-08-03
+title: "카프카를 써본적이 없는데, 요즘 제대로 처리되지 못한 사용자의 결제요청을 하나씩 복구하거나 결국 아예 복구 기능을 만들거나 하는..."
+description: "카프카를 써본적이 없는데, 요즘 제대로 처리되지 못한 사용자의 결제요청을 하나씩 복구하거나 결국 아예 복구 기능을 만들거나 하는 걸 보면서, 메시징 프레임워크를 썼으면 어땠을까 하는 생각을 종종 한다. 더 좋았을까..."
+pubDate: 2023-10-15
 source: twitter
-originalTweetUrl: "https://x.com/i/web/status/1952147386714988904"
-thumbnail: "https://pbs.twimg.com/tweet_video_thumb/Gxdrso6acAAQqCP.jpg"
+originalTweetUrl: "https://x.com/i/web/status/1713442957054054843"
 tags:
   - execution
   - decision
   - leadership
 ---
 
-언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안바꿈 클라우드 갈아 -&gt; 안갈아탐 깃헙 엔터프라이즈엔 확장성을 위해 두배의 코드를 쓴 레포의 무덤이 지평선 너머까지 있다고 한다.
-
-<img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/Gxdrso6acAAQqCP.jpg" alt="tweet image" />
+카프카를 써본적이 없는데, 요즘 제대로 처리되지 못한 사용자의 결제요청을 하나씩 복구하거나 결국 아예 복구 기능을 만들거나 하는 걸 보면서, 메시징 프레임워크를 썼으면 어땠을까 하는 생각을 종종 한다. 더 좋았을까 나빴을까. 결국 쓰기 나름이었겠지만 추가된 복잡도만큼 이득이 있었을까🧐

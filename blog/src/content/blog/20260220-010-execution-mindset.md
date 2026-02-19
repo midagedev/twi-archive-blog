@@ -1,13 +1,15 @@
 ---
-title: "B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의..."
-description: "B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의 측정이 안되는 경우가 많다. N명의 개발자는 그저 N명의 개발자라는 영업문구가 되버릴뿐..."
-pubDate: 2022-10-27
+title: "언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안..."
+description: "언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안바꿈 클라우드 갈아 -&gt; 안갈아탐 깃헙 엔터프라이즈엔 확장성을 위해 두배의 코드를..."
+pubDate: 2025-08-03
 source: twitter
-originalTweetUrl: "https://x.com/i/web/status/1585780451771547649"
+originalTweetUrl: "https://x.com/i/web/status/1952147386714988904"
+thumbnail: "https://pbs.twimg.com/tweet_video_thumb/Gxdrso6acAAQqCP.jpg"
 tags:
   - execution
   - decision
   - leadership
 ---
 
-B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의 측정이 안되는 경우가 많다. N명의 개발자는 그저 N명의 개발자라는 영업문구가 되버릴뿐. 1인분만 하면 되니 편하긴 한데 여기서 버티는 것도 일종의 재능이 필요하다.
+언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안바꿈 클라우드 갈아 -&gt; 안갈아탐 깃헙 엔터프라이즈엔 확장성을 위해 두배의 코드를 쓴 레포의 무덤이 지평선 너머까지 있다고 한다.
+<img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/Gxdrso6acAAQqCP.jpg" alt="tweet image" />

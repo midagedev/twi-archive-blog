@@ -1,16 +1,13 @@
 ---
-title: "40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커..."
-description: "40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커밋이더라도 100개 모이면 오류가 있을 가능성은 63.4퍼센트다."
-pubDate: 2024-10-10
+title: "앱을 개발하고 싶다는 분과 잠깐 상담을 해드렸다. 여러 앱에서 느낀 불편함 개선, 비지니스 효율 개선, 업무 노하우의 보안 등을..."
+description: "앱을 개발하고 싶다는 분과 잠깐 상담을 해드렸다. 여러 앱에서 느낀 불편함 개선, 비지니스 효율 개선, 업무 노하우의 보안 등을 이유로 꼽으셨다. 시장규모를 캐보니 많이 쓰면 천명정도.. 포기하시라고 말씀드렸다."
+pubDate: 2024-04-29
 source: twitter
-originalTweetUrl: "https://x.com/i/web/status/1844223805147041958"
-thumbnail: "https://pbs.twimg.com/media/GZf-LssaAAEZH8U.png"
+originalTweetUrl: "https://x.com/i/web/status/1784746869756919838"
 tags:
   - execution
   - decision
   - leadership
 ---
 
-40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커밋이더라도 100개 모이면 오류가 있을 가능성은 63.4퍼센트다.
-
-<img class="tweet-image-inline" src="https://pbs.twimg.com/media/GZf-LssaAAEZH8U.png" alt="tweet image" />
+앱을 개발하고 싶다는 분과 잠깐 상담을 해드렸다. 여러 앱에서 느낀 불편함 개선, 비지니스 효율 개선, 업무 노하우의 보안 등을 이유로 꼽으셨다. 시장규모를 캐보니 많이 쓰면 천명정도.. 포기하시라고 말씀드렸다.
