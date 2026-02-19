@@ -1,13 +1,16 @@
 ---
-title: "B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의..."
-description: "B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의 측정이 안되는 경우가 많다. N명의 개발자는 그저 N명의 개발자라는 영업문구가 되버릴뿐..."
-pubDate: 2022-10-27
+title: "40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커..."
+description: "40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커밋이더라도 100개 모이면 오류가 있을 가능성은 63.4퍼센트다."
+pubDate: 2024-10-10
 source: twitter
-originalTweetUrl: "https://x.com/i/web/status/1585780451771547649"
+originalTweetUrl: "https://x.com/i/web/status/1844223805147041958"
+thumbnail: "https://pbs.twimg.com/media/GZf-LssaAAEZH8U.png"
 tags:
   - execution
   - decision
   - leadership
 ---
 
-B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의 측정이 안되는 경우가 많다. N명의 개발자는 그저 N명의 개발자라는 영업문구가 되버릴뿐. 1인분만 하면 되니 편하긴 한데 여기서 버티는 것도 일종의 재능이 필요하다.
+40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커밋이더라도 100개 모이면 오류가 있을 가능성은 63.4퍼센트다.
+
+<p class="tweet-image-row"><img class="tweet-image-inline" src="https://pbs.twimg.com/media/GZf-LssaAAEZH8U.png" alt="tweet image" /></p>

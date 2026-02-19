@@ -1,19 +1,22 @@
 ---
-title: "작년 5월에 쓴 업무메모 1.서비스에 사용자행동 추적이 정확하게 되는지 2. 어트리뷰션이 정확히 측정되는지 3. 광고플랫폼 연계추..."
-description: "작년 5월에 쓴 업무메모 1.서비스에 사용자행동 추적이 정확하게 되는지 2. 어트리뷰션이 정확히 측정되는지 3. 광고플랫폼 연계추적이 정확히 되는지 이 세 가지를 검증하고 나면 신나는 데이타 분석으로 세상으로 들어갈..."
-pubDate: 2024-03-15
+title: "아 좋았다. 스프링 게이트웨이에서 url 이중 인코딩 문제로 한참을 헤메던 팀원분에게 3개월 전에 머지된 동일문제 PR 찾아드렸다..."
+description: "아 좋았다. 스프링 게이트웨이에서 url 이중 인코딩 문제로 한참을 헤메던 팀원분에게 3개월 전에 머지된 동일문제 PR 찾아드렸다.(perplexity찬양해) 여기 문제 제기되고 논의된 내용, 추가된 테스트케이스 같..."
+pubDate: 2025-08-18
 source: twitter
-originalTweetUrl: "https://x.com/i/web/status/1768464634284282194"
+originalTweetUrl: "https://x.com/i/web/status/1957405982750859435"
+thumbnail: "https://pbs.twimg.com/tweet_video_thumb/GyoaXMYawAEQLqJ.jpg"
 tags:
   - code-quality
   - review
   - engineering
 ---
 
-https://x.com/i/web/status/1768464634284282194
+https://x.com/i/web/status/1957405982750859435
 
 ### 1
-작년 5월에 쓴 업무메모 1.서비스에 사용자행동 추적이 정확하게 되는지 2. 어트리뷰션이 정확히 측정되는지 3. 광고플랫폼 연계추적이 정확히 되는지 이 세 가지를 검증하고 나면 신나는 데이타 분석으로 세상으로 들어갈 수 있습니다! 10개월째 그 세상에 못들어가고 있다🪦
+아 좋았다. 스프링 게이트웨이에서 url 이중 인코딩 문제로 한참을 헤메던 팀원분에게 3개월 전에 머지된 동일문제 PR 찾아드렸다.(perplexity찬양해) 여기 문제 제기되고 논의된 내용, 추가된 테스트케이스 같은 부분이 딱 그분이 고민하던 부분이었음. 요지는 이거다. 우리만의 문제일리 없다는 것
+
+<p class="tweet-image-row"><img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/GyoaXMYawAEQLqJ.jpg" alt="tweet image" /></p>
 
 ### 2
-하나하나 붙들고 끝장을 봐야하는데 자꾸 가까이에 있는 열매만 따먹다가 하나도 앞으로 못나아간 것 같다. 좀 후회가 된다.
+줏대없는 소리긴 하지만 우리는 보편적으로 개발에서 세컨드무버이고 여기에는 퍼스트무버와는 또 다른 이득이 많다. 더 좋은 결정을 내리기 위한 레퍼런스가 천지에 널렸다. 잘 주워먹자.
