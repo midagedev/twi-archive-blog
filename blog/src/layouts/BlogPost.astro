@@ -83,12 +83,15 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 			.prose {
 				color: rgb(var(--ink-dim));
 			}
-			.prose :global(img.tweet-image-inline) {
-				display: inline-block;
-				width: calc(50% - 0.4rem);
-				margin: 0 0 0.6rem;
-				vertical-align: top;
+			.prose :global(p.tweet-image-row) {
+				margin: 0.75rem 0;
+			}
+			.prose :global(p.tweet-image-row > img.tweet-image-inline) {
+				display: block;
+				width: 50%;
+				max-width: 50%;
 				height: auto;
+				margin: 0;
 			}
 			.prose :global(h2),
 			.prose :global(h3) {

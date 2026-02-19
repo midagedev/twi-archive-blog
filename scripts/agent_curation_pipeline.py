@@ -493,7 +493,8 @@ def write_drafts(candidates: list[dict[str, Any]], output_dir: Path, clean: bool
         if len(sources) == 1:
             body_sections.append(str(source.get("text", "")).strip())
             for media_url in [str(url) for url in source.get("media_urls", []) if str(url).strip()]:
-                body_sections.append(f'<img class="tweet-image-inline" src="{media_url}" alt="tweet image" />')
+                body_sections.append("")
+                body_sections.append(f'<p class="tweet-image-row"><img class="tweet-image-inline" src="{media_url}" alt="tweet image" /></p>')
         else:
             body_sections.append(str(source.get("url", "")).strip())
             body_sections.append("")
@@ -501,7 +502,8 @@ def write_drafts(candidates: list[dict[str, Any]], output_dir: Path, clean: bool
                 body_sections.append(f"### {section_idx}")
                 body_sections.append(str(section_source.get("text", "")).strip())
                 for media_url in [str(url) for url in section_source.get("media_urls", []) if str(url).strip()]:
-                    body_sections.append(f'<img class="tweet-image-inline" src="{media_url}" alt="tweet image" />')
+                    body_sections.append("")
+                    body_sections.append(f'<p class="tweet-image-row"><img class="tweet-image-inline" src="{media_url}" alt="tweet image" /></p>')
                 body_sections.append("")
         body = "\n".join(line for line in body_sections if line is not None).strip()
 
