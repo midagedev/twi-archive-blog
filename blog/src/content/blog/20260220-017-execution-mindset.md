@@ -1,0 +1,13 @@
+---
+title: "이전회사에서 만지던게 three.js로 돌아가는 솔루션이었다. 인상깊었던건 vuejs위에서 돌아가게 해놨는데, 몇백메가하던 thr..."
+description: "이전회사에서 만지던게 three.js로 돌아가는 솔루션이었다. 인상깊었던건 vuejs위에서 돌아가게 해놨는데, 몇백메가하던 three.js 오브젝트들 죄다 리액티비티가 걸려서 브라우저를 폭파시키고 있었다. 팀에서 그..."
+pubDate: 2023-03-25
+source: twitter
+originalTweetUrl: "https://x.com/i/web/status/1639596259123302401"
+tags:
+  - execution
+  - decision
+  - leadership
+---
+
+이전회사에서 만지던게 three.js로 돌아가는 솔루션이었다. 인상깊었던건 vuejs위에서 돌아가게 해놨는데, 몇백메가하던 three.js 오브젝트들 죄다 리액티비티가 걸려서 브라우저를 폭파시키고 있었다. 팀에서 그거 끊어내는데만 두어달 쓴 듯, 명시적으로 상태를 관리하는 리액트가 왜 좋은지 느낌

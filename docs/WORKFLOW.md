@@ -17,22 +17,27 @@
 - 권장 구조: `문제 -> 선택/실행 -> 결과 -> 배운 점`
 - 권장 분량: 주제별 600~1200자 이상(짧은 노트형 예외 가능)
 
-## 3. 글 작성 흐름
+## 3. 글 작성 흐름 (에이전트 선별 전용)
 
-기본:
-1. `twi2blog`로 초안 생성
-2. `blog/src/content/blog/*.md` 수동 편집
-3. 로컬 확인 (`npm run dev`, `npm run build`)
-4. 브랜치에서 PR 생성
-5. CI 통과 확인 후 `main` 머지
-6. Cloudflare Pages 자동 배포 확인
+1. 병렬 에이전트 리뷰로 `docs/manual_agent_selected_100.json` 준비
+2. 아래 명령으로 후보/포스트 재생성
 
-대안(권장):
-1. `scripts/run_codex_subagents.sh <archive.zip>` 실행
-2. `docs/topic_shortlist.md`에서 주제 우선순위 확인
-3. `drafts/codex/*.md`에서 초안 선택 후 수동 보강
-4. `blog/src/content/blog`로 반영 후 로컬 확인
-5. PR 생성 -> CI 확인 -> `main` 머지
+```bash
+cd /Users/hckim/Documents/twi
+python3 scripts/agent_curation_pipeline.py \
+  --archive twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip \
+  --selection-json docs/manual_agent_selected_100.json \
+  --candidate-json docs/topic_candidates.json \
+  --candidate-md docs/topic_candidates.md \
+  --draft-dir blog/src/content/blog \
+  --max-items 100 \
+  --clean-draft-dir
+```
+
+3. `blog/src/content/blog/*.md` 내용 점검 및 필요한 수동 보강
+4. 로컬 확인 (`npm run dev`, `npm run build`)
+5. PR 생성 -> CI 통과 확인 -> `main` 머지
+6. Cloudflare Pages 배포 확인
 
 ## 4. Markdown frontmatter 규칙
 
@@ -52,6 +57,9 @@ tags:
 
 - 변환기 CLI: `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
 - 변환기 로직: `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
+- 에이전트 선별 기반 생성 스크립트: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
+- 에이전트 선별 결과 ID 목록: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
+- 후보 리포트(JSON/MD): `/Users/hckim/Documents/twi/docs/topic_candidates.json`, `/Users/hckim/Documents/twi/docs/topic_candidates.md`
 - Astro 전역 스타일: `/Users/hckim/Documents/twi/blog/src/styles/global.css`
 - 헤더: `/Users/hckim/Documents/twi/blog/src/components/Header.astro`
 - 메타 태그: `/Users/hckim/Documents/twi/blog/src/components/BaseHead.astro`
@@ -59,12 +67,22 @@ tags:
 - 블로그 인덱스: `/Users/hckim/Documents/twi/blog/src/pages/blog/index.astro`
 - 포스트 레이아웃: `/Users/hckim/Documents/twi/blog/src/layouts/BlogPost.astro`
 
-## 6. 테마/브랜딩 수정 포인트
+## 6. 제거된 구 선별 흐름
+
+다음 파일/흐름은 더 이상 사용하지 않습니다.
+
+- `scripts/run_codex_subagents.sh`
+- `scripts/prepare_tweet_corpus.py`
+- `scripts/agent_blog_pipeline.py`
+- `docs/manual_include_tweet_ids.json`
+- `docs/topic_shortlist.json`, `docs/topic_shortlist.md`
+
+## 7. 테마/브랜딩 수정 포인트
 
 - 사이트명/설명/X 링크: `/Users/hckim/Documents/twi/blog/src/consts.ts`
 - 색/타이포/간격: `/Users/hckim/Documents/twi/blog/src/styles/global.css`
 
-## 7. CI/CD 체크리스트
+## 8. CI/CD 체크리스트
 
 PR 전:
 - `npm run build` 성공
@@ -80,7 +98,7 @@ PR 후:
 - `rss.xml` 확인
 - canonical host 확인 (`blog.midagedev.com`)
 
-## 8. 권장 주기
+## 9. 권장 주기
 
 - 주 1회: 초안 생성 + 발행
 - 월 1회: 상단 글 재정리(타이틀/설명/태그)

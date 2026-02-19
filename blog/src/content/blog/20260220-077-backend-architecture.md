@@ -1,0 +1,16 @@
+---
+title: "빡시게 RDB 스키마 정규화해가며 관리하던 회사에서 mongodb에다가 마이그레이션 없이 스키마 바꿔가며 집어넣는 회사에 오니 눈..."
+description: "빡시게 RDB 스키마 정규화해가며 관리하던 회사에서 mongodb에다가 마이그레이션 없이 스키마 바꿔가며 집어넣는 회사에 오니 눈이 팽팽 돌것 같다. 이걸 어떻게 관리를 한다는거지? 이걸 어떻게 여러 서비스에서 사용..."
+pubDate: 2025-07-31
+source: twitter
+originalTweetUrl: "https://x.com/i/web/status/1950859517786468533"
+thumbnail: "https://pbs.twimg.com/tweet_video_thumb/GxLYYz-a8AAUQlU.jpg"
+tags:
+  - backend
+  - architecture
+  - python
+---
+
+빡시게 RDB 스키마 정규화해가며 관리하던 회사에서 mongodb에다가 마이그레이션 없이 스키마 바꿔가며 집어넣는 회사에 오니 눈이 팽팽 돌것 같다. 이걸 어떻게 관리를 한다는거지? 이걸 어떻게 여러 서비스에서 사용할 수 있게 하지? 아!!!! 데이터 자체가 부채네 아!!!!! 아ㅠㅠㅠㅠ
+
+<img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/GxLYYz-a8AAUQlU.jpg" alt="tweet image" />

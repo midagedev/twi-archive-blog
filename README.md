@@ -1,14 +1,12 @@
 # Midage Dev Notes - Repository Guide
 
-`/Users/hckim/Documents/twi`는 다음 두 파트로 구성됩니다.
+`/Users/hckim/Documents/twi`는 X/Twitter 아카이브에서 고신호 글을 선별해 블로그 포스트로 전환하는 저장소입니다.
 
-- `twi2blog` (Python): X 아카이브 -> Markdown 변환기
-- `blog` (Astro): 실제 블로그 사이트
+## 현재 운영 방식 (에이전트 선별 전용)
 
-## 프로젝트 목적
-
-- 과거 트위터 글을 블로그 자산으로 전환해 이직/브랜딩에 활용
-- 트윗 원문 복붙이 아니라 맥락, 선택, 결과를 보강한 글로 재작성
+- 선별은 규칙 기반이 아니라 병렬 에이전트 리뷰 결과(`manual_agent_selected_100.json`)를 기준으로 진행합니다.
+- 생성은 `scripts/agent_curation_pipeline.py` 단일 스크립트로 수행합니다.
+- 제목은 별도 생성하지 않고 본문 발췌를 사용합니다.
 
 ## 빠른 시작
 
@@ -23,21 +21,21 @@ npm install
 npm run dev
 ```
 
-## 콘텐츠 추가 기본 루틴
-
-1. 초안 생성
+## 콘텐츠 생성 (100개 기준)
 
 ```bash
 cd /Users/hckim/Documents/twi
-source .venv/bin/activate
-twi2blog --archive data/tweets.js --out blog/src/content/blog --min-likes 20 --min-retweets 5
+python3 scripts/agent_curation_pipeline.py \
+  --archive twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip \
+  --selection-json docs/manual_agent_selected_100.json \
+  --candidate-json docs/topic_candidates.json \
+  --candidate-md docs/topic_candidates.md \
+  --draft-dir blog/src/content/blog \
+  --max-items 100 \
+  --clean-draft-dir
 ```
 
-2. 수동 편집
-- `blog/src/content/blog/*.md`에서 제목, 설명, 태그, 본문 보강
-- 권장 구조: `문제 -> 선택/실행 -> 결과 -> 배운 점`
-
-3. 로컬 검증
+## 로컬 검증
 
 ```bash
 cd /Users/hckim/Documents/twi/blog
@@ -45,34 +43,21 @@ npm run dev
 SITE_URL=https://blog.midagedev.com npm run build
 ```
 
-4. 배포
-- 변경사항을 PR로 검토
-- `main` 머지 후 GitHub Actions가 Cloudflare Pages에 자동 배포
+## 배포
 
-## 배포 파이프라인 (Cloudflare Pages)
-
-- CI: `.github/workflows/ci.yml`
-  - `twi2blog` 변환 스모크 테스트
-  - Astro 빌드 테스트
-- CD: `.github/workflows/deploy-cloudflare-pages.yml`
-  - `main`의 `blog/**` 변경 시 Cloudflare Pages(`twi-archive-blog`) 자동 배포
-- 도메인:
-  - Cloudflare Pages 커스텀 도메인: `blog.midagedev.com`
-  - Cloudflare DNS: `blog` CNAME -> `twi-archive-blog.pages.dev`
-- GitHub repository secrets:
-  - `CLOUDFLARE_API_KEY`
-  - `CLOUDFLARE_EMAIL`
-  - `CLOUDFLARE_ACCOUNT_ID`
+- 변경사항 커밋 후 `main` 푸시
+- GitHub Actions가 Cloudflare Pages로 자동 배포
 
 ## 문서 인덱스
 
 - 설정/배포: `/Users/hckim/Documents/twi/docs/SETUP.md`
 - 배포 런북: `/Users/hckim/Documents/twi/docs/DEPLOYMENT.md`
 - 콘텐츠 운영: `/Users/hckim/Documents/twi/docs/WORKFLOW.md`
-- Astro 프로젝트 참고: `/Users/hckim/Documents/twi/blog/README.md`
+- 이번 정리 로그: `/Users/hckim/Documents/twi/docs/2026-02-20-candidate-refresh.md`
 
 ## 핵심 경로
 
-- 변환기 코드: `/Users/hckim/Documents/twi/src/twi2blog`
+- 에이전트 파이프라인: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
+- 수동 선별 ID: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
+- 후보 결과: `/Users/hckim/Documents/twi/docs/topic_candidates.json`
 - 블로그 콘텐츠: `/Users/hckim/Documents/twi/blog/src/content/blog`
-- 사이트 코드: `/Users/hckim/Documents/twi/blog/src`

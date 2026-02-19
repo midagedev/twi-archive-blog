@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from .convert import export_markdown, load_force_include_ids, load_tweets
+from .convert import export_markdown, load_tweets
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -35,12 +35,6 @@ def build_parser() -> argparse.ArgumentParser:
         default=5,
         help="Include standalone tweets when retweets >= this threshold (default: 5)",
     )
-    parser.add_argument(
-        "--include-ids",
-        type=Path,
-        default=Path("docs/manual_include_tweet_ids.json"),
-        help="Optional JSON file for force-included tweet IDs (default: docs/manual_include_tweet_ids.json)",
-    )
     return parser
 
 
@@ -51,18 +45,12 @@ def main() -> int:
     if not args.archive.exists():
         parser.error(f"Archive file not found: {args.archive}")
 
-    try:
-        force_include_ids = load_force_include_ids(args.include_ids)
-    except ValueError as exc:
-        parser.error(str(exc))
-
     tweets = load_tweets(args.archive)
     summary = export_markdown(
         tweets=tweets,
         output_dir=args.out,
         min_likes=args.min_likes,
         min_retweets=args.min_retweets,
-        force_include_ids=force_include_ids,
     )
 
     print(
@@ -70,11 +58,6 @@ def main() -> int:
         f"{summary['written']} posts written "
         f"({summary['threads']} threads, {summary['singles']} single tweets)"
     )
-    if force_include_ids:
-        print(
-            f"Force includes: loaded {len(force_include_ids)} IDs, "
-            f"applied {summary['forced_includes']} single tweets"
-        )
     print(f"Output directory: {args.out.resolve()}")
     return 0
 

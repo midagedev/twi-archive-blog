@@ -1,616 +1,1006 @@
-# Curated Blog Topic Candidates
-
-- Generated at: 2026-02-20 01:19:03
-- Source: `twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip`
-- Topic count: `60`
-
-선별 기준: 기술/커리어 관련성, 반응(Like/RT), 문장 밀도, 스레드 맥락, 독서/책 인용 가중치, 이미지 가중치
-
-## 1. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 이 책 진짜 좋다. MSA에 대해 이야기하지만 읽고나면 굳이 MSA 전환을 해야될까 고민하게 되고...`
-- Aggregate score: `9.597`
-- Total engagement proxy: `201`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-10-21 | ❤ 137 / RT 32 | [1980767955614122053](https://x.com/i/web/status/1980767955614122053) | 이 책 진짜 좋다. MSA에 대해 이야기하지만 읽고나면 굳이 MSA 전환을 해야될까 고민하게 되고, MSA로의 전환방법이 있긴 하지만 아키텍쳐 전환의 보편적인 이야기라 모놀리스로의 전환에도 도움이 되는 내용이 많다. (book_signal=2, book_bonus=2.2, has_media=True, image_bonus=1.1)
-
-## 2. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: 습관처럼 나오는 독성말투를 자제하고자 간단히 openai API를 사용하는 크롬 익스텐션을 만들어...`
-- Aggregate score: `9.253`
-- Total engagement proxy: `2864`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2023-04-18 | ❤ 792 / RT 1036 | [1648338813939511297](https://x.com/i/web/status/1648338813939511297) | 습관처럼 나오는 독성말투를 자제하고자 간단히 openai API를 사용하는 크롬 익스텐션을 만들어봤다. 이것저것 좀 만져보면 쓸만해질듯. 이제 오탈자만 고치는걸로는 부족하다.. 인성보완계획 가동.. (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 3. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 개발자의 사회성부족은 매니저역할을 할때 더 처참하게 드러난다. 칭찬한다고 한 이야기는 한 사람을...`
-- Aggregate score: `8.737`
-- Total engagement proxy: `1037`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2022-10-23 | ❤ 393 / RT 322 | [1584320641511337985](https://x.com/i/web/status/1584320641511337985) | 개발자의 사회성부족은 매니저역할을 할때 더 처참하게 드러난다. 칭찬한다고 한 이야기는 한 사람을 칭찬하면서 세 사람을 상처주고, 감당해야 하는 팀원의 퇴사에는 한 없이 자책한다. 실패한 팀웍에 내가 하지 뭐 하며 혼... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 4. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: 클로드코드 크롬 익스텐션이 얼마나 좋은지는 이 코드를 보면 알 수 있다. 10분만에 그냥 이렇게...`
-- Aggregate score: `8.079`
-- Total engagement proxy: `804`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2025-12-31 | ❤ 524 / RT 140 | [2006305373863715100](https://x.com/i/web/status/2006305373863715100) | 클로드코드 크롬 익스텐션이 얼마나 좋은지는 이 코드를 보면 알 수 있다. 10분만에 그냥 이렇게 간단하게 워크플로우를 만들 수 있다. 개인이나 팀단위에서 생산성에 지대한 공헌 가능 (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 5. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 쏟아지는 일 완벽히 해내는 법을 쏟아지는 일때문에 못읽고 있는 상황에 대하여🙃`
-- Aggregate score: `7.764`
-- Total engagement proxy: `202`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2023-11-29 | ❤ 120 / RT 41 | [1729851311330312245](https://x.com/i/web/status/1729851311330312245) | 쏟아지는 일 완벽히 해내는 법을 쏟아지는 일때문에 못읽고 있는 상황에 대하여🙃 (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 6. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: 연말이라고 감시(?)가 느슨해진 틈을 타 팀원 하나 빚었다. 클로드코드 크롬익스텐션연동은 진짜 미...`
-- Aggregate score: `7.608`
-- Total engagement proxy: `314`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2025-12-24 | ❤ 232 / RT 41 | [2003756250270752977](https://x.com/i/web/status/2003756250270752977) | 연말이라고 감시(?)가 느슨해진 틈을 타 팀원 하나 빚었다. 클로드코드 크롬익스텐션연동은 진짜 미쳤다. api연동이 까다로운 협업툴들 그냥 다 뚫고 들어가서 필요한 작업이 가능하다. 터미널 기반 툴에서 이게 되면 스... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 7. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 시작하는 개발자들은 첫 직장 첫 연봉에 너무 연연하지 않아야 된다는 말에 백 번 동감하나, 오늘...`
-- Aggregate score: `7.518`
-- Total engagement proxy: `981`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2022-10-11 | ❤ 293 / RT 159 | [1579845580381368320](https://x.com/i/web/status/1579845580381368320) | 시작하는 개발자들은 첫 직장 첫 연봉에 너무 연연하지 않아야 된다는 말에 백 번 동감하나, 오늘 현 직장에 전 직장 후배를 추천하려고 이야기를 나누다 아득해졌다. 중소기업에서 거의 신입으로 시작하여 코로나를 핑계로... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2022-10-11 | ❤ 65 / RT 22 | [1579845584307228672](https://x.com/i/web/status/1579845584307228672) | 신입은 몰라도 경력자 이직은 전직장 연봉대비 산정하는게 보편적인 상황에서 그 친구의 전직장 연봉은 분명 큰 걸림돌이 될 수 밖에 없을 것이다. 물론 반짝이는 실력으로 그 걸림돌을 걷어차내버릴 수만 있다면야 더말할나위... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2022-10-11 | ❤ 145 / RT 58 | [1579845586177908736](https://x.com/i/web/status/1579845586177908736) | 결국 돌이켜보면 신입에게 5%미만의 연봉상승율을 제시하는 회사는 2년안에 박차고 나왔어야 했다. 그런데 그 친구는 맡고 있는 일들에 과한 책임감을 가지고 있었고, 정에 약한 부류였다. 이런 친구들이 여기저기 많을텐데... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 8. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 이 과정에서 제일 슬픈건, 위 쪽 사정을 잘 모르는 경력짧은 열혈 개발자들이 최선을 다하면서도 자...`
-- Aggregate score: `7.411`
-- Total engagement proxy: `333`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2023-06-25 | ❤ 115 / RT 109 | [1672792041712144384](https://x.com/i/web/status/1672792041712144384) | 이 과정에서 제일 슬픈건, 위 쪽 사정을 잘 모르는 경력짧은 열혈 개발자들이 최선을 다하면서도 자기가 잘못해서 안돌아가는줄 알고 자책감에 괴로워 한다는것, 나는 첫 si프로젝트에 일정 못맞춰서 뛰어내리고 싶었다. 지... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 9. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: “LLM의 환각(Hallucination) 현상은 결함이 아니라 본질적인 특성” “LLM은 결국...`
-- Aggregate score: `7.259`
-- Total engagement proxy: `1151`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2025-08-31 | ❤ 489 / RT 331 | [1961968150100222114](https://x.com/i/web/status/1961968150100222114) | “LLM의 환각(Hallucination) 현상은 결함이 아니라 본질적인 특성” “LLM은 결국 유용성이 있는 환각을 생성하기 위한 도구” 통찰력 미쳤다. (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 10. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 팀장으로 이직했으면 몇개월간은 제발.. 팀원보다 일을 두배 하고 팀원들이 퇴근하는 시간 혹은 마지...`
-- Aggregate score: `7.18`
-- Total engagement proxy: `6543`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-12-31 | ❤ 4006 / RT 1237 | [2006447418091647270](https://x.com/i/web/status/2006447418091647270) | 팀장으로 이직했으면 몇개월간은 제발.. 팀원보다 일을 두배 하고 팀원들이 퇴근하는 시간 혹은 마지막에 문닫고 나갑니다. 결국 신뢰란것은 코드나 실력보다 이런 것에서 오는것... 개인적으로 효과를 본 방법이다. 매니징... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2026-01-01 | ❤ 53 / RT 5 | [2006595674826224089](https://x.com/i/web/status/2006595674826224089) | 알티를 타버렸는데 원트나 이거나 결국 팀에 새로 조인했으면 포지션이 어떻든 두어달은 가성비 떨어지더라도 집중근무 필요하다는 겁니다. 트친분께 민폐를 끼쳐버렸네요 죄송합니다 ㄷㄷ🙇 (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 11. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 특정 도메인의 스타트업에서 초기멤버로서 정말 열심히 했던 적이 있었다. 개발리딩이 주요 롤이었지만...`
-- Aggregate score: `6.983`
-- Total engagement proxy: `757`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2022-09-05 | ❤ 187 / RT 80 | [1566579496706138113](https://x.com/i/web/status/1566579496706138113) | 특정 도메인의 스타트업에서 초기멤버로서 정말 열심히 했던 적이 있었다. 개발리딩이 주요 롤이었지만 기획, 디자인, 마케팅까지 모두 함께 고민을 했었다. 4년차쯤 되었을까 같은 도메인의 큰 회사에 인터뷰를 봤고, 자신... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2022-09-05 | ❤ 79 / RT 33 | [1566579498866188288](https://x.com/i/web/status/1566579498866188288) | 그러나 돌아오는 불합격 피드백은 ‘우리회사가 좀더 초기라면 채용을 했을지도 모르지만 지금은 좀 더 전문적인 개발자를 원합니다.’ 흔히 있는 일이다. 이것저것 가리지 않고 해왔던 과거가 좀 후회가 되기도 하고 앞으로... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2022-09-05 | ❤ 79 / RT 20 | [1566579500871086080](https://x.com/i/web/status/1566579500871086080) | 그 후로도 나는 개발자 생활을 잘 해가고 있기는 하지만 팀내 주니어분들이 커리어를 고려한 기술스택을 정하거나 비개발 업무에 대해 난색을 보이는 일을 충분히 이해할 수 있었다. 계속해서 시작하는, 작은 조직을 반복할... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2022-09-05 | ❤ 100 / RT 23 | [1566579503047925760](https://x.com/i/web/status/1566579503047925760) | 난 모두가 잘 되었으면 좋겠다. 특별난 재능이 있는 대단한 분들이야 뭘 하든 잘 되겠지만 우리는 대부분 보통의 개발자A니까 시장에 더 매력적이 되도록 노력하는 것이 이상하지 않다. 먹고 살아야지. (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 12. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 이제 신입 부트캠프 장사 잘 안되니까, 일하고 있는 개발자를 물경력으로 후려쳐서 강의를 팔아먹을라...`
-- Aggregate score: `6.871`
-- Total engagement proxy: `582`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2024-04-17 | ❤ 204 / RT 189 | [1780405100374339769](https://x.com/i/web/status/1780405100374339769) | 이제 신입 부트캠프 장사 잘 안되니까, 일하고 있는 개발자를 물경력으로 후려쳐서 강의를 팔아먹을라고 하네. 커리큘럼이나 코치진은 나쁘지 않아보이는데 광고판에 물경력 탈출기 따위의 워딩을 꼭 써야 하나. 물경력 표현은... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 13. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: mermaid 이틀차, 직관적이고 쉬운 신텍스, 가볍고 빠르고 풍부한 렌더링, 깃에 넣기 좋은 플...`
-- Aggregate score: `6.804`
-- Total engagement proxy: `159`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2023-01-31 | ❤ 97 / RT 31 | [1620394037764321283](https://x.com/i/web/status/1620394037764321283) | mermaid 이틀차, 직관적이고 쉬운 신텍스, 가볍고 빠르고 풍부한 렌더링, 깃에 넣기 좋은 플레인텍스트 등 매력적인 장점이 가득. 금방 익혀서 글로 정리되어 있던 프로세스를 스테이트, 시퀀스 다이어그램으로 옮겼고... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 14. 프론트엔드/웹 개발
-
-- Topic ID: `frontend-web`
-- Suggested title: `프론트엔드/웹 개발: 3D프린터때도 느꼈는데 키보드 펌웨어도 진짜 마귀소굴이군.. 키맵을 깃헙레포에 올리고 웹 에디터...`
-- Aggregate score: `6.788`
-- Total engagement proxy: `168`
-- Tags: `frontend, web, javascript`
-- Source tweets:
-  - 2024-05-09 | ❤ 68 / RT 50 | [1788372613301203144](https://x.com/i/web/status/1788372613301203144) | 3D프린터때도 느꼈는데 키보드 펌웨어도 진짜 마귀소굴이군.. 키맵을 깃헙레포에 올리고 웹 에디터 GUI로 키맵을 수정하면 자동으로 커밋이 되고 그럼 깃헙액션이 트리거 되면서 펌웨어 바이너리가 빌드됨. 이걸 개발자가... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 15. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 4년만에 다시 팀장이 되었다. 그간 안해볼려고 몸비틀며 살아왔는데 이번은 이직에 조바심을 너무 냈...`
-- Aggregate score: `6.728`
-- Total engagement proxy: `146`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-08-01 | ❤ 144 / RT 1 | [1951233401018786260](https://x.com/i/web/status/1951233401018786260) | 4년만에 다시 팀장이 되었다. 그간 안해볼려고 몸비틀며 살아왔는데 이번은 이직에 조바심을 너무 냈던 것 같다. 기왕 된거 예전에 했던거 보다 잘해야지. 첫날은 클로드에 컨플루언스 지라 깃 다 연결하고 이전 위클리미팅... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 16. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 5년만에 다시 읽어보는 책, 출퇴근 오디오북으로 듣는데 잔소리에 귀에서 피가 나는 기분이다. 하지...`
-- Aggregate score: `6.685`
-- Total engagement proxy: `40`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-05-29 | ❤ 34 / RT 3 | [1927885858587164861](https://x.com/i/web/status/1927885858587164861) | 5년만에 다시 읽어보는 책, 출퇴근 오디오북으로 듣는데 잔소리에 귀에서 피가 나는 기분이다. 하지만 대부분 맞말이라 반성모드로 듣는다. 개발자에게 직업인으로서의 성장을 위한 굉장히 구체적인 액션들을 제시해준다. 다... (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 17. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: 우리회사 개발자분도 디자인시스템을 만든 것에 대한 후회를 좀 하더라. 디자인시스템이라고 컴포넌트로...`
-- Aggregate score: `6.663`
-- Total engagement proxy: `473`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2025-08-17 | ❤ 311 / RT 81 | [1957040031052521665](https://x.com/i/web/status/1957040031052521665) | 우리회사 개발자분도 디자인시스템을 만든 것에 대한 후회를 좀 하더라. 디자인시스템이라고 컴포넌트로 만들어둔게 사실상 다른 UI프레임워크의 래퍼일 뿐이고 대부분은 그냥 sass variable로 소화가 가능했다고. 무... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 18. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 코덱스탭3개 클로드코드탭3개 열어두고 작업중 둘다 쓰면 좋다. 코덱스한테는 주로 클로드 작업한거...`
-- Aggregate score: `6.638`
-- Total engagement proxy: `133`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-11-11 | ❤ 113 / RT 10 | [1988382233519157550](https://x.com/i/web/status/1988382233519157550) | 코덱스탭3개 클로드코드탭3개 열어두고 작업중 둘다 쓰면 좋다. 코덱스한테는 주로 클로드 작업한거 리뷰 시킨다. 코덱스 최대 단점은 think를 영어로만 한다는거다. 클로드한테는 맘껏 독심술 펼치는데 코덱스는 거리감이... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 19. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: 에이전트 쓰는 법이 궁금하다는 팀원분을 위해 4세션에 걸쳐 진행한 작업에 대해서 클로드에게 세션기...`
-- Aggregate score: `6.619`
-- Total engagement proxy: `138`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2026-01-04 | ❤ 112 / RT 13 | [2007669420177633582](https://x.com/i/web/status/2007669420177633582) | 에이전트 쓰는 법이 궁금하다는 팀원분을 위해 4세션에 걸쳐 진행한 작업에 대해서 클로드에게 세션기록파일을 분석해서 패턴을 정리해달라고 했다. 개인 .claude밑에는 최근 대화의 기록이 모두 jsonl파일로 기록되어... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 20. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: QA팀에서 TC 3천개 받아와서 클로드코드 스킬로 케이스 그룹 선별/분석, playwright로...`
-- Aggregate score: `6.619`
-- Total engagement proxy: `132`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-11-19 | ❤ 98 / RT 17 | [1991071852182004147](https://x.com/i/web/status/1991071852182004147) | QA팀에서 TC 3천개 받아와서 클로드코드 스킬로 케이스 그룹 선별/분석, playwright로 통과하는 테스트코드 작성, PR작성까지 워크플로우 짜놓고 팀원들 전부다 돌리게 시키고 있다. 하루에 300개씩 뽑아지는... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 21. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: AWS다. 당신의 서버비 폭탄 = 우리의 많은 매출 매년 aws summit에서는 이걸 써서 문제...`
-- Aggregate score: `6.497`
-- Total engagement proxy: `473`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2025-10-08 | ❤ 235 / RT 119 | [1975799945480577217](https://x.com/i/web/status/1975799945480577217) | AWS다. 당신의 서버비 폭탄 = 우리의 많은 매출 매년 aws summit에서는 이걸 써서 문제를 멋지게 해결했다는 세션이 줄을 이었고 꾸준히 씨를 뿌린거 잘 수확하고 있다. (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 22. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 책 재밌었다. 늙은 개발자들은 킥킥대며 맞아 그런 일들이 있지하고 읽기 좋다. 당연한 이야기와 그...`
-- Aggregate score: `6.451`
-- Total engagement proxy: `114`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-12-29 | ❤ 94 / RT 10 | [2005434272061264302](https://x.com/i/web/status/2005434272061264302) | 책 재밌었다. 늙은 개발자들은 킥킥대며 맞아 그런 일들이 있지하고 읽기 좋다. 당연한 이야기와 그렇지 않은 이야기들을 잘 풀어놨고 가성비 좋은 책이다. 제목 번역이 아쉽다. 원제는 How to make things... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 23. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 팀원분이 회사에 좋은 책을 계속 공급해주신다. 도서구매 지원해주는 회사는 많지만 그걸 잘 활용하는...`
-- Aggregate score: `6.432`
-- Total engagement proxy: `39`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-12-29 | ❤ 35 / RT 2 | [2005435512933478611](https://x.com/i/web/status/2005435512933478611) | 팀원분이 회사에 좋은 책을 계속 공급해주신다. 도서구매 지원해주는 회사는 많지만 그걸 잘 활용하는 역량을 가진 직원도 나름 흔치 않은데, 고마우신 팀원분 (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 24. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 2019년 스타트업 다니면서 주 60시간씩 개발하던 때 사진. 그리고 오늘 사진 그 때 이대로는...`
-- Aggregate score: `6.425`
-- Total engagement proxy: `107`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-02-01 | ❤ 97 / RT 5 | [1885620871399948451](https://x.com/i/web/status/1885620871399948451) | 2019년 스타트업 다니면서 주 60시간씩 개발하던 때 사진. 그리고 오늘 사진 그 때 이대로는 금방 디질것 같아서 중견기업으로 이직했었고 운동을 시작했다. 운동으로 건강은 좀 좋아졌지만 살은 안빠졌고 작년에 위소매... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 25. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: 에이전트에게 '역할'을 이야기해주는 것이 안티패턴이라고 알고 있어서 피하고 있었다. 그런데 최근에...`
-- Aggregate score: `6.401`
-- Total engagement proxy: `107`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2026-01-11 | ❤ 75 / RT 16 | [2010311840308539666](https://x.com/i/web/status/2010311840308539666) | 에이전트에게 '역할'을 이야기해주는 것이 안티패턴이라고 알고 있어서 피하고 있었다. 그런데 최근에 들었던 이야기를 활용해서 좀 응용해봤더니 맘에 드는 결과가 나온다. 추가로 에이전트에 적절하게 작업계획을 세워달라는... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 26. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: “퇴사하는 팀원을 최대한 배려해줍시다. 이제 퇴사하신 분을 여러분이 면접보게 될 가능성보다 그 분...`
-- Aggregate score: `6.371`
-- Total engagement proxy: `403`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2026-01-28 | ❤ 295 / RT 54 | [2016429833191145753](https://x.com/i/web/status/2016429833191145753) | “퇴사하는 팀원을 최대한 배려해줍시다. 이제 퇴사하신 분을 여러분이 면접보게 될 가능성보다 그 분이 여러분을 면접보게 될 가능성이 아주 높아지는겁니다.” 퇴사예정자가 생겨서 팀원들에게.. (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 27. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 리뷰 보고 바로 구매했다. 리디 인터뷰 떨어지면서 받은 쿠폰으로😭 TTS지원이라 출근길에 듣기 좋...`
-- Aggregate score: `6.353`
-- Total engagement proxy: `136`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-07-24 | ❤ 98 / RT 19 | [1948376192652062835](https://x.com/i/web/status/1948376192652062835) | 리뷰 보고 바로 구매했다. 리디 인터뷰 떨어지면서 받은 쿠폰으로😭 TTS지원이라 출근길에 듣기 좋겠고만 (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 28. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 추천받자마자 구매하고 3주간 틈틈이 다 봤다. 나는 이 책에서 말하는 스태프엔지니어라는게 보통 자...`
-- Aggregate score: `6.324`
-- Total engagement proxy: `28`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-06-26 | ❤ 24 / RT 2 | [1938225043387117990](https://x.com/i/web/status/1938225043387117990) | 추천받자마자 구매하고 3주간 틈틈이 다 봤다. 나는 이 책에서 말하는 스태프엔지니어라는게 보통 자기조직화 과정중에 자연스럽게 누군가 맡게되는 롤이라고 생각했었는데 큰 회사에서는 아예 이걸 직책화 하는구나하고 신기했다... (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 29. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 주니어들을 데리고 코드품질 논하는 시간을 주2시간쯤 잡아보고 있다. 3년 전만 해도 아쉬운 리팩토...`
-- Aggregate score: `6.314`
-- Total engagement proxy: `172`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-12-13 | ❤ 130 / RT 21 | [1999700179994443976](https://x.com/i/web/status/1999700179994443976) | 주니어들을 데리고 코드품질 논하는 시간을 주2시간쯤 잡아보고 있다. 3년 전만 해도 아쉬운 리팩토링PR도 매몰비용과 감정적인 이유로 리젝하기가 부담스러웠는데 이제는 조언하면 부담없이 에이전트로 재작성한다. Colle... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 30. 실행력/의사결정
-
-- Topic ID: `execution-mindset`
-- Suggested title: `실행력/의사결정: 와.. doctest 첨써봤는데 미칠듯이 편하다. 이거 없이 어떻게 개발했지 싶네. 파이참으로 간...`
-- Aggregate score: `6.258`
-- Total engagement proxy: `88`
-- Tags: `execution, decision, leadership`
-- Source tweets:
-  - 2024-07-31 | ❤ 56 / RT 16 | [1818605121141719368](https://x.com/i/web/status/1818605121141719368) | 와.. doctest 첨써봤는데 미칠듯이 편하다. 이거 없이 어떻게 개발했지 싶네. 파이참으로 간단히 실행하니 진짜 편의성 최고 (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 31. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 와이프에게 6살 아이에게 마인크래프트를 허락하는건 너무 부모로서 무책임 한거 아니냐는 이야기를 들...`
-- Aggregate score: `6.25`
-- Total engagement proxy: `87`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2024-06-26 | ❤ 43 / RT 22 | [1805772190664867847](https://x.com/i/web/status/1805772190664867847) | 와이프에게 6살 아이에게 마인크래프트를 허락하는건 너무 부모로서 무책임 한거 아니냐는 이야기를 들었다. 물론 우려되는 부분도 있지만 마인크래프트야말로 개발자 영재교육 필수코스라고 방어를 했다. 나는 하루 30분 마인... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 32. 디버깅/장애 대응
-
-- Topic ID: `debugging-incident`
-- Suggested title: `디버깅/장애 대응: 오늘 클로드맥스5 구독 시작, 오후 두시에 리셋된 토큰이 퇴근하는 일곱시쯤 되니까 거의 소진되었다...`
-- Aggregate score: `6.239`
-- Total engagement proxy: `48`
-- Tags: `debugging, incident, reliability`
-- Source tweets:
-  - 2025-07-03 | ❤ 42 / RT 3 | [1940730732542152910](https://x.com/i/web/status/1940730732542152910) | 오늘 클로드맥스5 구독 시작, 오후 두시에 리셋된 토큰이 퇴근하는 일곱시쯤 되니까 거의 소진되었다. 프론트 테스트에서 의존성 문제를 버전충돌 문제로 분석하더니 고친답시고 만개가 넘는 토큰을 녹이더라. 세션을 세번정도... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 33. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 프리도 아니고 자기회사 개발자에게 좀 설득없이 시키는대로 했으면 좋겠다고 하는 경영진은, 시키는대...`
-- Aggregate score: `6.222`
-- Total engagement proxy: `86`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2024-04-04 | ❤ 46 / RT 20 | [1775677839611961615](https://x.com/i/web/status/1775677839611961615) | 프리도 아니고 자기회사 개발자에게 좀 설득없이 시키는대로 했으면 좋겠다고 하는 경영진은, 시키는대로 해서 몇 배 이상의 예산을 쓰고도 아무도 책임지지 않고 터져나가는 금융, 공공 SI프로젝트들을 보고 타산지석 삼아야... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 34. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 파이콘 2023 일요일만 댱겨왔습니다. 흥미로운 세션들 잘 보고 왔네요. 스탬프 찍기는 부끄러워서...`
-- Aggregate score: `6.213`
-- Total engagement proxy: `28`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2023-08-13 | ❤ 20 / RT 4 | [1690664123192037376](https://x.com/i/web/status/1690664123192037376) | 파이콘 2023 일요일만 댱겨왔습니다. 흥미로운 세션들 잘 보고 왔네요. 스탬프 찍기는 부끄러워서 실패함😇 질문하는거 회사분이 사진 찍어주심😚 즐거운 시간이었음, 질문 열심히 해서 책도 받고.. (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 35. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 사원증 나왔다. 개발자들이 안정감을 느끼며 일할 수 있는 곳으로 잘 만들어보자. 이직도 일종의 회...`
-- Aggregate score: `6.205`
-- Total engagement proxy: `100`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-07-24 | ❤ 98 / RT 1 | [1948347902189023615](https://x.com/i/web/status/1948347902189023615) | 사원증 나왔다. 개발자들이 안정감을 느끼며 일할 수 있는 곳으로 잘 만들어보자. 이직도 일종의 회귀물 아닌가. 대강 어찌 흘러갈지 아는 등장인물이 활약을 못하면 연중당하는거다. (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 36. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 딸이 로블록스에 관심을 가지더니 어느새 맵 제작 책을 사달라고 떼를 써서 사주게 되었다. 좋아 좋...`
-- Aggregate score: `6.154`
-- Total engagement proxy: `31`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2024-06-13 | ❤ 27 / RT 2 | [1801145399811662216](https://x.com/i/web/status/1801145399811662216) | 딸이 로블록스에 관심을 가지더니 어느새 맵 제작 책을 사달라고 떼를 써서 사주게 되었다. 좋아 좋은 흐름이야 (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 37. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 다른 맥락이지만 본 김에 요즘 보는 책에서.. 이 책 좀 고민거리를 많이 던져준다. - 실용주의...`
-- Aggregate score: `6.154`
-- Total engagement proxy: `31`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-12-31 | ❤ 23 / RT 4 | [2006299458112524652](https://x.com/i/web/status/2006299458112524652) | 다른 맥락이지만 본 김에 요즘 보는 책에서.. 이 책 좀 고민거리를 많이 던져준다. - 실용주의 사고와 학습 (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 38. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: 팀장 일주일 했다. 모든 레포 합치기, 마이크로서비스 비슷하게 나눠논거 합치기, 메세지브로커 없애...`
-- Aggregate score: `6.145`
-- Total engagement proxy: `302`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2025-08-08 | ❤ 151 / RT 17 | [1953948443598057939](https://x.com/i/web/status/1953948443598057939) | 팀장 일주일 했다. 모든 레포 합치기, 마이크로서비스 비슷하게 나눠논거 합치기, 메세지브로커 없애기 시작했다. 다행히도 기존 분들이 이미 그 필요성을 느끼고 있었다. 백엔드 개발자 인원보다 많은 서비스 수는 너무했다... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2025-08-08 | ❤ 34 / RT 2 | [1953949801156104285](https://x.com/i/web/status/1953949801156104285) | 서비스간 http로 통신을 하다가 길잃은 요청으로 타임아웃이 나는 일이 잦아지고 있다. 메세지브로커로 비동기처리 시도한 작업이 로그도 없이 사라져있다. 달라진 api명세로 로그인을 하다 실패하거나 상품이용이 불가능해... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-  - 2025-08-08 | ❤ 51 / RT 14 | [1953952107364823089](https://x.com/i/web/status/1953952107364823089) | 작디작은 서비스당 서버 하나씩 배정하면서 클라우드서비스에 돈을 팍팍 쓴다. 일종의 카르텔 같이 느껴지기도 한다. 인프라를 파는 회사, 데브옵스를 필요로 하는 복잡한 아키텍쳐를 써야 안정적인 서비스가 가능하다고 약을... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 39. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 일하기 싫어서 책상정리.. 그래도 해야지… 웬만하면 일하는거 재밌는데 그럭저럭 개발해둔게 기획서와...`
-- Aggregate score: `6.062`
-- Total engagement proxy: `25`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-02-02 | ❤ 23 / RT 1 | [1886028800829620261](https://x.com/i/web/status/1886028800829620261) | 일하기 싫어서 책상정리.. 그래도 해야지… 웬만하면 일하는거 재밌는데 그럭저럭 개발해둔게 기획서와 동작이 다르다는 이슈가 수십 개 쌓여있는건 참 동기부여가 안된다. (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 40. 실행력/의사결정
-
-- Topic ID: `execution-mindset`
-- Suggested title: `실행력/의사결정: 일간 로그 기반으로 주간로그를 생성하고 회고기능을 넣었다. 그리고 회고내용을 현재 주에 대한 문서...`
-- Aggregate score: `6.045`
-- Total engagement proxy: `73`
-- Tags: `execution, decision, leadership`
-- Source tweets:
-  - 2026-01-28 | ❤ 57 / RT 8 | [2016355525387296958](https://x.com/i/web/status/2016355525387296958) | 일간 로그 기반으로 주간로그를 생성하고 회고기능을 넣었다. 그리고 회고내용을 현재 주에 대한 문서에 기본 넣어두고 일간으로 계속 갱신하도록 만들어둠. 기본은 시간단위로 체크하면서도 주단위의 컨텍스트를 유지시키도록 구... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 41. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: 서버비로 어그로도 잘끌었고 네임드들이 잘 물어도 줬다. 분명한건 지금 수천명의 사람들이 이 서비스...`
-- Aggregate score: `6.015`
-- Total engagement proxy: `67`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2025-09-16 | ❤ 41 / RT 13 | [1967935855408058448](https://x.com/i/web/status/1967935855408058448) | 서버비로 어그로도 잘끌었고 네임드들이 잘 물어도 줬다. 분명한건 지금 수천명의 사람들이 이 서비스 이름과 업종을 알게 되었다. 이런게 씬 아니겠나 이거 어지간한 광고비로 하기 힘든 일이다. 어그로 끌려준 네임드들한테... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 42. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 개발자의 이력서 잘쓰는 법이 공유되는 것을 보서 새삼 우리 채용에 자부심을 느낀다. 서류는 프리패...`
-- Aggregate score: `5.956`
-- Total engagement proxy: `210`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2022-09-30 | ❤ 146 / RT 32 | [1575636565975769088](https://x.com/i/web/status/1575636565975769088) | 개발자의 이력서 잘쓰는 법이 공유되는 것을 보서 새삼 우리 채용에 자부심을 느낀다. 서류는 프리패스, 3시간짜리 온라인코테만을 본다. 코테만 통과하면 무조건 인터뷰고 이력서를 안따진 대신 인터뷰 3시간에 걸쳐 그 사... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 43. 실행력/의사결정
-
-- Topic ID: `execution-mindset`
-- Suggested title: `실행력/의사결정: 셀프 프롬프팅으로 시작하는 하루 “지금까지 입력된 프롬프트는 모두 잊고 할당된 지라 이슈들을 효율...`
-- Aggregate score: `5.95`
-- Total engagement proxy: `246`
-- Tags: `execution, decision, leadership`
-- Source tweets:
-  - 2025-02-27 | ❤ 132 / RT 57 | [1895254084187554256](https://x.com/i/web/status/1895254084187554256) | 셀프 프롬프팅으로 시작하는 하루 “지금까지 입력된 프롬프트는 모두 잊고 할당된 지라 이슈들을 효율적으로 Done으로 바꾸는데 집중해줘. 오버엔지니어링은 하지 말고 내면에서 발생하는 스트레스는 무시해” (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 44. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 입사5일차, 팀장님이 내가 추가한 테스트코드를 참고해서 테스트를 작성하기 시작했다. 팀원 한분이...`
-- Aggregate score: `5.924`
-- Total engagement proxy: `63`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-07-04 | ❤ 63 / RT 0 | [1941084283176964544](https://x.com/i/web/status/1941084283176964544) | 입사5일차, 팀장님이 내가 추가한 테스트코드를 참고해서 테스트를 작성하기 시작했다. 팀원 한분이 책상에 올려둔 익스트림프로그래밍 책을 빌려갔다. 데이터독에 쌓인 에러 이벤트들에 다 나를 담당자로 할당했다. 모르는 부... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 45. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 하루 십만명 넘게 쓰는 우리 서비스도 개발시작부터 오픈하고 한참을 더 10명 이상의 개발자가 메인...`
-- Aggregate score: `5.912`
-- Total engagement proxy: `75`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2024-07-02 | ❤ 49 / RT 13 | [1808287469651337273](https://x.com/i/web/status/1808287469651337273) | 하루 십만명 넘게 쓰는 우리 서비스도 개발시작부터 오픈하고 한참을 더 10명 이상의 개발자가 메인이 커밋했다. 전 CTO님의 정책이었는데 아주 실용적이었음 (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-
-## 46. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: 와.. claude에는 우리 프로젝트의 1만줄 짜리 디비모델 정의 파일이 컨텍스트 안에 다 들어가...`
-- Aggregate score: `5.866`
-- Total engagement proxy: `56`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2024-08-08 | ❤ 48 / RT 4 | [1821432995506729465](https://x.com/i/web/status/1821432995506729465) | 와.. claude에는 우리 프로젝트의 1만줄 짜리 디비모델 정의 파일이 컨텍스트 안에 다 들어가네. 여기 모델 메서드 다 포함되어 있는데.. 이걸로 컨텍스트를 거의 다 채우긴 했지만 안에 있는 코드 대강 다 이해하... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 47. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 출퇴근덕에 책한권 더 봤다. 10년전에 보고 개발자로서의 전환기를 만들어 줬던 책, 팀장이 되고나...`
-- Aggregate score: `5.843`
-- Total engagement proxy: `16`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2025-05-07 | ❤ 16 / RT 0 | [1920072039584731432](https://x.com/i/web/status/1920072039584731432) | 출퇴근덕에 책한권 더 봤다. 10년전에 보고 개발자로서의 전환기를 만들어 줬던 책, 팀장이 되고나서는 팀원들한테 강제로 읽게 만들어던 책. 오랜만에 다시 보니 새롭게 생각할 부분도 많고 그때와는 다르게 받아들여지는... (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 48. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: 업무에 프로세스를 더하는 것은 정말 쉽다. 문제가 있을때 프로세스를 더하자고 말하는 것은 똑똑해...`
-- Aggregate score: `5.837`
-- Total engagement proxy: `16`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2025-11-13 | ❤ 16 / RT 0 | [1988980675828212126](https://x.com/i/web/status/1988980675828212126) | 업무에 프로세스를 더하는 것은 정말 쉽다. 문제가 있을때 프로세스를 더하자고 말하는 것은 똑똑해 보이기도 하고 아주 쉽게 유리한 위치에서 책임을 피하는 방법이기도 하다. 그래도 안하고 버틸 수 있는데까지 버티자. 내... (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 49. 커리어/이직 인사이트
-
-- Topic ID: `career-job-transition`
-- Suggested title: `커리어/이직 인사이트: 채용공고 5년 이하 경력까지는 이해한다. 급여수준이나 기대역할을 어느정도 표현하니까. 하지만 10...`
-- Aggregate score: `5.81`
-- Total engagement proxy: `29`
-- Tags: `career, job-change, growth`
-- Source tweets:
-  - 2025-06-03 | ❤ 23 / RT 3 | [1930042141344182285](https://x.com/i/web/status/1930042141344182285) | 채용공고 5년 이하 경력까지는 이해한다. 급여수준이나 기대역할을 어느정도 표현하니까. 하지만 10년 이하는 무슨 의미일까. 10년이 넘어가면 10년이나 15년이나 급여수준이나 역할이 크게 달라질것도 없는데도 굳이 제... (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 50. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 아.. 오늘 클로드한테 “정말 핵심적인 개선이네요!”라고 리뷰 받고 나 쫌 하나? 했다가 “비판적...`
-- Aggregate score: `5.809`
-- Total engagement proxy: `141`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2025-06-10 | ❤ 85 / RT 28 | [1932389030181929440](https://x.com/i/web/status/1932389030181929440) | 아.. 오늘 클로드한테 “정말 핵심적인 개선이네요!”라고 리뷰 받고 나 쫌 하나? 했다가 “비판적으로 리뷰해줘”라고 쓰자 “취약한 부분이 많습니다. 예상 트래픽을 결코 소화할 수 없을 꺼에요. A부분은 이래서 안좋고... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 51. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: 솔루션으로 쇼핑몰을 운영중인데 자체개발로 바꾸고 싶어요. 페이지도 몇 개 안되고 그대로 옮겨 개발...`
-- Aggregate score: `5.759`
-- Total engagement proxy: `124`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2023-01-27 | ❤ 52 / RT 36 | [1619080963539222528](https://x.com/i/web/status/1619080963539222528) | 솔루션으로 쇼핑몰을 운영중인데 자체개발로 바꾸고 싶어요. 페이지도 몇 개 안되고 그대로 옮겨 개발하니 어렵지 않겠죠? (+ 60페이지의 어드민, 8개의 협업용 구글시트전환, SCM,CRM솔루션연동, 공급사정산, 쇼핑... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 52. AI 에이전트/자동화 실전
-
-- Topic ID: `ai-agent-automation`
-- Suggested title: `AI 에이전트/자동화 실전: 아주 만족스럽게 일하고 있는 나의 에이전트, 실제로 도움이 되고 있다.`
-- Aggregate score: `5.744`
-- Total engagement proxy: `73`
-- Tags: `ai, automation, agent`
-- Source tweets:
-  - 2025-12-30 | ❤ 67 / RT 3 | [2005946655388897353](https://x.com/i/web/status/2005946655388897353) | 아주 만족스럽게 일하고 있는 나의 에이전트, 실제로 도움이 되고 있다. (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 53. 팀 생산성/협업 방식
-
-- Topic ID: `team-productivity`
-- Suggested title: `팀 생산성/협업 방식: 1. 문서화는 생각을 정리하는 단계에서 좋음, 그러나 정리가 끝나서 코드로 넘어가면 문서는 보통...`
-- Aggregate score: `5.742`
-- Total engagement proxy: `189`
-- Tags: `team, productivity, collaboration`
-- Source tweets:
-  - 2024-05-06 | ❤ 106 / RT 27 | [1787322880709267736](https://x.com/i/web/status/1787322880709267736) | 1. 문서화는 생각을 정리하는 단계에서 좋음, 그러나 정리가 끝나서 코드로 넘어가면 문서는 보통 수명이 끝나는듯 2. 코드로 최대한 옮기고, 표현 어려운 것이나 why는 주석으로 코드 가까이에 둔다. 3. 인수인계시... (book_signal=1, book_bonus=1.1, has_media=False, image_bonus=0.0)
-  - 2024-05-06 | ❤ 17 / RT 6 | [1787325886527836642](https://x.com/i/web/status/1787325886527836642) | 그니까 생각보다 문서는 신선식품과 비슷하다. 생산직후부터 상하기 시작하니 빨리 배달되어 소비되는게 좋다. 노션으로 잘 정리된 문서를 만드는것 보다 그냥 슬랙 스래드로 담당자에게 떠넘기고 상하기전에 드시라고 안내해드리... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 54. 실행력/의사결정
-
-- Topic ID: `execution-mindset`
-- Suggested title: `실행력/의사결정: 클로드 프로젝트 하나 파두고, 자신에 대한 정보, 신뢰할만한 적절한 분량의 pdf 몇 개 넣어둔다...`
-- Aggregate score: `5.727`
-- Total engagement proxy: `55`
-- Tags: `execution, decision, leadership`
-- Source tweets:
-  - 2025-01-18 | ❤ 39 / RT 8 | [1880706920807641223](https://x.com/i/web/status/1880706920807641223) | 클로드 프로젝트 하나 파두고, 자신에 대한 정보, 신뢰할만한 적절한 분량의 pdf 몇 개 넣어둔다. 의사결정이 필요할 때 마다 쪼르르 와서 의논하면 내 나이, 부상이력을 고려하여 답변을 해주는데 아주 좋다. (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 55. 디버깅/장애 대응
-
-- Topic ID: `debugging-incident`
-- Suggested title: `디버깅/장애 대응: 정말정말 고치고 싶은 끔찍한 습관이 있는데, 이슈가 생겼을때 “내가 이럴꺼라고 했잖아요”라고 하는...`
-- Aggregate score: `5.724`
-- Total engagement proxy: `162`
-- Tags: `debugging, incident, reliability`
-- Source tweets:
-  - 2023-12-02 | ❤ 112 / RT 25 | [1730776589703782511](https://x.com/i/web/status/1730776589703782511) | 정말정말 고치고 싶은 끔찍한 습관이 있는데, 이슈가 생겼을때 “내가 이럴꺼라고 했잖아요”라고 하는 것이다. 말을 하는 사람과 듣는 사람에게 모두 피해만 입히고 이슈 해결에 아무 도움이 되지 않는데 얄팍한 자기방어기제... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 56. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: wkwebview는 캐시에 대해 별도로 정책을 설정해줄 수 있다. 그리고 무조건 캐시있으면 절대...`
-- Aggregate score: `5.68`
-- Total engagement proxy: `10`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2024-11-01 | ❤ 8 / RT 1 | [1852256940258177424](https://x.com/i/web/status/1852256940258177424) | wkwebview는 캐시에 대해 별도로 정책을 설정해줄 수 있다. 그리고 무조건 캐시있으면 절대 서버에 요청하지 않는다 같은 괴이한 정책이 있으며 이런 정책과 nextjs 정적사이트생성을 잘못 섞으면 참사가 벌어질... (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
-
-## 57. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 관용적 표현과 실제의미 이번주까지 할게요. -&gt; 다음주 월요일은 이번주입니다 가능합니다. -...`
-- Aggregate score: `5.644`
-- Total engagement proxy: `101`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2024-06-24 | ❤ 31 / RT 35 | [1805200329547583877](https://x.com/i/web/status/1805200329547583877) | 관용적 표현과 실제의미 이번주까지 할게요. -&gt; 다음주 월요일은 이번주입니다 가능합니다. -&gt; 엄청 오래걸립니다. 최선을 다 해보겠습니다. -&gt; 불가능합니다. 다했습니다. -&gt; 리뷰대기중입니다.... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 58. 백엔드/아키텍처
-
-- Topic ID: `backend-architecture`
-- Suggested title: `백엔드/아키텍처: 따님께서 서버 터지나 안터지나 매의 눈으로 감시중.. 우린 CPUUtilization 10%대를...`
-- Aggregate score: `5.641`
-- Total engagement proxy: `58`
-- Tags: `backend, architecture, python`
-- Source tweets:
-  - 2023-11-25 | ❤ 54 / RT 2 | [1728369729646289022](https://x.com/i/web/status/1728369729646289022) | 따님께서 서버 터지나 안터지나 매의 눈으로 감시중.. 우린 CPUUtilization 10%대를 유지하고 있어서 괜찮을 거란다.. (book_signal=0, book_bonus=0.0, has_media=True, image_bonus=1.1)
-
-## 59. 코드 품질/리뷰
-
-- Topic ID: `code-quality-review`
-- Suggested title: `코드 품질/리뷰: 내가 경험한 SI의 한계는 시간의 흐름에 따른 코드의 생명주기를 경험할 수 없다는 것이었다. 영영...`
-- Aggregate score: `5.631`
-- Total engagement proxy: `144`
-- Tags: `code-quality, review, engineering`
-- Source tweets:
-  - 2023-03-12 | ❤ 70 / RT 37 | [1634884225869680644](https://x.com/i/web/status/1634884225869680644) | 내가 경험한 SI의 한계는 시간의 흐름에 따른 코드의 생명주기를 경험할 수 없다는 것이었다. 영영 채점하지 않는 시험을 계속 치는 느낌, 모든 문제를 풀었느냐만 따졌다. 그저 유닛테스트를 통과하는 것 뿐만 아니라 수... (book_signal=0, book_bonus=0.0, has_media=False, image_bonus=0.0)
-
-## 60. 독서/책 인용 인사이트
-
-- Topic ID: `book-reading-insights`
-- Suggested title: `독서/책 인용 인사이트: 점심 산책, 이제 개들이 너무 강해졌다. 끌려다니느라 정신없네;;`
-- Aggregate score: `5.611`
-- Total engagement proxy: `18`
-- Tags: `book, reading, insight`
-- Source tweets:
-  - 2024-03-08 | ❤ 16 / RT 1 | [1765961646189756461](https://x.com/i/web/status/1765961646189756461) | 점심 산책, 이제 개들이 너무 강해졌다. 끌려다니느라 정신없네;; (book_signal=1, book_bonus=1.1, has_media=True, image_bonus=1.1)
+# Curated Blog Topic Candidates (Manual Agent Review)
+
+- Generated at: 2026-02-20 01:39:53
+- Source archive: `twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip`
+- Selection input: `docs/manual_agent_selected_100.json`
+- Candidate count: `100`
+
+## 1. 우리팀도 이제 주니어 채용을 목전에 두고 있다보니 고민되는..
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1525452933084483584`
+- Date: `2022-05-14`
+- Engagement: `❤ 5 / RT 0`
+- URL: https://x.com/i/web/status/1525452933084483584
+- Reason: 주니어 채용에서 시니어 비율과 팀의 장기 목표라는 핵심 전제조건을 다뤄 확장 가치가 높다.
+- Excerpt: 우리팀도 이제 주니어 채용을 목전에 두고 있다보니 고민되는.. 굉장히 안정적이고 충분한 비율의 시니어가 있으며 장기적인 목표를 가진 팀이라면 괜찮은 방향성일테지만, 참 어려운 길인듯..
+
+## 2. 열심히 매력적인 채용공고를 작성해서 한 달만에 개발자 네 명을 채용한 적이 있었다.
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1525453786567049217`
+- Date: `2022-05-14`
+- Engagement: `❤ 103 / RT 41`
+- URL: https://x.com/i/web/status/1525453786567049217
+- Reason: 채용 브랜딩의 성공과 입사 후 기대치 불일치라는 트레이드오프를 사례로 풀 수 있다.
+- Excerpt: 열심히 매력적인 채용공고를 작성해서 한 달만에 개발자 네 명을 채용한 적이 있었다. 그 중 한 명은 두달쯤 지나고 나서 팀장님이 지나치게 채용공고를 잘썼다며 씁쓸하게 웃었다. 미안했음..
+
+## 3. AWS는 늘 많은 스타트업들에게 지원 프로그램이라는 명목으로 많은 크레딧을 지급하고 교육을 해주며 대용량 트래픽 문제를 과장하고...
+
+- Topic: `디버깅/장애 대응`
+- Tweet ID: `1562641456594296833`
+- Date: `2022-08-25`
+- Engagement: `❤ 25 / RT 12`
+- URL: https://x.com/i/web/status/1562641456594296833
+- Reason: 벤더 마케팅이 스타트업 기술 선택과 아키텍처 판단에 미치는 영향을 분석하기 좋다.
+- Excerpt: AWS는 늘 많은 스타트업들에게 지원 프로그램이라는 명목으로 많은 크레딧을 지급하고 교육을 해주며 대용량 트래픽 문제를 과장하고 그 문제를 해결해줄 특별한 기술로 자사 서비스를 소개해왔다. 그러다보니 자연스레 현 상...
+
+## 4. 특정 도메인의 스타트업에서 초기멤버로서 정말 열심히 했던 적이 있었다.
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1566579496706138113`
+- Date: `2022-09-05`
+- Engagement: `❤ 187 / RT 80`
+- URL: https://x.com/i/web/status/1566579496706138113
+- Reason: 초기 멤버의 제너럴리스트 경험이 대규모 조직 평가 기준과 충돌하는 지점을 보여준다.
+- Excerpt: 특정 도메인의 스타트업에서 초기멤버로서 정말 열심히 했던 적이 있었다. 개발리딩이 주요 롤이었지만 기획, 디자인, 마케팅까지 모두 함께 고민을 했었다. 4년차쯤 되었을까 같은 도메인의 큰 회사에 인터뷰를 봤고, 자신...
+
+## 5. 그러나 돌아오는 불합격 피드백은 ‘우리회사가 좀더 초기라면 채용을 했을지도 모르지만 지금은 좀 더 전문적인 개발자를 원합니다.’...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1566579498866188288`
+- Date: `2022-09-05`
+- Engagement: `❤ 79 / RT 33`
+- URL: https://x.com/i/web/status/1566579498866188288
+- Reason: 불합격 피드백을 통해 커리어 포지셔닝 전략을 재정의하는 흐름을 구체적으로 다룰 수 있다.
+- Excerpt: 그러나 돌아오는 불합격 피드백은 ‘우리회사가 좀더 초기라면 채용을 했을지도 모르지만 지금은 좀 더 전문적인 개발자를 원합니다.’ 흔히 있는 일이다. 이것저것 가리지 않고 해왔던 과거가 좀 후회가 되기도 하고 앞으로...
+
+## 6. 결국 어낼리틱스101하는중 GA4, amplitude, mixpanel 다 붙여놓고 raw데이터 검증 위해 이벤트 따로 자체저장,...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1575113875564863492`
+- Date: `2022-09-28`
+- Engagement: `❤ 0 / RT 0`
+- URL: https://x.com/i/web/status/1575113875564863492
+- Reason: 분석 도구 비교 도입과 검증용 자체 저장까지 포함된 실무형 의사결정 사례다.
+- Excerpt: 결국 어낼리틱스101하는중 GA4, amplitude, mixpanel 다 붙여놓고 raw데이터 검증 위해 이벤트 따로 자체저장, 최후의 승자는 누가 될지🤔 GA4는 유입경로분석으로 생존할까고 나머지 두놈은 유료 플...
+
+## 7. 개발자의 이력서 잘쓰는 법이 공유되는 것을 보서 새삼 우리 채용에 자부심을 느낀다.
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1575636565975769088`
+- Date: `2022-09-30`
+- Engagement: `❤ 146 / RT 32`
+- URL: https://x.com/i/web/status/1575636565975769088
+- Reason: 서류 프리패스와 심층 인터뷰 중심 채용 설계를 팀 철학 관점에서 확장할 수 있다.
+- Excerpt: 개발자의 이력서 잘쓰는 법이 공유되는 것을 보서 새삼 우리 채용에 자부심을 느낀다. 서류는 프리패스, 3시간짜리 온라인코테만을 본다. 코테만 통과하면 무조건 인터뷰고 이력서를 안따진 대신 인터뷰 3시간에 걸쳐 그 사...
+
+## 8. 시작하는 개발자들은 첫 직장 첫 연봉에 너무 연연하지 않아야 된다는 말에 백 번 동감하나, 오늘 현 직장에 전 직장 후배를 추천하...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1579845580381368320`
+- Date: `2022-10-11`
+- Engagement: `❤ 293 / RT 159`
+- URL: https://x.com/i/web/status/1579845580381368320
+- Reason: 초봉보다 성장이라는 조언의 한계와 장기 저연봉의 현실 리스크를 함께 다룬다.
+- Excerpt: 시작하는 개발자들은 첫 직장 첫 연봉에 너무 연연하지 않아야 된다는 말에 백 번 동감하나, 오늘 현 직장에 전 직장 후배를 추천하려고 이야기를 나누다 아득해졌다. 중소기업에서 거의 신입으로 시작하여 코로나를 핑계로...
+
+## 9. 개발자의 사회성부족은 매니저역할을 할때 더 처참하게 드러난다.
+
+- Topic: `독서/책 인용 인사이트`
+- Tweet ID: `1584320641511337985`
+- Date: `2022-10-23`
+- Engagement: `❤ 393 / RT 322`
+- URL: https://x.com/i/web/status/1584320641511337985
+- Reason: 개발자에서 매니저로 전환할 때 생기는 커뮤니케이션 실패와 자기소진을 깊게 풀 수 있다.
+- Excerpt: 개발자의 사회성부족은 매니저역할을 할때 더 처참하게 드러난다. 칭찬한다고 한 이야기는 한 사람을 칭찬하면서 세 사람을 상처주고, 감당해야 하는 팀원의 퇴사에는 한 없이 자책한다. 실패한 팀웍에 내가 하지 뭐 하며 혼...
+
+## 10. B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1585780451771547649`
+- Date: `2022-10-27`
+- Engagement: `❤ 1 / RT 0`
+- URL: https://x.com/i/web/status/1585780451771547649
+- Reason: 개발 기여도 측정이 어려운 사업 구조에서의 동기와 커리어 전략을 설명하기 좋다.
+- Excerpt: B2B도 다양, 영업주도의 비지니스, 심지어 타사 제품 리셀도 하는 회사라면 매출이 잘 나오더라도 여기에 개발자의 기여도가 거의 측정이 안되는 경우가 많다. N명의 개발자는 그저 N명의 개발자라는 영업문구가 되버릴뿐...
+
+## 11. 개발은 사용자에게 가치를 제공한다는 목표가 있고 이를 효율적으로 달성하기 위한 다양한 수단이 있는듯 하다. 테스트 주도 개발, 산...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1607107505435598849`
+- Date: `2022-12-25`
+- Engagement: `❤ 10 / RT 1`
+- URL: https://x.com/i/web/status/1607107505435598849
+- Reason: 품질 방법론 선택을 자원 제약 하에서 목적 달성이라는 실무 관점으로 정리할 수 있다.
+- Excerpt: 개발은 사용자에게 가치를 제공한다는 목표가 있고 이를 효율적으로 달성하기 위한 다양한 수단이 있는듯 하다. 테스트 주도 개발, 산출 데이터 검증, 코드 분석툴, QA인력, 돌아가게만이라도 만들기(내 경력의 주요수단🥲...
+
+## 12. 더 괴로운 기억은 3개월짜리 MVP하고나면 그담에 다시 제대로 프로덕션 개발 할 계획이라고 해서 호다닥 아슬아슬한 카드로 만든 집...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1607811746391273473`
+- Date: `2022-12-27`
+- Engagement: `❤ 36 / RT 40`
+- URL: https://x.com/i/web/status/1607811746391273473
+- Reason: 단기 MVP가 장기 운영 부채로 고착되는 전형적인 실패 패턴을 생생하게 담고 있다.
+- Excerpt: 더 괴로운 기억은 3개월짜리 MVP하고나면 그담에 다시 제대로 프로덕션 개발 할 계획이라고 해서 호다닥 아슬아슬한 카드로 만든 집 만들어 놨는데 그 카드집에 만족한다면서 그 카드집에 3년내내 기능을 덧붙여야 했다....
+
+## 13. 솔루션으로 쇼핑몰을 운영중인데 자체개발로 바꾸고 싶어요. 페이지도 몇 개 안되고 그대로 옮겨 개발하니 어렵지 않겠죠? (+ 60페...
+
+- Topic: `팀 생산성/협업 방식`
+- Tweet ID: `1619080963539222528`
+- Date: `2023-01-27`
+- Engagement: `❤ 52 / RT 36`
+- URL: https://x.com/i/web/status/1619080963539222528
+- Reason: 요구 범위 과소추정이 어떻게 프로젝트 난이도를 폭발시키는지 구조적으로 풀 수 있다.
+- Excerpt: 솔루션으로 쇼핑몰을 운영중인데 자체개발로 바꾸고 싶어요. 페이지도 몇 개 안되고 그대로 옮겨 개발하니 어렵지 않겠죠? (+ 60페이지의 어드민, 8개의 협업용 구글시트전환, SCM,CRM솔루션연동, 공급사정산, 쇼핑...
+
+## 14. 서드파티API가 우리쪽 서버로 리퀘스트하는 형태인데 문서가 명확치 않아 작업지연.
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1625859546056126468`
+- Date: `2023-02-15`
+- Engagement: `❤ 8 / RT 0`
+- URL: https://x.com/i/web/status/1625859546056126468
+- Reason: 불완전한 문서 환경에서 관측 도구를 즉석 구축해 문제를 해결한 과정이 실전적이다.
+- Excerpt: 서드파티API가 우리쪽 서버로 리퀘스트하는 형태인데 문서가 명확치 않아 작업지연. 리퀘스트를 확인하고자 간이서버를 올려야되나 고민하다가 chatGPT에게 코드작성을 요청한후 lambda에 올리고 함수URL 만들고 이...
+
+## 15. 내가 경험한 SI의 한계는 시간의 흐름에 따른 코드의 생명주기를 경험할 수 없다는 것이었다. 영영 채점하지 않는 시험을 계속 치는...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1634884225869680644`
+- Date: `2023-03-12`
+- Engagement: `❤ 70 / RT 37`
+- URL: https://x.com/i/web/status/1634884225869680644
+- Reason: 코드의 전 생애주기를 경험하지 못하는 환경이 학습과 품질에 미치는 한계를 잘 보여준다.
+- Excerpt: 내가 경험한 SI의 한계는 시간의 흐름에 따른 코드의 생명주기를 경험할 수 없다는 것이었다. 영영 채점하지 않는 시험을 계속 치는 느낌, 모든 문제를 풀었느냐만 따졌다. 그저 유닛테스트를 통과하는 것 뿐만 아니라 수...
+
+## 16. 우리팀이 밑바닥부터 만든 서비스가 오픈하여 기존 사이트를 대체했다. 하루 사용자 n만명을 버텼다. 오픈하고도 맘편히 고쳐가며 하루...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1635652245021933568`
+- Date: `2023-03-14`
+- Engagement: `❤ 104 / RT 13`
+- URL: https://x.com/i/web/status/1635652245021933568
+- Reason: 오픈 이후 무중단 배포와 테스트 기반 수정이라는 안정적 운영 방식의 모범 사례다.
+- Excerpt: 우리팀이 밑바닥부터 만든 서비스가 오픈하여 기존 사이트를 대체했다. 하루 사용자 n만명을 버텼다. 오픈하고도 맘편히 고쳐가며 하루동안 수 십번의 무중단배포를 했다. 아무것도 급하게 고치지 않았고, 발견되는 예외에 차...
+
+## 17. 이전회사에서 만지던게 three.js로 돌아가는 솔루션이었다. 인상깊었던건 vuejs위에서 돌아가게 해놨는데, 몇백메가하던 thr...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1639596259123302401`
+- Date: `2023-03-25`
+- Engagement: `❤ 52 / RT 10`
+- URL: https://x.com/i/web/status/1639596259123302401
+- Reason: 프레임워크 반응성 특성이 대용량 객체 처리에 미친 성능 문제를 구체적으로 설명할 수 있다.
+- Excerpt: 이전회사에서 만지던게 three.js로 돌아가는 솔루션이었다. 인상깊었던건 vuejs위에서 돌아가게 해놨는데, 몇백메가하던 three.js 오브젝트들 죄다 리액티비티가 걸려서 브라우저를 폭파시키고 있었다. 팀에서 그...
+
+## 18. 잡부개발자는 MVP때까지만 쓰고 성공하면 물갈이 될 수 있다는 데에 공감하지만 90%이상의 기업이 성공하지 못하고 MVP만 만들고...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1640653629949632515`
+- Date: `2023-03-28`
+- Engagement: `❤ 71 / RT 42`
+- URL: https://x.com/i/web/status/1640653629949632515
+- Reason: 제너럴리스트 수요와 커리어 불안의 공존이라는 시장 현실을 균형 있게 다룬다.
+- Excerpt: 잡부개발자는 MVP때까지만 쓰고 성공하면 물갈이 될 수 있다는 데에 공감하지만 90%이상의 기업이 성공하지 못하고 MVP만 만들고 있으므로 잡부개발자는 여전히 수요가 굉장히 많다. 하긴 그래서 일종의 스타트업 낭인...
+
+## 19. 어제 팀애 주니어분이 금요일 오후 여섯시에 프로덕션 배포하고 바로 집에 가는걸 보고 내심 공포감에 휩싸였🥶 안정적인 배포 시스템이...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1646998484623699971`
+- Date: `2023-04-14`
+- Engagement: `❤ 24 / RT 7`
+- URL: https://x.com/i/web/status/1646998484623699971
+- Reason: 배포 타이밍, 장애 비용, 팀 문화가 충돌하는 운영 리스크를 현실적으로 풀기 좋다.
+- Excerpt: 어제 팀애 주니어분이 금요일 오후 여섯시에 프로덕션 배포하고 바로 집에 가는걸 보고 내심 공포감에 휩싸였🥶 안정적인 배포 시스템이 있긴 하지만 언제나 무섭다.. 30분만 멈춰도 천만원은 날아가는걸😬 다행히 별일없었음...
+
+## 20. 얼마전에 본 구글어쩌고 책에서도 매니저는 how가 아니라 what을 고민하라는데.. 현실은 대개 코드에 가장 많은 기여를 하는 혹...
+
+- Topic: `독서/책 인용 인사이트`
+- Tweet ID: `1647217911990452225`
+- Date: `2023-04-15`
+- Engagement: `❤ 18 / RT 9`
+- URL: https://x.com/i/web/status/1647217911990452225
+- Reason: 매니저와 테크리드 역할 혼재 문제를 조직 설계 관점으로 확장하기 좋은 출발점이다.
+- Excerpt: 얼마전에 본 구글어쩌고 책에서도 매니저는 how가 아니라 what을 고민하라는데.. 현실은 대개 코드에 가장 많은 기여를 하는 혹은 할 수 있는 사람을 매니저 시키는게 흔하다 보니 넘 어렵다. 매니저와 테크리드를 따...
+
+## 21. 레거시에 대한 경험, 지금와 생각해보면 테스트케이스가 없거나 극단적으로 적은게 본질이었다.
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1653185615398334465`
+- Date: `2023-05-01`
+- Engagement: `❤ 6 / RT 1`
+- URL: https://x.com/i/web/status/1653185615398334465
+- Reason: 레거시 고통의 본질을 테스트 부재로 환원한 회고라 개선 우선순위 논의에 적합하다.
+- Excerpt: 레거시에 대한 경험, 지금와 생각해보면 테스트케이스가 없거나 극단적으로 적은게 본질이었다. 하나의 개선에 세개의 오류가 따라왔고, 개발자를 옥죄고 방어적 코딩을 하게했다. 새로 만들기 전에는 별 도리가 없다고 생각했...
+
+## 22. 분명 스테이징 서버에서는 잘 돌던것이 프로덕션에 가서 일부 고객에게만 오류가 발생했다.
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1664359602962698246`
+- Date: `2023-06-01`
+- Engagement: `❤ 30 / RT 18`
+- URL: https://x.com/i/web/status/1664359602962698246
+- Reason: 환경 차이로 인한 재현 난이도 높은 장애를 어떻게 추적하는지 사례화하기 좋다.
+- Excerpt: 분명 스테이징 서버에서는 잘 돌던것이 프로덕션에 가서 일부 고객에게만 오류가 발생했다. 알고보니 서브도메인이 다른 타 서비스의 쿠키가 도메인레벨로 되어 있어서 거기서 덕지덕지 붙어온 쿠키가 이 서비스 nignx 기본...
+
+## 23. 몇년전 제품에 MSA도입 오판으로 10MM쯤 개발리소스를 허비한적이 있었다.
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1667478906444853248`
+- Date: `2023-06-10`
+- Engagement: `❤ 15 / RT 1`
+- URL: https://x.com/i/web/status/1667478906444853248
+- Reason: 과설계와 기술 선택 오판의 비용을 숫자와 맥락으로 보여주는 강한 반면교사다.
+- Excerpt: 몇년전 제품에 MSA도입 오판으로 10MM쯤 개발리소스를 허비한적이 있었다. 결론은 어떻게 해야할지 모르겠다였다😭 그래도 그 인원들 스터디는 많이 했으니까 이득😇 릴리즈 주기가 다른 몇 제품을 하나의 패키지로 배포되...
+
+## 24. 스타트업썰, 대표님이 날 첫 개발자로 채용하시면서 백엔드는 외주를 줘서 거의 다 완성이 되어있으니 프론트엔드만 해달라고 했다. 입...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1682762420257972224`
+- Date: `2023-07-22`
+- Engagement: `❤ 126 / RT 37`
+- URL: https://x.com/i/web/status/1682762420257972224
+- Reason: 외주 산출물 품질 착시와 요구사항 정의 실패가 어떻게 내부 재작업으로 이어지는지 드러난다.
+- Excerpt: 스타트업썰, 대표님이 날 첫 개발자로 채용하시면서 백엔드는 외주를 줘서 거의 다 완성이 되어있으니 프론트엔드만 해달라고 했다. 입사후 본 2천만원짜리 그 외주는 보내준 테이블설계서대로 이클립스 플러그인을 통해 생성한...
+
+## 25. 역설적이지만 퇴사준비로 가장 추천하는 것은 새로운 스택 익히는게 아니라, 다니던 회사의 코드나 인프라의 이해도를 높히는 것인 것...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1694618153719075304`
+- Date: `2023-08-24`
+- Engagement: `❤ 239 / RT 128`
+- URL: https://x.com/i/web/status/1694618153719075304
+- Reason: 이직 준비의 초점을 신기술 학습보다 현업 시스템 이해로 전환하는 커리어 인사이트가 크다.
+- Excerpt: 역설적이지만 퇴사준비로 가장 추천하는 것은 새로운 스택 익히는게 아니라, 다니던 회사의 코드나 인프라의 이해도를 높히는 것인 것 같다. 자기 회사껀 다 미흡해 보이는 법이지만, 리얼월드의 프로젝트를 직관하는 것은 귀...
+
+## 26. 그래서 가급적 이직 타이밍은 내가 회사에 충분히 기여한 것이 인정되는 때로 잡는다.
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1712473248255090967`
+- Date: `2023-10-12`
+- Engagement: `❤ 1 / RT 0`
+- URL: https://x.com/i/web/status/1712473248255090967
+- Reason: 퇴사 시점의 윤리와 평판 관리라는 커리어 의사결정 맥락이 분명하다.
+- Excerpt: 그래서 가급적 이직 타이밍은 내가 회사에 충분히 기여한 것이 인정되는 때로 잡는다. 내가 한 일이 잘 안되었을때 퇴사하는 것은 내가 어린시절 전도사에게 느꼈던 실망감과 비슷한 느낌을 동료에게 줄 것임을 알기때문. 부...
+
+## 27. 카프카를 써본적이 없는데, 요즘 제대로 처리되지 못한 사용자의 결제요청을 하나씩 복구하거나 결국 아예 복구 기능을 만들거나 하는...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1713442957054054843`
+- Date: `2023-10-15`
+- Engagement: `❤ 8 / RT 1`
+- URL: https://x.com/i/web/status/1713442957054054843
+- Reason: 결제 복구 경험을 바탕으로 메시징 도입의 이득과 복잡도 트레이드오프를 다룰 수 있다.
+- Excerpt: 카프카를 써본적이 없는데, 요즘 제대로 처리되지 못한 사용자의 결제요청을 하나씩 복구하거나 결국 아예 복구 기능을 만들거나 하는 걸 보면서, 메시징 프레임워크를 썼으면 어땠을까 하는 생각을 종종 한다. 더 좋았을까...
+
+## 28. 사용하지 않는데 폐기되지 않은 코드는 나중에 다시보면 이게 사용되지 않는다는 컨택스트를 코드읽을때 다시 파악해야 하고 이 비용은...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1714305858908406228`
+- Date: `2023-10-17`
+- Engagement: `❤ 10 / RT 0`
+- URL: https://x.com/i/web/status/1714305858908406228
+- Reason: 데드코드가 유지보수 비용과 오류 확률을 키운다는 실무 교훈이 명확하다.
+- Excerpt: 사용하지 않는데 폐기되지 않은 코드는 나중에 다시보면 이게 사용되지 않는다는 컨택스트를 코드읽을때 다시 파악해야 하고 이 비용은 계속 누적되며, 실수을 유발한다. 당사자성 있음 😢 안쓰는 코드는 제때제때 없애자.
+
+## 29. 요즘 느끼는 것, 대충 기능이 3가지라면 문제의 소지는 1+2+3 해서 5정도 되는 느낌 문제는 기능이 6개면 이게 순식간에 1+...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1714312907767591403`
+- Date: `2023-10-17`
+- Engagement: `❤ 3 / RT 0`
+- URL: https://x.com/i/web/status/1714312907767591403
+- Reason: 기능 수 증가에 따른 복잡도 폭증과 모듈 격리 전략을 설명하기 좋다.
+- Excerpt: 요즘 느끼는 것, 대충 기능이 3가지라면 문제의 소지는 1+2+3 해서 5정도 되는 느낌 문제는 기능이 6개면 이게 순식간에 1+2+3+4+5+6해서 21로 올라감 그런데 이걸 3개짜리 두개로 잘 격리하면 5+5로...
+
+## 30. 디비레벨의 제약으로는 밸리데이션이 안되는 규칙이 계속계속 늘어가는걸 보면서 도메인모델에 대한 환상만 커지는구만.. 찍먹해볼 기회를...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1717406272830775756`
+- Date: `2023-10-26`
+- Engagement: `❤ 4 / RT 0`
+- URL: https://x.com/i/web/status/1717406272830775756
+- Reason: DB 제약의 한계에서 도메인 모델 설계로 사고가 확장되는 문제의식이 있다.
+- Excerpt: 디비레벨의 제약으로는 밸리데이션이 안되는 규칙이 계속계속 늘어가는걸 보면서 도메인모델에 대한 환상만 커지는구만.. 찍먹해볼 기회를 좀 맹글어 봐야겠다.
+
+## 31. 사이드이팩트가 너무 싫다. 같은 파라메터로 실행하는데 결과가 다르니 토할 것 같다. 이래서 외부API랑 작업할때는 그냥 상태를 복...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1717916721330483311`
+- Date: `2023-10-27`
+- Engagement: `❤ 7 / RT 0`
+- URL: https://x.com/i/web/status/1717916721330483311
+- Reason: 외부 API 연동에서 결정적 문제인 비결정성 대응 전략을 구체화할 수 있다.
+- Excerpt: 사이드이팩트가 너무 싫다. 같은 파라메터로 실행하는데 결과가 다르니 토할 것 같다. 이래서 외부API랑 작업할때는 그냥 상태를 복제해서 한벌 만들던가 해야되는데.. 그래 그르자....
+
+## 32. 너 나 우리의 디비😭 비슷한 예로 초기에 한 pg사의 결제수단에 따라 나눈 컬럼이 나중에 pg사가 추가되면서 꼬여갔으나 결제 너무...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1718762974578708620`
+- Date: `2023-10-29`
+- Engagement: `❤ 10 / RT 8`
+- URL: https://x.com/i/web/status/1718762974578708620
+- Reason: 결제 도메인 스키마가 시간이 지나며 꼬이는 현실적 사례와 리팩터링 난제를 담고 있다.
+- Excerpt: 너 나 우리의 디비😭 비슷한 예로 초기에 한 pg사의 결제수단에 따라 나눈 컬럼이 나중에 pg사가 추가되면서 꼬여갔으나 결제 너무 복잡해서 결국 if로 뭉갰던 경험이 있다. 은근 결제가 서드파티서비스랑 엮여야 해서...
+
+## 33. 예전에는 시스템이 아닌 몇몇 능력자에 의존하는 조직은 체계가 없고 지속불가능한 안좋은 구성이라고 생각했다. 하지만 이번 OpenA...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1726749015105253411`
+- Date: `2023-11-20`
+- Engagement: `❤ 49 / RT 22`
+- URL: https://x.com/i/web/status/1726749015105253411
+- Reason: 시스템 중심 관점과 스타 플레이어 중심 관점의 조직론 비교가 가능하다.
+- Excerpt: 예전에는 시스템이 아닌 몇몇 능력자에 의존하는 조직은 체계가 없고 지속불가능한 안좋은 구성이라고 생각했다. 하지만 이번 OpenAI사태도 그렇고 결국 아웃스탠딩한 성과를 내는 조직은 시스템이 아닌 뛰어난 개인들의 공...
+
+## 34. 죽음의 이지선다 A 검색해보셨나요 B 왜 안물어보셨나요 이상적인건 잠깐 구글링 해보고 안되겠다 싶으면 물어보는건데, 아차하는 순간...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1730061374372614352`
+- Date: `2023-11-30`
+- Engagement: `❤ 5 / RT 2`
+- URL: https://x.com/i/web/status/1730061374372614352
+- Reason: 주니어-시니어 협업에서 질문 타이밍과 탐색 범위라는 실전 커뮤니케이션 이슈를 담는다.
+- Excerpt: 죽음의 이지선다 A 검색해보셨나요 B 왜 안물어보셨나요 이상적인건 잠깐 구글링 해보고 안되겠다 싶으면 물어보는건데, 아차하는 순간 두어시간이 훌쩍 지나고 그 타이밍에 진척도를 묻게 되면 당황할 수 밖에 없을듯.. 같...
+
+## 35. 정말정말 고치고 싶은 끔찍한 습관이 있는데, 이슈가 생겼을때 “내가 이럴꺼라고 했잖아요”라고 하는 것이다. 말을 하는 사람과 듣는...
+
+- Topic: `디버깅/장애 대응`
+- Tweet ID: `1730776589703782511`
+- Date: `2023-12-02`
+- Engagement: `❤ 112 / RT 25`
+- URL: https://x.com/i/web/status/1730776589703782511
+- Reason: 이슈 대응 태도 개선이라는 협업 역량과 리더십 자기점검 주제로 확장 가치가 높다.
+- Excerpt: 정말정말 고치고 싶은 끔찍한 습관이 있는데, 이슈가 생겼을때 “내가 이럴꺼라고 했잖아요”라고 하는 것이다. 말을 하는 사람과 듣는 사람에게 모두 피해만 입히고 이슈 해결에 아무 도움이 되지 않는데 얄팍한 자기방어기제...
+
+## 36. chatgpt가 내 지능을 두배로 만들어서 내가 풀 수 없는 고차원의 문제를 풀게 해주는 건 아니다. 그러나 최소한 나와 비슷한...
+
+- Topic: `팀 생산성/협업 방식`
+- Tweet ID: `1731707036269002882`
+- Date: `2023-12-04`
+- Engagement: `❤ 9 / RT 1`
+- URL: https://x.com/i/web/status/1731707036269002882
+- Reason: AI 활용 기대치와 실제 생산성 향상 메커니즘을 균형 있게 설명할 수 있다.
+- Excerpt: chatgpt가 내 지능을 두배로 만들어서 내가 풀 수 없는 고차원의 문제를 풀게 해주는 건 아니다. 그러나 최소한 나와 비슷한 능력의 동료 한명을 옆에 두고 협업하는 수준으로 업무 효율을 올려준다. 그리고 짧아진...
+
+## 37. 외래키를 안쓰는 형태의 디비 사용법에 대해 이해하기 어려웠는데, 오늘 외래키 필드 하나 추가하다가 제약 만들면서 테이블에 몇 분이...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1732405141863817423`
+- Date: `2023-12-06`
+- Engagement: `❤ 40 / RT 14`
+- URL: https://x.com/i/web/status/1732405141863817423
+- Reason: 외래키 제약이 가져오는 잠금 비용을 통해 데이터 무결성과 가용성의 트레이드오프를 보여준다.
+- Excerpt: 외래키를 안쓰는 형태의 디비 사용법에 대해 이해하기 어려웠는데, 오늘 외래키 필드 하나 추가하다가 제약 만들면서 테이블에 몇 분이나 읽기 락이 걸리는걸 보고 이런 것도 다 트레이드오프구나 싶었다.
+
+## 38. 요즘하는 뻘생각 한 명의 개발자가 운용 가능한 코드(피쳐)의 양이 대략 있다.
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1735103969901584650`
+- Date: `2023-12-14`
+- Engagement: `❤ 8 / RT 1`
+- URL: https://x.com/i/web/status/1735103969901584650
+- Reason: 개발자 수용 가능한 코드량이라는 운영 관점은 팀 생산성 논의로 확장하기 좋다.
+- Excerpt: 요즘하는 뻘생각 한 명의 개발자가 운용 가능한 코드(피쳐)의 양이 대략 있다. 건강한 프로젝트의 코드베이스는 이 양의 총합 이하여야 한다. 유능한 팀이란 운용할 수 있는 코드의 양이 많거나, 같은 코드량으로 더 많은...
+
+## 39. 비슷하게 회사에서 쓰는데 하나의 백엔드코드로 사용자용 서버에도 배포하고 백오피스용 서버도 배포하고 배치잡도 돌린다. 이걸 뭉쳐 배...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1735280446970401111`
+- Date: `2023-12-14`
+- Engagement: `❤ 5 / RT 4`
+- URL: https://x.com/i/web/status/1735280446970401111
+- Reason: 단일 코드베이스 다중 배포 전략의 실용성과 경계 설정 기준을 설명할 수 있다.
+- Excerpt: 비슷하게 회사에서 쓰는데 하나의 백엔드코드로 사용자용 서버에도 배포하고 백오피스용 서버도 배포하고 배치잡도 돌린다. 이걸 뭉쳐 배포한다고 빌드시간이나 용량이 딱히 늘지도 않고 굳이 코드 경계가 있을필요도 없다. 역할...
+
+## 40. postgres 최적화 하나 경험, 인덱스를 쓰더라도 인덱스의 크기가 크게 되면 일단 스캔하는데 오래걸린다. 필터해서 쓰는 주요...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1742180181228634440`
+- Date: `2024-01-02`
+- Engagement: `❤ 18 / RT 6`
+- URL: https://x.com/i/web/status/1742180181228634440
+- Reason: 부분 인덱스로 성능을 개선한 재현 가능한 최적화 사례라 실무 글감으로 적합하다.
+- Excerpt: postgres 최적화 하나 경험, 인덱스를 쓰더라도 인덱스의 크기가 크게 되면 일단 스캔하는데 오래걸린다. 필터해서 쓰는 주요 데이터가 전체 데이터중 일부분이라면 그 조건으로 파셜인덱스를 생성해두는 것으로 큰 이득...
+
+## 41. 하루면 될꺼 같은데.. 라는 늪에서 10년째 벗어나질 못하고 있다. 수백번 이렇게 뒤집어 쓰고 생명력 소모를 했다. 회사에서 사업...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1745045207111102841`
+- Date: `2024-01-10`
+- Engagement: `❤ 21 / RT 3`
+- URL: https://x.com/i/web/status/1745045207111102841
+- Reason: 낙관적 일정 추정의 반복적 실패라는 흔한 프로젝트 리스크를 다룬다.
+- Excerpt: 하루면 될꺼 같은데.. 라는 늪에서 10년째 벗어나질 못하고 있다. 수백번 이렇게 뒤집어 쓰고 생명력 소모를 했다. 회사에서 사업접는 서드파티 서비스 하나 사온다는데 자꾸 머리속에서 ‘하루면 될 꺼 같은데’라는 생각...
+
+## 42. 팀에서 물어보는 법도 크게 다르지 않다. A로 할까요 B로 할까요? (호응없음)
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1749466474123821173`
+- Date: `2024-01-22`
+- Engagement: `❤ 11 / RT 0`
+- URL: https://x.com/i/web/status/1749466474123821173
+- Reason: 의견을 끌어내는 질문 방식과 근거 제시의 효과를 협업 팁으로 풀기 좋다.
+- Excerpt: 팀에서 물어보는 법도 크게 다르지 않다. A로 할까요 B로 할까요? (호응없음) 제가 알아보니 A가 더 좋은 것 같습니다. (어떤 근거지? 반박하고 싶다! 두뇌 풀 가동) 적당히 어그로를 제공하자. 물론 여기에는 A...
+
+## 43. 팀에 하루의 1/3 이상은 페어로 개발하는 분들이 있는데, 결국 그 쪽 분들이 개발 성과도 좋고 개발 숙련도도 오르는게 보인다....
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1752332607663329408`
+- Date: `2024-01-30`
+- Engagement: `❤ 23 / RT 2`
+- URL: https://x.com/i/web/status/1752332607663329408
+- Reason: 페어 프로그래밍이 성과와 학습 속도에 미친 영향을 경험 기반으로 전개할 수 있다.
+- Excerpt: 팀에 하루의 1/3 이상은 페어로 개발하는 분들이 있는데, 결국 그 쪽 분들이 개발 성과도 좋고 개발 숙련도도 오르는게 보인다. 본받아야겠다. 이미 작성된 코드의 리뷰보다 훨씬 효율적인것 같다.
+
+## 44. 개발자의 퇴사는 GPU리소스에 한 1억쯤 부어서 자사 프로덕트의 문제해결에 스페셜라이즈드하게 훈련된 고성능 모델을 깔끔하게 지우는...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1757423558085714238`
+- Date: `2024-02-13`
+- Engagement: `❤ 6 / RT 4`
+- URL: https://x.com/i/web/status/1757423558085714238
+- Reason: 퇴사가 조직 지식 자산에 미치는 손실을 비용 관점으로 설명하는 인사이트가 강하다.
+- Excerpt: 개발자의 퇴사는 GPU리소스에 한 1억쯤 부어서 자사 프로덕트의 문제해결에 스페셜라이즈드하게 훈련된 고성능 모델을 깔끔하게 지우는 것과 같다. 인수인계고 문서화고 자시고 소용없다. 무얼 어떻게 하든 막심한 손해다....
+
+## 45. 내가 CTO면 어떤 언어를 쓸까? 그 당시 팀원들의 숙련/선호도가 높은 언어를 고를 수 밖에 없을 것 같다. 결국 그들이 만들고...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1766311193751466172`
+- Date: `2024-03-09`
+- Engagement: `❤ 17 / RT 1`
+- URL: https://x.com/i/web/status/1766311193751466172
+- Reason: 기술 스택 선택에서 팀 역량과 채용 현실을 우선하는 CTO 관점을 담고 있다.
+- Excerpt: 내가 CTO면 어떤 언어를 쓸까? 그 당시 팀원들의 숙련/선호도가 높은 언어를 고를 수 밖에 없을 것 같다. 결국 그들이 만들고 트러블 슈팅을 할꺼다. 그리고 채용의 난이도는 언어보다 급여와 팀원의 매력도가 훨씬 영...
+
+## 46. 작년 5월에 쓴 업무메모 1.서비스에 사용자행동 추적이 정확하게 되는지 2. 어트리뷰션이 정확히 측정되는지 3. 광고플랫폼 연계추...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1768464634284282194`
+- Date: `2024-03-15`
+- Engagement: `❤ 13 / RT 2`
+- URL: https://x.com/i/web/status/1768464634284282194
+- Reason: 데이터 분석 이전의 계측·어트리뷰션 검증이라는 선행조건을 실무적으로 다룬다.
+- Excerpt: 작년 5월에 쓴 업무메모 1.서비스에 사용자행동 추적이 정확하게 되는지 2. 어트리뷰션이 정확히 측정되는지 3. 광고플랫폼 연계추적이 정확히 되는지 이 세 가지를 검증하고 나면 신나는 데이타 분석으로 세상으로 들어갈...
+
+## 47. 6년전 영록님과 면접을 봤는데, 일주일간 40여개의 메일을 주고 받으며 단계별로 과제를 진행했다. 떨어뜨리기 위한 과제가 아니라...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1770388178052186591`
+- Date: `2024-03-20`
+- Engagement: `❤ 69 / RT 9`
+- URL: https://x.com/i/web/status/1770388178052186591
+- Reason: 채용 과제를 평가가 아닌 상호 탐색으로 운영한 면접 철학이 구체적이다.
+- Excerpt: 6년전 영록님과 면접을 봤는데, 일주일간 40여개의 메일을 주고 받으며 단계별로 과제를 진행했다. 떨어뜨리기 위한 과제가 아니라 뽑을 이유를 탐색하기 위한 과제를 소통해가며 푸는 경험은 이후 개발자인생에 많은 도움이...
+
+## 48. 프리도 아니고 자기회사 개발자에게 좀 설득없이 시키는대로 했으면 좋겠다고 하는 경영진은, 시키는대로 해서 몇 배 이상의 예산을 쓰...
+
+- Topic: `독서/책 인용 인사이트`
+- Tweet ID: `1775677839611961615`
+- Date: `2024-04-04`
+- Engagement: `❤ 46 / RT 20`
+- URL: https://x.com/i/web/status/1775677839611961615
+- Reason: 설득 없는 지시 문화의 실패 사례를 통해 기술조직 의사결정 원칙을 논할 수 있다.
+- Excerpt: 프리도 아니고 자기회사 개발자에게 좀 설득없이 시키는대로 했으면 좋겠다고 하는 경영진은, 시키는대로 해서 몇 배 이상의 예산을 쓰고도 아무도 책임지지 않고 터져나가는 금융, 공공 SI프로젝트들을 보고 타산지석 삼아야...
+
+## 49. 운영8 개발2인 조직은 살짝만 퍼포먼스가 떨어져도 아무것도 못하고 꼼짝없이 멈춘다. 운영8만 겨우 하다가 뭐라도 나아가야지 하고...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1783785496663241098`
+- Date: `2024-04-26`
+- Engagement: `❤ 10 / RT 0`
+- URL: https://x.com/i/web/status/1783785496663241098
+- Reason: 운영 과부하 조직에서 개발 역량이 잠식되는 구조적 병목을 설명하기 좋다.
+- Excerpt: 운영8 개발2인 조직은 살짝만 퍼포먼스가 떨어져도 아무것도 못하고 꼼짝없이 멈춘다. 운영8만 겨우 하다가 뭐라도 나아가야지 하고 개발1을 억지로 떼네면 대체로 여유없는 개발1이 운영을 9로 만든다. 이렇게 멈춘다....
+
+## 50. 앱을 개발하고 싶다는 분과 잠깐 상담을 해드렸다. 여러 앱에서 느낀 불편함 개선, 비지니스 효율 개선, 업무 노하우의 보안 등을...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1784746869756919838`
+- Date: `2024-04-29`
+- Engagement: `❤ 28 / RT 5`
+- URL: https://x.com/i/web/status/1784746869756919838
+- Reason: 시장 규모 검증으로 아이디어를 접는 판단 과정이 제품 의사결정 사례로 유용하다.
+- Excerpt: 앱을 개발하고 싶다는 분과 잠깐 상담을 해드렸다. 여러 앱에서 느낀 불편함 개선, 비지니스 효율 개선, 업무 노하우의 보안 등을 이유로 꼽으셨다. 시장규모를 캐보니 많이 쓰면 천명정도.. 포기하시라고 말씀드렸다.
+
+## 51. 좀 다른 이야기지만 보통 캐시가 필요해질 때 쯤 들어온 다음 개발자는 너무 쉽게 캐시가 없는게 문제네요 라고 말한다. 이제 캐시가...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1827994829974057148`
+- Date: `2024-08-26`
+- Engagement: `❤ 48 / RT 14`
+- URL: https://x.com/i/web/status/1827994829974057148
+- Reason: 문제 원인을 캐시 부재가 아니라 도입 시점으로 재정의하는 실무 관점이 뚜렷하다.
+- Excerpt: 좀 다른 이야기지만 보통 캐시가 필요해질 때 쯤 들어온 다음 개발자는 너무 쉽게 캐시가 없는게 문제네요 라고 말한다. 이제 캐시가 필요한 때가 됐네요 라고 말할 수 있는 개발자가 되자. (자아비판임)
+
+## 52. MSA쓰는 조직에서는 경력 개발자 채용에 MSA 경험에 대한 가점이 너무 커서 MSA경험이 없다면 가급적 현재 조직에서 도입해보고...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1828762281012036034`
+- Date: `2024-08-28`
+- Engagement: `❤ 5 / RT 1`
+- URL: https://x.com/i/web/status/1828762281012036034
+- Reason: 채용 시장 신호가 아키텍처 선택을 왜곡하는 트레이드오프를 잘 드러낸다.
+- Excerpt: MSA쓰는 조직에서는 경력 개발자 채용에 MSA 경험에 대한 가점이 너무 커서 MSA경험이 없다면 가급적 현재 조직에서 도입해보고자 하는 유혹이 너무 크다. 특별히 MSA가 맞는 서비스가 아니라면 복잡도와 비용만 늘...
+
+## 53. 커머스들이 오픈마켓 보다 자체 플랫폼 구축하는게 생각보다 정산주기로 인한 재무적 이점이 크다는 걸 알았다. 티몬으로 인해 더 부각...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1829348471813668917`
+- Date: `2024-08-30`
+- Engagement: `❤ 16 / RT 1`
+- URL: https://x.com/i/web/status/1829348471813668917
+- Reason: 정산 주기와 현금흐름의 관계를 플랫폼 전략과 연결해 확장 가치가 높다.
+- Excerpt: 커머스들이 오픈마켓 보다 자체 플랫폼 구축하는게 생각보다 정산주기로 인한 재무적 이점이 크다는 걸 알았다. 티몬으로 인해 더 부각되었는데 매출의 발생과 공급자정산 간의 지연이 클수록 동원할 수 있는 자금이 레버리지...
+
+## 54. 예전에 우리팀은 출근 첫날 커밋하기가 미션이었다. 나도 첫출근날부터 이슈를 받아 겨우겨우 커밋을 했다. 괜찮은 경험이었다. 숲을...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1834142380716687478`
+- Date: `2024-09-12`
+- Engagement: `❤ 29 / RT 6`
+- URL: https://x.com/i/web/status/1834142380716687478
+- Reason: 온보딩에서 빠른 기여를 설계하는 팀 문화와 효과를 구체적으로 풀어낼 수 있다.
+- Excerpt: 예전에 우리팀은 출근 첫날 커밋하기가 미션이었다. 나도 첫출근날부터 이슈를 받아 겨우겨우 커밋을 했다. 괜찮은 경험이었다. 숲을 먼저 보는 것도 좋겠지만 당장 내 눈 앞의 나무에 도끼자국부터 내보는 것도 나쁘지 않았...
+
+## 55. htmx로 만들어진 서비스에 오랜만에 기능추가 요청이 왔다. 예전과 다르게 백엔드 프론트엔드 조직이 나뉘어져 있다보니 어느쪽 조직...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1834189666397872554`
+- Date: `2024-09-12`
+- Engagement: `❤ 13 / RT 0`
+- URL: https://x.com/i/web/status/1834189666397872554
+- Reason: 기술 스택보다 조직 경계와 책임 분리가 협업 병목이 되는 상황을 잘 보여준다.
+- Excerpt: htmx로 만들어진 서비스에 오랜만에 기능추가 요청이 왔다. 예전과 다르게 백엔드 프론트엔드 조직이 나뉘어져 있다보니 어느쪽 조직에서도 선뜻 하겠다고 나서지 못하게 되버렸다. 눈치게임 시작!
+
+## 56. 오늘 첨으로 데브옵스 분이 내가 만든 서비스 인프라 문제를 해결해주시는걸 경험해봤다. aws ecs로 올려뒀던게 vpc쪽 변경사항...
+
+- Topic: `디버깅/장애 대응`
+- Tweet ID: `1842066089574072429`
+- Date: `2024-10-04`
+- Engagement: `❤ 10 / RT 0`
+- URL: https://x.com/i/web/status/1842066089574072429
+- Reason: 장애 대응에서 역할 분리와 플랫폼 전환의 속도 이점을 사례로 설명하기 좋다.
+- Excerpt: 오늘 첨으로 데브옵스 분이 내가 만든 서비스 인프라 문제를 해결해주시는걸 경험해봤다. aws ecs로 올려뒀던게 vpc쪽 변경사항때문에 장애가 생겼는데 부탁드리니 ecs에서 지금 구축중인 eks 안으로 옮겨주심. 3...
+
+## 57. 트랜잭션이랑 celery랑 잘못 엮이기 시작하니 여기저기서 터지는구나. 초기에 팀에서 가급적 트랜잭션 잘 안쓰길래 왜그러지 싶었는...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1843233019416785242`
+- Date: `2024-10-07`
+- Engagement: `❤ 9 / RT 2`
+- URL: https://x.com/i/web/status/1843233019416785242
+- Reason: 트랜잭션과 비동기 작업 결합 시 발생하는 운영 리스크를 현실적으로 다룬다.
+- Excerpt: 트랜잭션이랑 celery랑 잘못 엮이기 시작하니 여기저기서 터지는구나. 초기에 팀에서 가급적 트랜잭션 잘 안쓰길래 왜그러지 싶었는데 비동기 작업 좀 들어가기 시작하니 로컬에서는 테스트도 잘 돌고 문제없었는데요 하는...
+
+## 58. 40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1844223805147041958`
+- Date: `2024-10-10`
+- Engagement: `❤ 7 / RT 0`
+- URL: https://x.com/i/web/status/1844223805147041958
+- Reason: 대규모 머지의 위험을 확률 관점으로 설명해 배포 전략 글로 확장하기 좋다.
+- Excerpt: 40일정도 준비해온 피쳐 브랜치 머지하는날. 빅뱅 머지 시르다.. QA를 거쳤어도 불안하다. 단 1퍼센트의 오류 가능성이 있는 커밋이더라도 100개 모이면 오류가 있을 가능성은 63.4퍼센트다.
+
+## 59. 기획서 없이 개발했던 때에는 크게 필요성을 못느꼈던 QA가 기획서대로 작업해야 할 때는 큰 도움이 되는걸 느낌 사실 기획서 의도를...
+
+- Topic: `독서/책 인용 인사이트`
+- Tweet ID: `1844552426738844027`
+- Date: `2024-10-11`
+- Engagement: `❤ 6 / RT 2`
+- URL: https://x.com/i/web/status/1844552426738844027
+- Reason: 명세 기반 개발에서 QA가 만드는 품질 안전망과 협업 가치를 담고 있다.
+- Excerpt: 기획서 없이 개발했던 때에는 크게 필요성을 못느꼈던 QA가 기획서대로 작업해야 할 때는 큰 도움이 되는걸 느낌 사실 기획서 의도를 못따라 가서 뇌 빼고 개발하다 보니 더 강하게 느낀다. 셀프로 검증해야 했다면 뛰어내...
+
+## 60. 오늘도 Django에 붙어있던 api한개 go로 뜯어옮겼다. 직접 타이핑한 코드는 5%가 안되네.. repo크기가 작다보니 그냥...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1848354372515979266`
+- Date: `2024-10-21`
+- Engagement: `❤ 5 / RT 0`
+- URL: https://x.com/i/web/status/1848354372515979266
+- Reason: 언어 전환, LLM 활용, 큐 기반 벌크 처리까지 성능 개선 흐름이 선명하다.
+- Excerpt: 오늘도 Django에 붙어있던 api한개 go로 뜯어옮겼다. 직접 타이핑한 코드는 5%가 안되네.. repo크기가 작다보니 그냥 전체 코드 다 claude 에 넣고 딸깍딸깍 했다. 로직은 옮겼고 이제 sqs붙여서 요...
+
+## 61. 특히 팀 구성인원의 변동이 크지 않을 시절에는 이게 진짜 좋았다. django를 정말 잘하시는 몇 분이 계셔주신게(특히 이분 ㅎㅎ...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1849398004228464887`
+- Date: `2024-10-24`
+- Engagement: `❤ 35 / RT 6`
+- URL: https://x.com/i/web/status/1849398004228464887
+- Reason: 강한 프레임워크와 숙련 인력의 시너지가 만드는 생산성을 실전 맥락으로 보여준다.
+- Excerpt: 특히 팀 구성인원의 변동이 크지 않을 시절에는 이게 진짜 좋았다. django를 정말 잘하시는 몇 분이 계셔주신게(특히 이분 ㅎㅎ) 특히 더 시너지가 있었다. 테이블을 추가하고 crud api 추가는 진짜 30분도...
+
+## 62. 다만 적절한 시점에 디비와 앱을 좀 찢어서 서비스를 분리해가는 시점을 잘 찾으면 더 좋았을것 같다. 대체로 django가 문제라고...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1849399698500821398`
+- Date: `2024-10-24`
+- Engagement: `❤ 8 / RT 0`
+- URL: https://x.com/i/web/status/1849399698500821398
+- Reason: 모놀리스 분해에서 핵심인 타이밍 의사결정을 깊게 다룰 수 있는 소재다.
+- Excerpt: 다만 적절한 시점에 디비와 앱을 좀 찢어서 서비스를 분리해가는 시점을 잘 찾으면 더 좋았을것 같다. 대체로 django가 문제라고 하는 것의 많은 지분이 단 하나의 서비스에 기능들을 끝없이 덧붙이다 각 기능들의 장애...
+
+## 63. 지난 2년간 회사 서비스 main브랜치의 python코드의 라인수를 시각화 해봤다. 커미터는 보통 12~15명 선을 유지했던거 같...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1849474510527095124`
+- Date: `2024-10-24`
+- Engagement: `❤ 11 / RT 3`
+- URL: https://x.com/i/web/status/1849474510527095124
+- Reason: 코드량 증가와 비즈니스 성과의 연결을 묻는 생산성 관점이 분명하다.
+- Excerpt: 지난 2년간 회사 서비스 main브랜치의 python코드의 라인수를 시각화 해봤다. 커미터는 보통 12~15명 선을 유지했던거 같다. 놀라울정도로 선형으로 증가하는구만. 코드의 양이 2배가 늘 때 매출이나 순익은 얼...
+
+## 64. wkwebview는 캐시에 대해 별도로 정책을 설정해줄 수 있다. 그리고 무조건 캐시있으면 절대 서버에 요청하지 않는다 같은 괴이...
+
+- Topic: `프론트엔드/웹 개발`
+- Tweet ID: `1852256940258177424`
+- Date: `2024-11-01`
+- Engagement: `❤ 8 / RT 1`
+- URL: https://x.com/i/web/status/1852256940258177424
+- Reason: 클라이언트 캐시 정책과 정적 생성 전략이 충돌하는 함정을 사례로 풀기 좋다.
+- Excerpt: wkwebview는 캐시에 대해 별도로 정책을 설정해줄 수 있다. 그리고 무조건 캐시있으면 절대 서버에 요청하지 않는다 같은 괴이한 정책이 있으며 이런 정책과 nextjs 정적사이트생성을 잘못 섞으면 참사가 벌어질...
+
+## 65. django의 prefetch_related는 디비부하를 줄일 수 있는 좋은 방법 중 하나지만 prefetch 해 온 결과물을 조...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1863775406018461985`
+- Date: `2024-12-03`
+- Engagement: `❤ 9 / RT 0`
+- URL: https://x.com/i/web/status/1863775406018461985
+- Reason: DB 최적화가 앱 CPU 병목으로 전이되는 트레이드오프를 명확히 보여준다.
+- Excerpt: django의 prefetch_related는 디비부하를 줄일 수 있는 좋은 방법 중 하나지만 prefetch 해 온 결과물을 조합하는 과정에서 cpu 자원을 많이 사용한다. 이걸 당연한 이야기인 것 같지만 캐시가...
+
+## 66. 예전에 게임쪽에 있던 분과 일할 기회가 있었는데 같이 디비설계를 하면서 게임쪽은 FK를 잘 안건다는 이야기를 들었다. 그땐 이해하...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1885509188572643418`
+- Date: `2025-02-01`
+- Engagement: `❤ 13 / RT 3`
+- URL: https://x.com/i/web/status/1885509188572643418
+- Reason: FK 제약을 둘러싼 쓰기 성능과 무결성의 균형을 논의하기에 적합하다.
+- Excerpt: 예전에 게임쪽에 있던 분과 일할 기회가 있었는데 같이 디비설계를 하면서 게임쪽은 FK를 잘 안건다는 이야기를 들었다. 그땐 이해하기 어려웠지만 지금 와서 생각해보면 높은 쓰기빈도로 제약검사의 오버헤드가 발생할 수 있...
+
+## 67. 크롤링은 엣지 케이스를 내가 처리하느냐 내가 돈을 준 업체가 처리하느냐 정도의 차이일뿐 누군가 그걸 해야하더라. 금융정보 직접 크...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1886055516151148709`
+- Date: `2025-02-02`
+- Engagement: `❤ 96 / RT 30`
+- URL: https://x.com/i/web/status/1886055516151148709
+- Reason: 크롤링 외주화의 본질이 운영 역량 이전이라는 점을 날카롭게 짚는다.
+- Excerpt: 크롤링은 엣지 케이스를 내가 처리하느냐 내가 돈을 준 업체가 처리하느냐 정도의 차이일뿐 누군가 그걸 해야하더라. 금융정보 직접 크롤링하다가 나름 대형업체의 서비스로 바꾼 적이 있었는데, 방문해보니 거기서 자랑하는 것...
+
+## 68. 크롤링 많이 해보고 난 후 경력에서는 누가 크롤링 말을 꺼내면 일단 반대한다.
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1886062729267671386`
+- Date: `2025-02-02`
+- Engagement: `❤ 37 / RT 14`
+- URL: https://x.com/i/web/status/1886062729267671386
+- Reason: 외부 시스템의 카오스가 내부 복잡도로 유입되는 구조적 리스크를 설명한다.
+- Excerpt: 크롤링 많이 해보고 난 후 경력에서는 누가 크롤링 말을 꺼내면 일단 반대한다. 우리 제품에 열심히 코드리뷰해가며 if문 한개씩 없애며 복잡도를 줄여놨는데, 크롤링을 프로세스에 넣는 순간 대상 시스템의 카오스가 우리...
+
+## 69. LLM쓰면서 코딩 퇴화에 대한 위기감을 가진 적은 없었는데 오늘 기획서 스샷 떤져주면서 “이 기획서를 토대로 프로토타이핑 해보고...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1909193902244102373`
+- Date: `2025-04-07`
+- Engagement: `❤ 11 / RT 1`
+- URL: https://x.com/i/web/status/1909193902244102373
+- Reason: LLM을 구현 보조를 넘어 요구사항 검증과 질문 도출에 쓰는 실무 포인트가 있다.
+- Excerpt: LLM쓰면서 코딩 퇴화에 대한 위기감을 가진 적은 없었는데 오늘 기획서 스샷 떤져주면서 “이 기획서를 토대로 프로토타이핑 해보고 기획자에게 질문해야 할 것들 목록 뽑아줘” 라고 질문한 후 만족스러운 답변을 받고 앗...
+
+## 70. 이메일 서비스 sendgrid는 일괄발송시 같은 메일 여러개 담으면 지맘대로 합쳐서 한개만 보낸다. QA분과 반나절을 토스하다 알...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1912812416091709814`
+- Date: `2025-04-17`
+- Engagement: `❤ 8 / RT 0`
+- URL: https://x.com/i/web/status/1912812416091709814
+- Reason: 외부 서비스 스펙 함정을 QA 협업으로 발견한 문제해결 사례로 확장 가능하다.
+- Excerpt: 이메일 서비스 sendgrid는 일괄발송시 같은 메일 여러개 담으면 지맘대로 합쳐서 한개만 보낸다. QA분과 반나절을 토스하다 알게된 스펙 🥲 그래도 일주일 준비한 피쳐 잘 배포했다.
+
+## 71. PR메세지에 제미나이로 부터 받은 리뷰를 추가하기 시작했다. 코드레빗 같은 서비스도 괜찮지만 커서는 정액제라 사실상 무료니까 좋다...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1914997618926928012`
+- Date: `2025-04-23`
+- Engagement: `❤ 7 / RT 0`
+- URL: https://x.com/i/web/status/1914997618926928012
+- Reason: AI 리뷰를 PR 프로세스에 붙여 품질과 리뷰 효율을 함께 높인 실험이 구체적이다.
+- Excerpt: PR메세지에 제미나이로 부터 받은 리뷰를 추가하기 시작했다. 코드레빗 같은 서비스도 괜찮지만 커서는 정액제라 사실상 무료니까 좋다. 목적은 리뷰어의 부담을 줄여서 승인을 빠르게 받아내는 것이었는데, 의도치 않게 셀프...
+
+## 72. 소프트웨어 자체가 제품인 회사의 개발자와 전통적인 산업을 하는 회사에 개발자는 갭이 꽤 있구나. 전자인 회사만 다니다가 여기가 후...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1923340232969044038`
+- Date: `2025-05-16`
+- Engagement: `❤ 64 / RT 9`
+- URL: https://x.com/i/web/status/1923340232969044038
+- Reason: 산업 구조에 따라 개발 성과가 가치가 아닌 비용으로 인식되는 갭을 다룬다.
+- Excerpt: 소프트웨어 자체가 제품인 회사의 개발자와 전통적인 산업을 하는 회사에 개발자는 갭이 꽤 있구나. 전자인 회사만 다니다가 여기가 후자에 가까운데 개발의 성과가 매출에 비례하기가 어려우니 아무래도 비용으로 많이 여겨지는...
+
+## 73. “지원자에게 집에서 할 수 있는 기술 문제로 실력을 테스트하는 경우, 지원자가 AI를 사용해 문제를 해결할 수 있다는 것을 받아들...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1928418979875271054`
+- Date: `2025-05-30`
+- Engagement: `❤ 68 / RT 29`
+- URL: https://x.com/i/web/status/1928418979875271054
+- Reason: 채용 과제에서 AI 사용을 전제로 평가 기준을 재설계해야 한다는 인사이트가 크다.
+- Excerpt: “지원자에게 집에서 할 수 있는 기술 문제로 실력을 테스트하는 경우, 지원자가 AI를 사용해 문제를 해결할 수 있다는 것을 받아들여야 한다. 어차피 실제 업무에서도 그렇게 할 것이기 때문에 먼저 장려하는 것이 좋다....
+
+## 74. 오퍼 메일을 받자마자 바로 회사에 퇴사하겠다고 말했다. 3년의 이커머스 여정이 이렇게 끝나는구나. 커리어를 이어갈 수 있으면 좋겠...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1930579926589313261`
+- Date: `2025-06-05`
+- Engagement: `❤ 120 / RT 0`
+- URL: https://x.com/i/web/status/1930579926589313261
+- Reason: 도메인과 기술 스택을 내려놓고 이동한 커리어 의사결정의 현실을 담고 있다.
+- Excerpt: 오퍼 메일을 받자마자 바로 회사에 퇴사하겠다고 말했다. 3년의 이커머스 여정이 이렇게 끝나는구나. 커리어를 이어갈 수 있으면 좋겠다고 생각했지만 결국 도메인도 파이썬도 모두 내려놓고 간다. 쉬고 싶은 마음이 있지만...
+
+## 75. 요구사항이 막 바뀌는 상황으로 곤란해하고 있어요. -&gt; 새로운 요구사항이 발견되는 상황은 비즈니스 적으로 좋은 상황일 수 있...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1939648321532141640`
+- Date: `2025-06-30`
+- Engagement: `❤ 18 / RT 14`
+- URL: https://x.com/i/web/status/1939648321532141640
+- Reason: 변동 요구사항을 비즈니스 신호로 해석하고 개발 참여의 필요성을 제시한다.
+- Excerpt: 요구사항이 막 바뀌는 상황으로 곤란해하고 있어요. -&gt; 새로운 요구사항이 발견되는 상황은 비즈니스 적으로 좋은 상황일 수 있어요. 요구사항이 정리되지 않고 개발요청이 들어와요 -&gt; 그걸 정리하는데 개발자가...
+
+## 76. 동료분께 컨텍스트문서를 이용한 바이브코딩 설명하다가 느낀것 아무 맥락없이 일부 구현을(심지어 본인이 잘 안되서)툭하니 요청하는건...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1948543598657765879`
+- Date: `2025-07-25`
+- Engagement: `❤ 29 / RT 3`
+- URL: https://x.com/i/web/status/1948543598657765879
+- Reason: 협업 요청에서 목표와 맥락 정렬이 왜 중요한지 사람과 LLM 모두에 적용되는 실무 원칙을 담고 있다.
+- Excerpt: 동료분께 컨텍스트문서를 이용한 바이브코딩 설명하다가 느낀것 아무 맥락없이 일부 구현을(심지어 본인이 잘 안되서)툭하니 요청하는건 받는 입장에서 엄청 어려운 일이구나 싶었다. 함께 일할꺼면 작업의 최종 목적지와 가는...
+
+## 77. 빡시게 RDB 스키마 정규화해가며 관리하던 회사에서 mongodb에다가 마이그레이션 없이 스키마 바꿔가며 집어넣는 회사에 오니 눈...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1950859517786468533`
+- Date: `2025-07-31`
+- Engagement: `❤ 62 / RT 4`
+- URL: https://x.com/i/web/status/1950859517786468533
+- Reason: 스키마 거버넌스 부재가 데이터 부채로 이어지는 구조적 문제를 생생하게 보여준다.
+- Excerpt: 빡시게 RDB 스키마 정규화해가며 관리하던 회사에서 mongodb에다가 마이그레이션 없이 스키마 바꿔가며 집어넣는 회사에 오니 눈이 팽팽 돌것 같다. 이걸 어떻게 관리를 한다는거지? 이걸 어떻게 여러 서비스에서 사용...
+
+## 78. 4년만에 다시 팀장이 되었다. 그간 안해볼려고 몸비틀며 살아왔는데 이번은 이직에 조바심을 너무 냈던 것 같다. 기왕 된거 예전에...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1951233401018786260`
+- Date: `2025-08-01`
+- Engagement: `❤ 144 / RT 1`
+- URL: https://x.com/i/web/status/1951233401018786260
+- Reason: 새 리더 온보딩에서 AI로 팀 컨텍스트를 빠르게 파악하는 실행 패턴이 구체적이다.
+- Excerpt: 4년만에 다시 팀장이 되었다. 그간 안해볼려고 몸비틀며 살아왔는데 이번은 이직에 조바심을 너무 냈던 것 같다. 기왕 된거 예전에 했던거 보다 잘해야지. 첫날은 클로드에 컨플루언스 지라 깃 다 연결하고 이전 위클리미팅...
+
+## 79. 한 피쳐를 1명이 1개월간 개발하는 것과 2명이 2주간 개발하는 것은 절대적인 리소스양이 비슷해 보여도 효율은 후자가 압도적으로...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1951251873035624637`
+- Date: `2025-08-01`
+- Engagement: `❤ 64 / RT 8`
+- URL: https://x.com/i/web/status/1951251873035624637
+- Reason: 인력 배치 방식이 품질·속도·도메인 지식 확산에 미치는 트레이드오프를 잘 설명한다.
+- Excerpt: 한 피쳐를 1명이 1개월간 개발하는 것과 2명이 2주간 개발하는 것은 절대적인 리소스양이 비슷해 보여도 효율은 후자가 압도적으로 높다. 특히 운영중인 서비스라면 더 그렇다. 훨씬 덜 지치고 더 높은 품질의 코드가 나...
+
+## 80. 언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1952147386714988904`
+- Date: `2025-08-03`
+- Engagement: `❤ 108 / RT 77`
+- URL: https://x.com/i/web/status/1952147386714988904
+- Reason: 미래 대비 과설계가 만드는 낭비를 사례형으로 풀 수 있어 확장성이 높다.
+- Excerpt: 언어가 추가될테니 i18n부터 셋팅하자 -&gt; 추가안됨 디비를 바꿀 수 있으니 특정 디비 종속적인 쿼리 쓰지말자 -&gt; 안바꿈 클라우드 갈아 -&gt; 안갈아탐 깃헙 엔터프라이즈엔 확장성을 위해 두배의 코드를...
+
+## 81. 그러나 안타깝게도 지금 회사에서는 11개 언어로 서비스를 만들고 클라우드 밴더 종속성을 줄이는 작업을 하고 있습니다. 요지는 미래...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1952329332791361568`
+- Date: `2025-08-04`
+- Engagement: `❤ 18 / RT 6`
+- URL: https://x.com/i/web/status/1952329332791361568
+- Reason: 대비보다 대응이 실용적일 때를 실제 조직 맥락과 함께 논의할 수 있다.
+- Excerpt: 그러나 안타깝게도 지금 회사에서는 11개 언어로 서비스를 만들고 클라우드 밴더 종속성을 줄이는 작업을 하고 있습니다. 요지는 미래는 대비하는 것 보다 대응하는 것이 실용적인 때가 많다는 것이죠. 대비하지 않았다고 과...
+
+## 82. 오늘도 페어를 했다. 사용중인 매니지드 메세지브로커서비스의 카프카 대체 작업을 아무런 검증코드 없이 뛰어드는 것을 붙잡고 api두...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1952685872257860011`
+- Date: `2025-08-05`
+- Engagement: `❤ 22 / RT 1`
+- URL: https://x.com/i/web/status/1952685872257860011
+- Reason: 대체 작업에서 검증코드 선행과 페어링이라는 리스크 관리 의사결정이 명확하다.
+- Excerpt: 오늘도 페어를 했다. 사용중인 매니지드 메세지브로커서비스의 카프카 대체 작업을 아무런 검증코드 없이 뛰어드는 것을 붙잡고 api두개와 기존 메세지를 아우르는 e2e테스트부터 같이 만들었다. 반갑게도 클로드코드를 쓰길...
+
+## 83. 기획을 안줘서 개발이 어렵다는 팀원분께 일단 기획이고 나발이고 개발안되면 개발자만 욕먹으니까 일단 목업으로라도 구현하고 붙여서 기...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1953036293291774015`
+- Date: `2025-08-06`
+- Engagement: `❤ 43 / RT 12`
+- URL: https://x.com/i/web/status/1953036293291774015
+- Reason: 기획 공백 상황에서 목업 선행으로 합의를 끌어내는 현실적 문제해결 전략을 담고 있다.
+- Excerpt: 기획을 안줘서 개발이 어렵다는 팀원분께 일단 기획이고 나발이고 개발안되면 개발자만 욕먹으니까 일단 목업으로라도 구현하고 붙여서 기획자 컨펌받는 식으로 진행하라고 말씀드렸다. 피그마 그리는것과 우리가 코드를 짜는 것...
+
+## 84. 팀장 일주일 했다. 모든 레포 합치기, 마이크로서비스 비슷하게 나눠논거 합치기, 메세지브로커 없애기 시작했다. 다행히도 기존 분들...
+
+- Topic: `커리어/이직 인사이트`
+- Tweet ID: `1953948443598057939`
+- Date: `2025-08-08`
+- Engagement: `❤ 151 / RT 17`
+- URL: https://x.com/i/web/status/1953948443598057939
+- Reason: 구조 단순화를 위한 대규모 통합 결정을 리더십 관점에서 확장하기 좋다.
+- Excerpt: 팀장 일주일 했다. 모든 레포 합치기, 마이크로서비스 비슷하게 나눠논거 합치기, 메세지브로커 없애기 시작했다. 다행히도 기존 분들이 이미 그 필요성을 느끼고 있었다. 백엔드 개발자 인원보다 많은 서비스 수는 너무했다...
+
+## 85. 서비스간 http로 통신을 하다가 길잃은 요청으로 타임아웃이 나는 일이 잦아지고 있다. 메세지브로커로 비동기처리 시도한 작업이 로...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1953949801156104285`
+- Date: `2025-08-08`
+- Engagement: `❤ 34 / RT 2`
+- URL: https://x.com/i/web/status/1953949801156104285
+- Reason: 분산 구조에서 발생하는 장애 패턴과 관측성 한계를 기술적으로 풀어낼 수 있다.
+- Excerpt: 서비스간 http로 통신을 하다가 길잃은 요청으로 타임아웃이 나는 일이 잦아지고 있다. 메세지브로커로 비동기처리 시도한 작업이 로그도 없이 사라져있다. 달라진 api명세로 로그인을 하다 실패하거나 상품이용이 불가능해...
+
+## 86. 이 분기 하나를 없애는 것에 합의한 기획자와 개발자에게 경의를 표한다. 단순하게 만드는 것이 훨씬 어렵다.
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1954345756921663521`
+- Date: `2025-08-10`
+- Engagement: `❤ 312 / RT 124`
+- URL: https://x.com/i/web/status/1954345756921663521
+- Reason: 기능 삭제 합의라는 어려운 협업 의사결정을 통해 단순화의 가치를 다룰 수 있다.
+- Excerpt: 이 분기 하나를 없애는 것에 합의한 기획자와 개발자에게 경의를 표한다. 단순하게 만드는 것이 훨씬 어렵다.
+
+## 87. 오늘 팀원분들 대상으로 클로드코드 핸즈온세션을 두번 했다. 실무 이슈 하나 잡아서 작업계획을 관리하면서 작은 단위로 진행하게 했다...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1955235186297495864`
+- Date: `2025-08-12`
+- Engagement: `❤ 23 / RT 1`
+- URL: https://x.com/i/web/status/1955235186297495864
+- Reason: 같은 교육이 직군별로 다르게 실패·성공한 이유를 분석하기 좋은 사례다.
+- Excerpt: 오늘 팀원분들 대상으로 클로드코드 핸즈온세션을 두번 했다. 실무 이슈 하나 잡아서 작업계획을 관리하면서 작은 단위로 진행하게 했다. 프론트분들 대상으로는 대성공 했는데 백엔드분들 대상으로는 대실패 했다. api통합테...
+
+## 88. 안그래도 오늘 프론트분이랑 이야기하다가 모노레포 커지면서 타입추론 부담될거 같다고 하시길래, 이거 레포합쳐서 절약되는 개발리소스가...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1955258737037369790`
+- Date: `2025-08-12`
+- Engagement: `❤ 42 / RT 12`
+- URL: https://x.com/i/web/status/1955258737037369790
+- Reason: 개발 생산성과 하드웨어 투자비를 비교하는 경영형 엔지니어링 판단이 담겨 있다.
+- Excerpt: 안그래도 오늘 프론트분이랑 이야기하다가 모노레포 커지면서 타입추론 부담될거 같다고 하시길래, 이거 레포합쳐서 절약되는 개발리소스가 회사 개발자분 PC 모두 업그레이드하는 비용보다 훨씬 크니 타입추론 빡셔지면 다 업그...
+
+## 89. 우리회사 개발자분도 디자인시스템을 만든 것에 대한 후회를 좀 하더라. 디자인시스템이라고 컴포넌트로 만들어둔게 사실상 다른 UI프레...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1957040031052521665`
+- Date: `2025-08-17`
+- Engagement: `❤ 311 / RT 81`
+- URL: https://x.com/i/web/status/1957040031052521665
+- Reason: 디자인시스템의 실효성, 유지비용, AI 친화성까지 함께 논의할 수 있는 주제다.
+- Excerpt: 우리회사 개발자분도 디자인시스템을 만든 것에 대한 후회를 좀 하더라. 디자인시스템이라고 컴포넌트로 만들어둔게 사실상 다른 UI프레임워크의 래퍼일 뿐이고 대부분은 그냥 sass variable로 소화가 가능했다고. 무...
+
+## 90. 아 좋았다. 스프링 게이트웨이에서 url 이중 인코딩 문제로 한참을 헤메던 팀원분에게 3개월 전에 머지된 동일문제 PR 찾아드렸다...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1957405982750859435`
+- Date: `2025-08-18`
+- Engagement: `❤ 12 / RT 1`
+- URL: https://x.com/i/web/status/1957405982750859435
+- Reason: 기존 PR과 논의 기록 재활용으로 문제를 푸는 탐색 전략이 실무적으로 유용하다.
+- Excerpt: 아 좋았다. 스프링 게이트웨이에서 url 이중 인코딩 문제로 한참을 헤메던 팀원분에게 3개월 전에 머지된 동일문제 PR 찾아드렸다.(perplexity찬양해) 여기 문제 제기되고 논의된 내용, 추가된 테스트케이스 같...
+
+## 91. LLM의 시대, 코드리뷰 애로사항은 우리팀에서는 페어프로그래밍으로 꽤 많이 해소가 되고 있다. 둘이서 같이 어떤식으로 프롬프트를...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1959547348868079882`
+- Date: `2025-08-24`
+- Engagement: `❤ 16 / RT 1`
+- URL: https://x.com/i/web/status/1959547348868079882
+- Reason: LLM 시대에 리뷰 병목을 페어프로그래밍으로 전환한 팀 운영 방식이 구체적이다.
+- Excerpt: LLM의 시대, 코드리뷰 애로사항은 우리팀에서는 페어프로그래밍으로 꽤 많이 해소가 되고 있다. 둘이서 같이 어떤식으로 프롬프트를 만들지 논의하고 다른 방식으로 요청하며 서로의 방식이 공유되고 개선된다. 무엇보다 페어...
+
+## 92. 특히 ES는 스무번 정도 고민하고 쓰면 좋겠다. 노드, 인덱스, 데이터 동기화 등 신경쓸 지점이 확 는다. 굳이 필요하다면 RDB...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1960550223006294362`
+- Date: `2025-08-27`
+- Engagement: `❤ 84 / RT 18`
+- URL: https://x.com/i/web/status/1960550223006294362
+- Reason: 검색 인프라 도입 시 운영 복잡도와 대안 설계의 트레이드오프를 다루기 좋다.
+- Excerpt: 특히 ES는 스무번 정도 고민하고 쓰면 좋겠다. 노드, 인덱스, 데이터 동기화 등 신경쓸 지점이 확 는다. 굳이 필요하다면 RDB에 CQRS패턴을 쓰되 검색어에 대한 형태소분석 정도만 하고 쿼리만 잘짜면 대부분의 요...
+
+## 93. 여러분 aws cloudtail로그의 기본 보존기간은 90일입니다. 꼭 s3에 보존하도록 설정하세요. 안그러면 90일 전에 누가...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `1962290184554483786`
+- Date: `2025-08-31`
+- Engagement: `❤ 63 / RT 15`
+- URL: https://x.com/i/web/status/1962290184554483786
+- Reason: 로그 보존 설정 누락이 보안 감사 대응에 미치는 리스크를 실무적으로 환기한다.
+- Excerpt: 여러분 aws cloudtail로그의 기본 보존기간은 90일입니다. 꼭 s3에 보존하도록 설정하세요. 안그러면 90일 전에 누가 시크릿키를 바꿨는지, s3버킷을 퍼블릭으로 열었는지 클라우드프론트에 연결했는지 이런걸...
+
+## 94. IaC 뭘루하냐 고민중이다. 나는 예전에 python스크립트로 다 했었을때 경험이 좋았고 다만 지금 회사는 주로 typescrip...
+
+- Topic: `백엔드/아키텍처`
+- Tweet ID: `1981319361093865762`
+- Date: `2025-10-23`
+- Engagement: `❤ 16 / RT 1`
+- URL: https://x.com/i/web/status/1981319361093865762
+- Reason: IaC 도구 선택에서 개인 경험과 조직 표준 사이의 현실적 충돌을 보여준다.
+- Excerpt: IaC 뭘루하냐 고민중이다. 나는 예전에 python스크립트로 다 했었을때 경험이 좋았고 다만 지금 회사는 주로 typescript와 kotlin을 써서 그럼 대안으로 pulumi를 고려해봤다. 인프라와 이야기해보니...
+
+## 95. 나도 지금 회사에서 한 개발환경 셋팅은 고역이었다. react앱 하나 serve하는데 hosts를 셋팅하고 dev인프라와 연결해준...
+
+- Topic: `프론트엔드/웹 개발`
+- Tweet ID: `1981988509780255107`
+- Date: `2025-10-25`
+- Engagement: `❤ 25 / RT 0`
+- URL: https://x.com/i/web/status/1981988509780255107
+- Reason: 복잡한 로컬 개발환경이 온보딩 속도와 생산성에 주는 비용을 설명하기 좋다.
+- Excerpt: 나도 지금 회사에서 한 개발환경 셋팅은 고역이었다. react앱 하나 serve하는데 hosts를 셋팅하고 dev인프라와 연결해준다는 cli앱을 설치하고 도커 컨테이너를 띄운 다음에 십수개의 앱 목록에서 내가 띄울...
+
+## 96. QA팀에서 TC 3천개 받아와서 클로드코드 스킬로 케이스 그룹 선별/분석, playwright로 통과하는 테스트코드 작성, PR작...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1991071852182004147`
+- Date: `2025-11-19`
+- Engagement: `❤ 98 / RT 17`
+- URL: https://x.com/i/web/status/1991071852182004147
+- Reason: 대규모 회귀 테스트를 자동화 워크플로우로 전환한 팀 단위 실행 사례다.
+- Excerpt: QA팀에서 TC 3천개 받아와서 클로드코드 스킬로 케이스 그룹 선별/분석, playwright로 통과하는 테스트코드 작성, PR작성까지 워크플로우 짜놓고 팀원들 전부다 돌리게 시키고 있다. 하루에 300개씩 뽑아지는...
+
+## 97. 논의끝에 디자인시스템만을 위해 존재하던 래퍼컴포넌트들을 제거하고 베이스가 되는 ui프레임워크의 theme과 css variable...
+
+- Topic: `프론트엔드/웹 개발`
+- Tweet ID: `1995457868590379131`
+- Date: `2025-12-01`
+- Engagement: `❤ 20 / RT 0`
+- URL: https://x.com/i/web/status/1995457868590379131
+- Reason: 래퍼 제거와 테마 중심 전환을 기획·디자인·개발 합의로 이끈 과정이 확장 가치가 높다.
+- Excerpt: 논의끝에 디자인시스템만을 위해 존재하던 래퍼컴포넌트들을 제거하고 베이스가 되는 ui프레임워크의 theme과 css variable위주로 가기로 기획 디자인 개발자 모두 합의했다. 백엔드에게는 msa를, 프론트에게 디...
+
+## 98. 주니어들을 데리고 코드품질 논하는 시간을 주2시간쯤 잡아보고 있다. 3년 전만 해도 아쉬운 리팩토링PR도 매몰비용과 감정적인 이유...
+
+- Topic: `코드 품질/리뷰`
+- Tweet ID: `1999700179994443976`
+- Date: `2025-12-13`
+- Engagement: `❤ 130 / RT 21`
+- URL: https://x.com/i/web/status/1999700179994443976
+- Reason: 주니어 성장, 코드 오너십, AI 재작성 활용을 연결한 팀 문화 개선 사례다.
+- Excerpt: 주니어들을 데리고 코드품질 논하는 시간을 주2시간쯤 잡아보고 있다. 3년 전만 해도 아쉬운 리팩토링PR도 매몰비용과 감정적인 이유로 리젝하기가 부담스러웠는데 이제는 조언하면 부담없이 에이전트로 재작성한다. Colle...
+
+## 99. 리팩토링에 코드스멜 같은 것보다 더 중요함에도 잘 눈에 띄지 않는 원칙이 있는데 “작게 리팩토링 하기”다. 자칫 욕심에 딸려 들어...
+
+- Topic: `AI 에이전트/자동화 실전`
+- Tweet ID: `1999748966624452968`
+- Date: `2025-12-13`
+- Engagement: `❤ 20 / RT 2`
+- URL: https://x.com/i/web/status/1999748966624452968
+- Reason: 작게 리팩토링하는 원칙을 통해 에이전트 시대의 변경 리스크 관리법을 풀어낼 수 있다.
+- Excerpt: 리팩토링에 코드스멜 같은 것보다 더 중요함에도 잘 눈에 띄지 않는 원칙이 있는데 “작게 리팩토링 하기”다. 자칫 욕심에 딸려 들어가서 대규모 리팩토링을 하기 쉬운데 이걸 꾹 참도록 조언한다. 이건 특히 에이전트를 쓰...
+
+## 100. 배포되지 않은 코드는 여러가지 측면에서 해롭다. 개발자는 배포되지 않은 코드에 대한 컨텍스트를 계속 들고 있어야 해서 두뇌를 쓸데...
+
+- Topic: `실행력/의사결정`
+- Tweet ID: `2021348471765446942`
+- Date: `2026-02-10`
+- Engagement: `❤ 32 / RT 3`
+- URL: https://x.com/i/web/status/2021348471765446942
+- Reason: 미배포 코드를 재고로 보는 관점이 리드타임·인지부하·고객가치 문제를 한 번에 설명한다.
+- Excerpt: 배포되지 않은 코드는 여러가지 측면에서 해롭다. 개발자는 배포되지 않은 코드에 대한 컨텍스트를 계속 들고 있어야 해서 두뇌를 쓸데없이 좀먹고 배포의 위험은 높아지고 고객은 이미 개발된 기능을 사용할 수 없어서 손해다...

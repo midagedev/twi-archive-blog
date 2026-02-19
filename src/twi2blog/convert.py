@@ -5,7 +5,7 @@ import re
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional
 
 
 @dataclass
@@ -74,29 +74,6 @@ def load_tweets(archive_path: Path) -> List[Tweet]:
     tweets = [t for t in tweets if t.id and not t.full_text.startswith("RT @")]
     tweets.sort(key=lambda t: t.created_at)
     return tweets
-
-
-def load_force_include_ids(path: Optional[Path]) -> Set[str]:
-    if path is None or not path.exists():
-        return set()
-
-    try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        raise ValueError(f"Could not parse include IDs file: {path}") from exc
-
-    raw_ids: List[str]
-    if isinstance(payload, list):
-        raw_ids = [str(item) for item in payload]
-    elif isinstance(payload, dict):
-        candidate = payload.get("tweet_ids") or payload.get("include_ids") or payload.get("ids") or []
-        if not isinstance(candidate, list):
-            raise ValueError(f"Include IDs file has invalid format: {path}")
-        raw_ids = [str(item) for item in candidate]
-    else:
-        raise ValueError(f"Include IDs file has invalid format: {path}")
-
-    return {tweet_id.strip() for tweet_id in raw_ids if tweet_id.strip().isdigit()}
 
 
 def _normalize_title(text: str, fallback: str) -> str:
@@ -230,15 +207,12 @@ def export_markdown(
     output_dir: Path,
     min_likes: int,
     min_retweets: int,
-    force_include_ids: Optional[Set[str]] = None,
 ) -> Dict[str, int]:
     output_dir.mkdir(parents=True, exist_ok=True)
-    force_include_ids = force_include_ids or set()
 
     written = 0
     thread_count = 0
     single_count = 0
-    forced_include_count = 0
 
     used_ids = set()
     threads = _build_threads(tweets)
@@ -258,13 +232,11 @@ def export_markdown(
     for tweet in tweets:
         if tweet.id in used_ids:
             continue
-        is_force_included = tweet.id in force_include_ids
         if (
             tweet.favorite_count < min_likes
             and tweet.retweet_count < min_retweets
             and _book_signal_level(tweet.full_text) == 0
             and not tweet.has_media
-            and not is_force_included
         ):
             continue
 
@@ -276,12 +248,9 @@ def export_markdown(
 
         written += 1
         single_count += 1
-        if is_force_included:
-            forced_include_count += 1
 
     return {
         "written": written,
         "threads": thread_count,
         "singles": single_count,
-        "forced_includes": forced_include_count,
     }

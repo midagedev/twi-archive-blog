@@ -2,73 +2,66 @@
 
 ## Goal
 
-- Regenerate blog candidates from Twitter archive with practical volume.
-- Combine existing mechanical filtering with one-time manually curated include IDs.
-- Publish a browsable set in the local Astro blog for review.
+- Keep only the agent-based curation flow.
+- Remove old rule-based/manual-include selection code and artifacts.
+- Regenerate 100 blog posts from manually reviewed IDs.
 
 ## What Changed
 
-### 1) Converter enhancement (`twi2blog`)
+### 1) Agent-only pipeline fixed as source of truth
 
-- Added support for force-include tweet IDs loaded from JSON.
-- Kept original mechanical filtering logic unchanged.
-- Added CLI option:
-  - `--include-ids` (default: `docs/manual_include_tweet_ids.json`)
+- Manual selection file fixed to `docs/manual_agent_selected_100.json` (100 IDs).
+- `scripts/agent_curation_pipeline.py` used for:
+  - archive loading
+  - topic/tag inference
+  - candidate JSON/MD report generation
+  - markdown post writing
 
-Files:
+### 2) Legacy selection path removed
 
-- `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
-- `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
-- `/Users/hckim/Documents/twi/docs/manual_include_tweet_ids.json`
+- Deleted scripts:
+  - `/Users/hckim/Documents/twi/scripts/prepare_tweet_corpus.py`
+  - `/Users/hckim/Documents/twi/scripts/run_codex_subagents.sh`
+  - `/Users/hckim/Documents/twi/scripts/agent_blog_pipeline.py`
+- Deleted old artifacts:
+  - `/Users/hckim/Documents/twi/docs/manual_include_tweet_ids.json`
+  - `/Users/hckim/Documents/twi/docs/topic_shortlist.json`
+  - `/Users/hckim/Documents/twi/docs/topic_shortlist.md`
+  - `/Users/hckim/Documents/twi/docs/topic_candidates_manual_agent80.json`
+  - `/Users/hckim/Documents/twi/docs/manual_agent_selected_80_ids.json`
+- Removed old include-ID option from:
+  - `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
+  - `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
 
-## 2) One-time manual include set
+### 3) Regenerated outputs (100)
 
-- Curated manually from archive JSON with LLM-assisted review.
-- Stored as fixed list for reuse.
-- Current size: `20` tweet IDs.
+- Candidate files:
+  - `/Users/hckim/Documents/twi/docs/topic_candidates.json`
+  - `/Users/hckim/Documents/twi/docs/topic_candidates.md`
+- Blog markdown:
+  - `/Users/hckim/Documents/twi/blog/src/content/blog/*.md` (100 files)
 
-File:
-
-- `/Users/hckim/Documents/twi/docs/manual_include_tweet_ids.json`
-
-## 3) Candidate regeneration for review
-
-- Previous temporary review volumes tested: `50`, `80`.
-- Final review set for today: `60`.
-- Existing blog markdown in `blog/src/content/blog` was replaced by regenerated set as requested.
-
-Files:
-
-- `/Users/hckim/Documents/twi/blog/src/content/blog/*.md` (now 60 files)
-- `/Users/hckim/Documents/twi/docs/topic_candidates.json` (candidate_count: 60)
-- `/Users/hckim/Documents/twi/docs/topic_candidates.md`
-
-## Commands Used (final state)
+## Command Used
 
 ```bash
-python3 scripts/agent_blog_pipeline.py \
+python3 scripts/agent_curation_pipeline.py \
   --archive twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip \
-  --mode full \
-  --max-topics 60 \
-  --tweets-per-topic 8 \
-  --min-score 2.2 \
-  --draft-dir blog/src/content/blog \
+  --selection-json docs/manual_agent_selected_100.json \
   --candidate-json docs/topic_candidates.json \
   --candidate-md docs/topic_candidates.md \
-  --workers 6
+  --draft-dir blog/src/content/blog \
+  --max-items 100 \
+  --clean-draft-dir
 ```
 
 ## Verification
 
-- Content file count:
-  - `/Users/hckim/Documents/twi/blog/src/content/blog` -> `60` markdown files
-- Astro production build:
-  - `cd blog && npm run build` passed
-- Dev server:
-  - `cd blog && npm run dev -- --host 0.0.0.0 --port 4321`
-  - Port `4321` was occupied, server used `4322`
+- Pipeline output:
+  - `selection_loaded=100`
+  - `candidates_written=100`
+  - `drafts_written=100`
 
 ## Notes
 
-- This refresh prioritizes fast review and selection quality over immediate publish readiness.
-- Final publish should still include human editorial pass on title, description, and body quality.
+- Selection is one-time manual+agent curation. Runtime selection is no longer rule-extended.
+- Final publish still requires human editorial pass for tone and narrative completeness.
