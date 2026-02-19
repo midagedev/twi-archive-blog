@@ -496,8 +496,6 @@ def write_drafts(candidates: list[dict[str, Any]], output_dir: Path, clean: bool
                 body_sections.append("")
                 body_sections.append(f'<p class="tweet-image-row"><img class="tweet-image-inline" src="{media_url}" alt="tweet image" /></p>')
         else:
-            body_sections.append(str(source.get("url", "")).strip())
-            body_sections.append("")
             for section_idx, section_source in enumerate(sources, start=1):
                 body_sections.append(f"### {section_idx}")
                 body_sections.append(str(section_source.get("text", "")).strip())
