@@ -3,11 +3,14 @@ __pycache__/
 *.pyc
 src/*.egg-info/
 src/twi2blog.egg-info/
+scripts/__pycache__/
 
 drafts/
 !drafts/.gitkeep
+.tmp/
 
 data/tweets.js
+twitter-*.zip
 blog/node_modules/
 blog/dist/
 blog/.astro/

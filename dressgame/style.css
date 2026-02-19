@@ -1,0 +1,139 @@
+:root {
+  --bg-a: #ffe5f0;
+  --bg-b: #e8f3ff;
+  --panel: #ffffffee;
+  --ink: #2f3142;
+  --pink: #ff6e96;
+  --mint: #4ec9b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Pretendard", "Avenir Next", "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(850px 400px at 15% -10%, #ffd0e1 0%, transparent 70%),
+    radial-gradient(900px 420px at 85% 110%, #cfe8ff 0%, transparent 70%),
+    linear-gradient(145deg, var(--bg-a), var(--bg-b));
+  padding: 20px;
+}
+
+.app {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.panel {
+  background: var(--panel);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0 18px 38px #00000015;
+}
+
+.controls {
+  padding: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  margin: 6px 0 14px;
+  font-size: 0.95rem;
+  opacity: 0.82;
+}
+
+.field-grid {
+  display: grid;
+  gap: 10px;
+}
+
+label span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  border: 2px solid #e5e7f2;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--ink);
+  padding: 9px 11px;
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.pink {
+  background: var(--pink);
+}
+
+.btn.mint {
+  background: var(--mint);
+}
+
+.btn.dark {
+  background: #32364b;
+}
+
+.tip {
+  margin: 12px 0 2px;
+  font-size: 0.85rem;
+  opacity: 0.78;
+}
+
+.stage-panel {
+  padding: 14px;
+}
+
+#stage {
+  width: 100%;
+  max-width: 620px;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background:
+    radial-gradient(260px 150px at 50% 16%, #ffffff 0%, #ffffff9a 55%, transparent 100%),
+    linear-gradient(180deg, #fff8fb, #eef5ff);
+}
+
+@media (max-width: 960px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  #stage {
+    max-width: 100%;
+  }
+}

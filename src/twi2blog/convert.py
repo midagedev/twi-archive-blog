@@ -19,6 +19,7 @@ class Tweet:
     in_reply_to_user_id: Optional[str]
     hashtags: List[str]
     urls: List[str]
+    has_media: bool
 
 
 def _strip_archive_prefix(raw: str) -> str:
@@ -49,8 +50,10 @@ def load_tweets(archive_path: Path) -> List[Tweet]:
     for item in payload:
         tw = item.get("tweet", {})
         entities = tw.get("entities", {})
+        extended_entities = tw.get("extended_entities", {})
         hashtags = [tag.get("text", "") for tag in entities.get("hashtags", []) if tag.get("text")]
         urls = [u.get("expanded_url", "") for u in entities.get("urls", []) if u.get("expanded_url")]
+        media_entities = entities.get("media", []) + extended_entities.get("media", [])
         text = tw.get("full_text") or tw.get("text") or ""
 
         tweets.append(
@@ -64,6 +67,7 @@ def load_tweets(archive_path: Path) -> List[Tweet]:
                 in_reply_to_user_id=tw.get("in_reply_to_user_id_str"),
                 hashtags=hashtags,
                 urls=urls,
+                has_media=bool(media_entities),
             )
         )
 
@@ -88,6 +92,48 @@ def _safe_slug(text: str) -> str:
     text = re.sub(r"\s+", "-", text)
     text = re.sub(r"-+", "-", text)
     return text[:60].strip("-") or "post"
+
+
+BOOK_SIGNAL_KEYWORDS = (
+    "책",
+    "독서",
+    "완독",
+    "재독",
+    "읽고",
+    "읽은",
+    "읽는",
+    "인용",
+    "구절",
+    "저자",
+    "book",
+    "reading",
+    "author",
+    "chapter",
+    "quote",
+)
+
+
+def _book_signal_level(text: str) -> int:
+    lowered = text.lower()
+    keyword_hits = sum(1 for keyword in BOOK_SIGNAL_KEYWORDS if keyword in lowered)
+
+    quote_marker = bool(
+        re.search(r"[《〈][^》〉]+[》〉]", text)
+        or re.search(r"\b(?:p|pp)\.?\s*\d{1,4}\b", lowered)
+        or re.search(r"\b\d{1,4}쪽\b", text)
+    )
+
+    if keyword_hits == 0 and not quote_marker:
+        return 0
+    if keyword_hits >= 2 or (keyword_hits >= 1 and quote_marker):
+        return 2
+    return 1
+
+
+def _strip_media_trailing_tco(text: str, has_media: bool) -> str:
+    if not has_media:
+        return text
+    return re.sub(r"\s+https://t\.co/[A-Za-z0-9]+/?\s*$", "", text).strip()
 
 
 def _build_threads(tweets: List[Tweet]) -> List[List[Tweet]]:
@@ -134,14 +180,10 @@ def _build_threads(tweets: List[Tweet]) -> List[List[Tweet]]:
 def _render_post(title: str, tweets: List[Tweet], tags: List[str]) -> str:
     date_str = tweets[0].created_at.strftime("%Y-%m-%d")
     description = _normalize_title(tweets[0].full_text, "Twitter note")
-    body_lines = []
+    body_lines = [f"https://x.com/i/web/status/{tweets[0].id}", ""]
     for idx, tw in enumerate(tweets, start=1):
         body_lines.append(f"### {idx}")
-        body_lines.append(tw.full_text.strip())
-        if tw.urls:
-            body_lines.append("")
-            for url in tw.urls:
-                body_lines.append(f"- {url}")
+        body_lines.append(_strip_media_trailing_tco(tw.full_text, tw.has_media))
         body_lines.append("")
 
     tag_yaml = "\n".join([f"  - {tag}" for tag in sorted(set(tags))]) if tags else "  - twitter"
@@ -190,7 +232,12 @@ def export_markdown(
     for tweet in tweets:
         if tweet.id in used_ids:
             continue
-        if tweet.favorite_count < min_likes and tweet.retweet_count < min_retweets:
+        if (
+            tweet.favorite_count < min_likes
+            and tweet.retweet_count < min_retweets
+            and _book_signal_level(tweet.full_text) == 0
+            and not tweet.has_media
+        ):
             continue
 
         title = _normalize_title(tweet.full_text, "Twitter Post")

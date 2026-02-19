@@ -5,10 +5,13 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getPostUrl } from '../utils/postSlug';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const leftPosts = posts.filter((_, idx) => idx % 2 === 0);
+const rightPosts = posts.filter((_, idx) => idx % 2 === 1);
 ---
 
 <!doctype html>
@@ -16,17 +19,24 @@ const posts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.grid {
-				column-count: 2;
-				column-gap: 0.8rem;
+			.masonry {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 0.8rem;
+				align-items: start;
+			}
+			.column {
+				display: grid;
+				gap: 0.8rem;
 				list-style: none;
 				padding: 0;
 				margin: 0;
 			}
-			.grid > li {
-				break-inside: avoid;
-				-webkit-column-break-inside: avoid;
-				margin: 0 0 0.8rem;
+			.list-mobile {
+				display: none;
+				list-style: none;
+				padding: 0;
+				margin: 0;
 			}
 			.card {
 				padding: 0.9rem;
@@ -80,8 +90,12 @@ const posts = (await getCollection('blog')).sort(
 				color: rgb(var(--ink-dim));
 			}
 			@media (max-width: 860px) {
-				.grid {
-					column-count: 1;
+				.masonry {
+					display: none;
+				}
+				.list-mobile {
+					display: grid;
+					gap: 0.8rem;
 				}
 			}
 		</style>
@@ -89,11 +103,65 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<ul class="grid">
+			<div class="masonry">
+				<ul class="column">
+					{
+						leftPosts.map((post) => (
+							<li>
+								<a class="card" href={getPostUrl(post)}>
+									{post.data.thumbnail && (
+										<img class="thumb" src={post.data.thumbnail} alt={post.data.title} loading="lazy" />
+									)}
+									<p class="meta">
+										<span><FormattedDate date={post.data.pubDate} /></span>
+										<span>{post.data.source ?? 'note'}</span>
+									</p>
+									<h2 class="title">{post.data.title}</h2>
+									<p class="desc">{post.data.description}</p>
+									{post.data.tags.length > 0 && (
+										<div class="tags">
+											{post.data.tags.slice(0, 4).map((tag) => (
+												<span class="tag">#{tag}</span>
+											))}
+										</div>
+									)}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+				<ul class="column">
+					{
+						rightPosts.map((post) => (
+							<li>
+								<a class="card" href={getPostUrl(post)}>
+									{post.data.thumbnail && (
+										<img class="thumb" src={post.data.thumbnail} alt={post.data.title} loading="lazy" />
+									)}
+									<p class="meta">
+										<span><FormattedDate date={post.data.pubDate} /></span>
+										<span>{post.data.source ?? 'note'}</span>
+									</p>
+									<h2 class="title">{post.data.title}</h2>
+									<p class="desc">{post.data.description}</p>
+									{post.data.tags.length > 0 && (
+										<div class="tags">
+											{post.data.tags.slice(0, 4).map((tag) => (
+												<span class="tag">#{tag}</span>
+											))}
+										</div>
+									)}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+			<ul class="list-mobile">
 				{
 					posts.map((post) => (
 						<li>
-							<a class="card" href={`/blog/${post.id}/`}>
+							<a class="card" href={getPostUrl(post)}>
 								{post.data.thumbnail && (
 									<img class="thumb" src={post.data.thumbnail} alt={post.data.title} loading="lazy" />
 								)}

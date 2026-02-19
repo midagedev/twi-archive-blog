@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dress Room SVG Try-On Demo</title>
+  <style>
+    :root {
+      --bg-a: #ffe9ef;
+      --bg-b: #e9f5ff;
+      --panel: #ffffffee;
+      --ink: #2f3040;
+      --accent: #ff7c9c;
+      --accent-2: #57b8a6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Pretendard", "Noto Sans KR", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #ffd2e0 0%, transparent 65%),
+        radial-gradient(1200px 500px at 90% 110%, #cde8ff 0%, transparent 70%),
+        linear-gradient(140deg, var(--bg-a), var(--bg-b));
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .app {
+      width: min(1100px, 100%);
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 2px solid #ffffff;
+      border-radius: 22px;
+      box-shadow: 0 18px 40px #00000014;
+      backdrop-filter: blur(6px);
+    }
+
+    .controls {
+      padding: 18px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 14px;
+      font-size: 0.92rem;
+      opacity: 0.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    select {
+      width: 100%;
+      border: 2px solid #e7e8ef;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-random { background: var(--accent); color: #fff; }
+    .btn-reset { background: var(--accent-2); color: #fff; }
+    .btn-export { background: #2f3040; color: #fff; }
+
+    .meta {
+      margin-top: 12px;
+      font-size: 0.83rem;
+      opacity: 0.75;
+      line-height: 1.45;
+    }
+
+    .stage-wrap {
+      padding: 14px;
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+    }
+
+    .stage {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 2 / 3;
+      border-radius: 18px;
+      overflow: hidden;
+      background:
+        radial-gradient(130px 95px at 50% 13%, #ffffff 0%, #ffffffaa 45%, transparent 100%),
+        linear-gradient(180deg, #fff8fb, #eef6ff);
+      border: 2px solid #ffffff;
+      box-shadow: inset 0 0 0 1px #00000008;
+    }
+
+    .layer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+      image-rendering: auto;
+    }
+
+    .hint {
+      font-size: 0.84rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <section class="panel controls">
+      <h1>Dress Room SVG Demo</h1>
+      <p class="subtitle">Hand-made `body_a` vector parts. No AI output in this preview.</p>
+
+      <div class="grid">
+        <div>
+          <label for="hair">Hair</label>
+          <select id="hair"></select>
+        </div>
+        <div>
+          <label for="top">Top</label>
+          <select id="top"></select>
+        </div>
+        <div>
+          <label for="bottom">Bottom</label>
+          <select id="bottom"></select>
+        </div>
+        <div>
+          <label for="shoes">Shoes</label>
+          <select id="shoes"></select>
+        </div>
+        <div>
+          <label for="accessory">Accessory</label>
+          <select id="accessory"></select>
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="button" class="btn-random" id="randomBtn">Random</button>
+        <button type="button" class="btn-reset" id="resetBtn">Reset</button>
+        <button type="button" class="btn-export" id="openPackBtn">Open Asset Folder</button>
+      </div>
+
+      <p class="meta">
+        Canvas: 1024x1536<br />
+        Layer order: base -> bottom -> top -> shoes -> hair -> accessory
+      </p>
+    </section>
+
+    <section class="panel stage-wrap">
+      <div class="stage" id="stage">
+        <img class="layer" id="layer-base" alt="base" />
+        <img class="layer" id="layer-bottom" alt="bottom" />
+        <img class="layer" id="layer-top" alt="top" />
+        <img class="layer" id="layer-shoes" alt="shoes" />
+        <img class="layer" id="layer-hair" alt="hair" />
+        <img class="layer" id="layer-accessory" alt="accessory" />
+      </div>
+      <div class="hint">Try swapping parts to verify alignment.</div>
+    </section>
+  </main>
+
+  <script>
+    const ASSETS = {
+      base: "assets/svg/body_a/base/body_a_base.svg",
+      categories: {
+        hair: [
+          ["Bob Black", "assets/svg/body_a/hair/hair_bob_black.svg"],
+          ["Long Brown", "assets/svg/body_a/hair/hair_long_brown.svg"],
+          ["Twin Tail Brown", "assets/svg/body_a/hair/hair_twintail_brown.svg"]
+        ],
+        top: [
+          ["Sweater Lavender", "assets/svg/body_a/top/top_sweater_lavender.svg"],
+          ["Hoodie Mint", "assets/svg/body_a/top/top_hoodie_mint.svg"],
+          ["Cardigan Peach", "assets/svg/body_a/top/top_cardigan_peach.svg"]
+        ],
+        bottom: [
+          ["Jeans Blue", "assets/svg/body_a/bottom/bottom_jeans_blue.svg"],
+          ["Skirt Pink", "assets/svg/body_a/bottom/bottom_skirt_pink.svg"],
+          ["Shorts Gray", "assets/svg/body_a/bottom/bottom_shorts_gray.svg"]
+        ],
+        shoes: [
+          ["Sneaker White", "assets/svg/body_a/shoes/shoes_sneaker_white.svg"],
+          ["Boots Brown", "assets/svg/body_a/shoes/shoes_boots_brown.svg"]
+        ],
+        accessory: [
+          ["None", ""],
+          ["Bow Pink", "assets/svg/body_a/accessory/accessory_bow_pink.svg"],
+          ["Round Glasses", "assets/svg/body_a/accessory/accessory_glasses_round.svg"],
+          ["Star Necklace", "assets/svg/body_a/accessory/accessory_necklace_star.svg"]
+        ]
+      },
+      defaults: {
+        hair: "assets/svg/body_a/hair/hair_bob_black.svg",
+        top: "assets/svg/body_a/top/top_sweater_lavender.svg",
+        bottom: "assets/svg/body_a/bottom/bottom_jeans_blue.svg",
+        shoes: "assets/svg/body_a/shoes/shoes_sneaker_white.svg",
+        accessory: ""
+      }
+    };
+
+    const selects = {
+      hair: document.getElementById("hair"),
+      top: document.getElementById("top"),
+      bottom: document.getElementById("bottom"),
+      shoes: document.getElementById("shoes"),
+      accessory: document.getElementById("accessory")
+    };
+
+    const layers = {
+      base: document.getElementById("layer-base"),
+      hair: document.getElementById("layer-hair"),
+      top: document.getElementById("layer-top"),
+      bottom: document.getElementById("layer-bottom"),
+      shoes: document.getElementById("layer-shoes"),
+      accessory: document.getElementById("layer-accessory")
+    };
+
+    function populateSelect(category) {
+      const select = selects[category];
+      select.innerHTML = "";
+
+      if (category !== "accessory") {
+        const noneOpt = document.createElement("option");
+        noneOpt.value = "";
+        noneOpt.textContent = "None";
+        select.appendChild(noneOpt);
+      }
+
+      ASSETS.categories[category].forEach(([label, src]) => {
+        const option = document.createElement("option");
+        option.value = src;
+        option.textContent = label;
+        select.appendChild(option);
+      });
+    }
+
+    function applySelection() {
+      layers.base.src = ASSETS.base;
+      Object.keys(selects).forEach((category) => {
+        layers[category].src = selects[category].value;
+      });
+    }
+
+    function setDefaults() {
+      Object.keys(selects).forEach((category) => {
+        selects[category].value = ASSETS.defaults[category] || "";
+      });
+      applySelection();
+    }
+
+    function randomize() {
+      Object.keys(selects).forEach((category) => {
+        const options = Array.from(selects[category].options);
+        const randomOption = options[Math.floor(Math.random() * options.length)];
+        selects[category].value = randomOption.value;
+      });
+      applySelection();
+    }
+
+    Object.keys(selects).forEach((category) => {
+      populateSelect(category);
+      selects[category].addEventListener("change", applySelection);
+    });
+
+    document.getElementById("randomBtn").addEventListener("click", randomize);
+    document.getElementById("resetBtn").addEventListener("click", setDefaults);
+    document.getElementById("openPackBtn").addEventListener("click", () => {
+      alert("Asset folder: assets/svg/body_a");
+    });
+
+    setDefaults();
+  </script>
+</body>
+</html>

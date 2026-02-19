@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dress Room - Idol Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="panel controls">
+      <h1>Dress Room</h1>
+      <p class="subtitle">아이돌 감성 코디 게임 (브라우저 베이스)</p>
+
+      <div class="field-grid">
+        <label>
+          <span>Top</span>
+          <select id="topSelect"></select>
+        </label>
+        <label>
+          <span>Bottom</span>
+          <select id="bottomSelect"></select>
+        </label>
+        <label>
+          <span>Dress</span>
+          <select id="dressSelect"></select>
+        </label>
+        <label>
+          <span>Shoes</span>
+          <select id="shoesSelect"></select>
+        </label>
+        <label>
+          <span>Accessory</span>
+          <select id="accessorySelect"></select>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="randomBtn" class="btn pink">랜덤</button>
+        <button id="resetBtn" class="btn mint">초기화</button>
+        <button id="savePngBtn" class="btn dark">PNG 저장</button>
+      </div>
+
+      <p class="tip">
+        Dress를 선택하면 Top/Bottom은 자동 해제됩니다.
+      </p>
+    </section>
+
+    <section class="panel stage-panel">
+      <canvas id="stage" width="1024" height="1024" aria-label="avatar stage"></canvas>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

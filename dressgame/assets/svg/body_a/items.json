@@ -1,0 +1,42 @@
+{
+  "bodyType": "body_a",
+  "canvas": {
+    "width": 1024,
+    "height": 1536
+  },
+  "layerOrder": ["base", "bottom", "top", "shoes", "hair", "accessory"],
+  "base": "assets/svg/body_a/base/body_a_base.svg",
+  "categories": {
+    "hair": [
+      "assets/svg/body_a/hair/hair_bob_black.svg",
+      "assets/svg/body_a/hair/hair_long_brown.svg",
+      "assets/svg/body_a/hair/hair_twintail_brown.svg"
+    ],
+    "top": [
+      "assets/svg/body_a/top/top_sweater_lavender.svg",
+      "assets/svg/body_a/top/top_hoodie_mint.svg",
+      "assets/svg/body_a/top/top_cardigan_peach.svg"
+    ],
+    "bottom": [
+      "assets/svg/body_a/bottom/bottom_jeans_blue.svg",
+      "assets/svg/body_a/bottom/bottom_skirt_pink.svg",
+      "assets/svg/body_a/bottom/bottom_shorts_gray.svg"
+    ],
+    "shoes": [
+      "assets/svg/body_a/shoes/shoes_sneaker_white.svg",
+      "assets/svg/body_a/shoes/shoes_boots_brown.svg"
+    ],
+    "accessory": [
+      "assets/svg/body_a/accessory/accessory_bow_pink.svg",
+      "assets/svg/body_a/accessory/accessory_glasses_round.svg",
+      "assets/svg/body_a/accessory/accessory_necklace_star.svg"
+    ]
+  },
+  "defaults": {
+    "hair": "assets/svg/body_a/hair/hair_bob_black.svg",
+    "top": "assets/svg/body_a/top/top_sweater_lavender.svg",
+    "bottom": "assets/svg/body_a/bottom/bottom_jeans_blue.svg",
+    "shoes": "assets/svg/body_a/shoes/shoes_sneaker_white.svg",
+    "accessory": ""
+  }
+}
