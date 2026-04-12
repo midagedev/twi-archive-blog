@@ -1,12 +1,13 @@
 # Midage Dev Notes - Repository Guide
 
-`/Users/hckim/Documents/twi`는 X/Twitter 아카이브에서 고신호 글을 선별해 블로그 포스트로 전환하는 저장소입니다.
+`/Users/hckim/Documents/twi`는 X/Twitter 아카이브와 최근 공개 글에서 고신호 글을 선별해 짧은 엔지니어링 노트로 보존하는 저장소입니다.
 
 ## 현재 운영 방식 (에이전트 선별 전용)
 
-- 선별은 규칙 기반이 아니라 병렬 에이전트 리뷰 결과(`manual_agent_selected_100.json`)를 기준으로 진행합니다.
-- 생성은 `scripts/agent_curation_pipeline.py` 단일 스크립트로 수행합니다.
-- 제목은 별도 생성하지 않고 본문 발췌를 사용합니다.
+- 에이전트는 글을 길게 대필하지 않고 수집, 중복 제거, 선별, 주제 묶기만 담당합니다.
+- 과거 아카이브는 병렬 에이전트 리뷰 결과(`manual_agent_selected_100.json`)를 기준으로 생성합니다.
+- 최근 글은 브라우저 HAR를 `scripts/import_x_har.py`로 읽고, 병렬 에이전트 shortlist를 거쳐 남깁니다.
+- 제목은 별도 생성하지 않고 본문 발췌를 사용해 원래 어투를 보존합니다.
 
 ## 빠른 시작
 
@@ -21,7 +22,7 @@ npm install
 npm run dev
 ```
 
-## 콘텐츠 생성 (100개 기준)
+## 과거 아카이브 생성 (100개 기준)
 
 ```bash
 cd /Users/hckim/Documents/twi
@@ -34,6 +35,20 @@ python3 scripts/agent_curation_pipeline.py \
   --max-items 0 \
   --clean-draft-dir
 ```
+
+## 최근 X 글 수집/선별
+
+브라우저에서 X 검색 결과를 `Save all as HAR with content`로 저장한 뒤 가져옵니다. HAR에는 쿠키가 들어갈 수 있으므로 커밋하지 않습니다.
+
+```bash
+cd /Users/hckim/Documents/twi
+python3 scripts/import_x_har.py \
+  --har data/x_recent.har \
+  --since-date 2026-02-20 \
+  --dry-run
+```
+
+dry-run 결과를 확인한 뒤 실제 Markdown을 생성하고, 병렬 에이전트 선별 결과는 `docs/recent_agent_shortlist_YYYYMMDD.*`로 남깁니다.
 
 ## 로컬 검증
 
@@ -58,6 +73,8 @@ SITE_URL=https://blog.midagedev.com npm run build
 ## 핵심 경로
 
 - 에이전트 파이프라인: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
+- 최근 HAR 가져오기: `/Users/hckim/Documents/twi/scripts/import_x_har.py`
 - 수동 선별 ID: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
 - 후보 결과: `/Users/hckim/Documents/twi/docs/topic_candidates.json`
+- 최근 선별 결과: `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`
 - 블로그 콘텐츠: `/Users/hckim/Documents/twi/blog/src/content/blog`

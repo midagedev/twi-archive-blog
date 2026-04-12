@@ -20,7 +20,7 @@ npm install
 
 ## 2. 콘텐츠 생성
 
-X 아카이브 파일(`data/tweets.js`)을 준비한 후:
+과거 X 아카이브 파일(`data/tweets.js`)을 준비한 후:
 
 ```bash
 cd /Users/hckim/Documents/twi
@@ -34,6 +34,14 @@ twi2blog \
 
 생성 파일 위치:
 - `/Users/hckim/Documents/twi/blog/src/content/blog`
+
+최근 공개 X 글은 브라우저 HAR로 가져옵니다. HAR에는 세션 정보가 포함될 수 있으므로 커밋하지 않습니다.
+
+```bash
+cd /Users/hckim/Documents/twi
+python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20 --dry-run
+python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
+```
 
 ## 3. 로컬 미리보기/빌드
 

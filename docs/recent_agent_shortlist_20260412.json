@@ -1,0 +1,490 @@
+{
+  "topics": [
+    {
+      "priority": 1,
+      "topic_id": "ai-agent-automation",
+      "title": "Agent tools as workflow infrastructure",
+      "angle": "Emphasize token limits, context handoff, and orchestration as the real constraints once agents do production work.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 9.5,
+        "community": 9.0
+      },
+      "selection_rationale": "Both selectors converged on this cluster, and the tweets stay grounded in how agent tools actually change attention, context, and execution. This is the strongest AI topic for a career-visible engineering post because it turns novelty into operating constraints.",
+      "tweet_ids": [
+        "2024781322766708888",
+        "2024784852097311210",
+        "2024794773849350402",
+        "2026239971510939878",
+        "2029403955147751752",
+        "2031162411923980376",
+        "2033678154594979844",
+        "2038410453811183828",
+        "2041660501068038170",
+        "2042572823403893068"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2024781322766708888",
+          "pubDate": "2026-02-20",
+          "file": "blog/src/content/blog/20260412-001-ai-agent-automation.md",
+          "title": "몇달째 탄수화물과 카페인을 프롬프트로 바꾸는 기계가 된 느낌이다. 슬슬 번아웃 이야기 많이 나올때 되었다. 멈출수가 없다. 아마...",
+          "excerpt": "몇달째 탄수화물과 카페인을 프롬프트로 바꾸는 기계가 된 느낌이다. 슬슬 번아웃 이야기 많이 나올때 되었다. 멈출수가 없다. 아마 에이전틱코딩이 개발자의 두뇌를 어떻게 변화시킨다던가 그런 논문이 나올꺼다. LLM이 코딩 능력을 퇴화시킨다거나 되레 성장하거나 그런류의 변화가 아닌것 같다.  [media]"
+        },
+        {
+          "tweet_id": "2024784852097311210",
+          "pubDate": "2026-02-20",
+          "file": "blog/src/content/blog/20260412-002-ai-agent-automation.md",
+          "title": "클로드코드 사용량 많은 사람을 남겨야 했는데 아마존 망했네(아님) 이제 LoC가 아닌 토큰의 시대구만, 아마 빠른 시간내에 AI...",
+          "excerpt": "### 1 클로드코드 사용량 많은 사람을 남겨야 했는데 아마존 망했네(아님) 이제 LoC가 아닌 토큰의 시대구만, 아마 빠른 시간내에 AI 이용자의 품질(?) 측정하는 비지니스가 도입되고 적극 활용되겠지. 어? 괜찮은데  [media]  ### 2 분명 구체적으로 토큰을 어디에 쓰는지는 수집하지 않으면서 그 품질에 대한 "
+        },
+        {
+          "tweet_id": "2024794773849350402",
+          "pubDate": "2026-02-20",
+          "file": "blog/src/content/blog/20260412-003-execution-mindset.md",
+          "title": "그런데 Claude max oauth는 일단 서비스가 아닌 코딩용으로는 오케이라고 했으면 맥스20 구독을 여러개 만들어두고 세션을...",
+          "excerpt": "### 1 그런데 Claude max oauth는 일단 서비스가 아닌 코딩용으로는 오케이라고 했으면 맥스20 구독을 여러개 만들어두고 세션을 분배하는 식으로 회사 인원 통째로 써도 되는거 아닌가? 세선 할당하고 뭐 원격 볼륨 마운트시키고 어케저케 하면 되게 알뜰살뜰하게 쓸수 있는데  ### 2 그럴것도 없지 그냥 서버 하"
+        },
+        {
+          "tweet_id": "2026239971510939878",
+          "pubDate": "2026-02-24",
+          "file": "blog/src/content/blog/20260412-011-ai-agent-automation.md",
+          "title": "특히 npm 공급망 공격 심화된 때가 코딩에이전트 부흥시기에 너무 적절하게 맞춰 터진것도 크다. 기획적으로 했다고 해도 그럴싸 할...",
+          "excerpt": "특히 npm 공급망 공격 심화된 때가 코딩에이전트 부흥시기에 너무 적절하게 맞춰 터진것도 크다. 기획적으로 했다고 해도 그럴싸 할 정도로 좋은 타이밍이었다."
+        },
+        {
+          "tweet_id": "2029403955147751752",
+          "pubDate": "2026-03-05",
+          "file": "blog/src/content/blog/20260412-019-ai-agent-automation.md",
+          "title": "이것도 옛날 이야기다 에이전트들을 부리는건 매니저인가 아닌가 😇 요즘 세상에 무슨 매니저는 매니저야 이제 곧 마주할 세상에는 에이...",
+          "excerpt": "이것도 옛날 이야기다 에이전트들을 부리는건 매니저인가 아닌가 😇 요즘 세상에 무슨 매니저는 매니저야 이제 곧 마주할 세상에는 에이전트 오케스트레이션을 할 컨텍스트 관리자로서의 매니저 수요가 분명 있다. 원맨팀 금방이다."
+        },
+        {
+          "tweet_id": "2031162411923980376",
+          "pubDate": "2026-03-10",
+          "file": "blog/src/content/blog/20260412-024-ai-agent-automation.md",
+          "title": "요즘 회사 AX 작업 계속 하다 보니까 회사 및 각 조직단위의 SOUL IDENTITY HEARTBEAT 같은 것들 필요성이 강하...",
+          "excerpt": "요즘 회사 AX 작업 계속 하다 보니까 회사 및 각 조직단위의 SOUL IDENTITY HEARTBEAT 같은 것들 필요성이 강하게 느껴졌다. 이런 지침md가 처음에는 에이전트가 사람처럼 행동하기 위해 만들어졌지만 결국 사람이 일을 잘 하려면 필요한 것이 잘 추상화 된 것이기도 하다는 것"
+        },
+        {
+          "tweet_id": "2033678154594979844",
+          "pubDate": "2026-03-16",
+          "file": "blog/src/content/blog/20260412-032-execution-mindset.md",
+          "title": "기왕 오픈클로 뚫은거 부부가 함께 쓰는 것도 하나 추가했다. 그간 가계부 정리에 대한 부담이 많았는데 이제 딸깍 들어간다. 주요...",
+          "excerpt": "### 1 기왕 오픈클로 뚫은거 부부가 함께 쓰는 것도 하나 추가했다. 그간 가계부 정리에 대한 부담이 많았는데 이제 딸깍 들어간다. 주요 가족행사 지출 등 다 컨텍스트 넣어두고 늘 분쟁의 시발점이 되는 육아의 기준 같은 것도 그냥 컨텍스트화 해서 일관된 의사결정을 할 수 있게 만드는게 목표다.  [media]  ### "
+        },
+        {
+          "tweet_id": "2038410453811183828",
+          "pubDate": "2026-03-30",
+          "file": "blog/src/content/blog/20260412-051-ai-agent-automation.md",
+          "title": "클로드가 상태가 안좋아지면 그냥 코덱스한테 클로드코드 세션파일을 읽고 이어하라고 시킨다..😇",
+          "excerpt": "클로드가 상태가 안좋아지면 그냥 코덱스한테 클로드코드 세션파일을 읽고 이어하라고 시킨다..😇  [media]"
+        },
+        {
+          "tweet_id": "2041660501068038170",
+          "pubDate": "2026-04-07",
+          "file": "blog/src/content/blog/20260412-060-execution-mindset.md",
+          "title": "그간 수집한 모든 데이터를 토대로(모든 채팅까지 다) 서비스, 팀원, 팀, 프로젝트 등을 모두 엔티티로 정의하고 각 엔티티마다 컨...",
+          "excerpt": "그간 수집한 모든 데이터를 토대로(모든 채팅까지 다) 서비스, 팀원, 팀, 프로젝트 등을 모두 엔티티로 정의하고 각 엔티티마다 컨텍스트를 관리하는 구성을 만들었다. 역시 이때 할 질문은 who am I  [media]"
+        },
+        {
+          "tweet_id": "2042572823403893068",
+          "pubDate": "2026-04-10",
+          "file": "blog/src/content/blog/20260412-065-ai-agent-automation.md",
+          "title": "고객분이 우리 서비스를 ai agent로 써보고 싶으시답니다. -> ChatGPT요? 어떤거 쓰신대요? -> 클로드코드라던데요....",
+          "excerpt": "고객분이 우리 서비스를 ai agent로 써보고 싶으시답니다. -> ChatGPT요? 어떤거 쓰신대요? -> 클로드코드라던데요. -> 어! 저! 그그! 잠깐만 기다리세요  [media]"
+        }
+      ]
+    },
+    {
+      "priority": 2,
+      "topic_id": "review-behavior-test-strategy",
+      "title": "Reviewing behavior and test strategy",
+      "angle": "Emphasize what tests and code review should protect when wrappers, packaging, and regressions keep changing.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 9.1,
+        "community": 8.8
+      },
+      "selection_rationale": "This cluster is consistently concrete about review failures, coverage boundaries, and regression control. It should produce a practical post about keeping test strategy useful as the stack shifts.",
+      "tweet_ids": [
+        "2026180393335164946",
+        "2026343672787382675",
+        "2027230988901011777",
+        "2033830579230437811",
+        "2035873607537316290",
+        "2037538372290588922",
+        "2039547827383398500",
+        "2042592969061208091"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2026180393335164946",
+          "pubDate": "2026-02-24",
+          "file": "blog/src/content/blog/20260412-010-code-quality-review.md",
+          "title": "6개월 전이네, 지금은 이제 자바로 왔지만 여전히 같은 문제로 고민하고 있었다. 카카오코덱스의 은혜로 해결했다. 메이븐센트럴에도...",
+          "excerpt": "### 1 6개월 전이네, 지금은 이제 자바로 왔지만 여전히 같은 문제로 고민하고 있었다. 카카오코덱스의 은혜로 해결했다. 메이븐센트럴에도 올렸다. 우리회사 프로젝트에서 잘 된다! 스프링에서 도커없이 몽고디비 통합테스트 가능 https://github.com/midagedev/jongodb  ### 2 이걸 nodejs포"
+        },
+        {
+          "tweet_id": "2026343672787382675",
+          "pubDate": "2026-02-24",
+          "file": "blog/src/content/blog/20260412-012-ai-agent-automation.md",
+          "title": "결국 node용 래퍼도 만들었다. 에이전트가 다 해주니 좋네(아님)(빌드 백번 실패) 메모리몽고디비 좀 빠른 거 말고는 게 나을거...",
+          "excerpt": "결국 node용 래퍼도 만들었다. 에이전트가 다 해주니 좋네(아님)(빌드 백번 실패) 메모리몽고디비 좀 빠른 거 말고는 게 나을거 없지만 그래도 일단 만들어는 둔다. https://www.npmjs.com/package/@jongodb/memory-server"
+        },
+        {
+          "tweet_id": "2027230988901011777",
+          "pubDate": "2026-02-27",
+          "file": "blog/src/content/blog/20260412-014-code-quality-review.md",
+          "title": "몽고디비의 테스트 스위트에 감사할 따름이다. 토큰 남을때마다 붓다보니 이제 커버 범위가 꽤 넒어졌다. 스프링이나 노드에서 몽고티비...",
+          "excerpt": "몽고디비의 테스트 스위트에 감사할 따름이다.  https://github.com/midagedev/jongodb/blob/main/docs/research/05-test-strategy.md  토큰 남을때마다 붓다보니 이제 커버 범위가 꽤 넒어졌다. 스프링이나 노드에서 몽고티비 쓰시는 분들 츄라이츄라이"
+        },
+        {
+          "tweet_id": "2033830579230437811",
+          "pubDate": "2026-03-17",
+          "file": "blog/src/content/blog/20260412-033-code-quality-review.md",
+          "title": "예전 다니던 스타트업에서 이번달 월급이 못나갑니다. 어떻게 하실지 내일 알려주세요. 듣고나서 다음날 사실 테스트였습니다 했던 대표...",
+          "excerpt": "예전 다니던 스타트업에서 이번달 월급이 못나갑니다. 어떻게 하실지 내일 알려주세요. 듣고나서 다음날 사실 테스트였습니다 했던 대표가 생각난다. 그그실"
+        },
+        {
+          "tweet_id": "2035873607537316290",
+          "pubDate": "2026-03-23",
+          "file": "blog/src/content/blog/20260412-040-execution-mindset.md",
+          "title": "세상이 계속 바뀌니 계속 실험해볼뿐이다. 코드리뷰에서 두걸음 물러서서, 동작의 점검과 유지보수성의 관리라는 두가지에 집중해보자고...",
+          "excerpt": "세상이 계속 바뀌니 계속 실험해볼뿐이다. 코드리뷰에서 두걸음 물러서서, 동작의 점검과 유지보수성의 관리라는 두가지에 집중해보자고 했다. 코드리뷰도 그 두가지가 주 목적 아니겠는가 코드를 어떻게 썼는지 어떤 의존성을 택했는지 보다 결국 잘 동작하고 복잡성이 많이 증가하지 않으면 오케이"
+        },
+        {
+          "tweet_id": "2037538372290588922",
+          "pubDate": "2026-03-27",
+          "file": "blog/src/content/blog/20260412-049-code-quality-review.md",
+          "title": "요즘 회사에서 코드를 azure devops에서 GitHub으로 이전해서 이것저것 써보고 있는데 특히 슬랙류의 연동에 있어서.....",
+          "excerpt": "### 1 요즘 회사에서 코드를 azure devops에서 GitHub으로 이전해서 이것저것 써보고 있는데 특히 슬랙류의 연동에 있어서.. azure께 하도 그지같아서 열심히 깎아둔 알리미들 품질이 깃헙기본 연동을 뛰어넘어버렸네.. 메신저에 깃헙 통함 추가했다가 다시 빼버렸다..;;  ### 2 깃헙에 클로드 통합도 써봤"
+        },
+        {
+          "tweet_id": "2039547827383398500",
+          "pubDate": "2026-04-02",
+          "file": "blog/src/content/blog/20260412-055-code-quality-review.md",
+          "title": "어제 배포한 코드에서 응답의 형태가 달라져서 장애가 하나 났고, 테스트 다 했는데 무슨일일까요? 했더니 테스트코드에 폴백이 있었다...",
+          "excerpt": "어제 배포한 코드에서 응답의 형태가 달라져서 장애가 하나 났고, 테스트 다 했는데 무슨일일까요? 했더니 테스트코드에 폴백이 있었다고🤦‍♂️"
+        },
+        {
+          "tweet_id": "2042592969061208091",
+          "pubDate": "2026-04-10",
+          "file": "blog/src/content/blog/20260412-068-ai-agent-automation.md",
+          "title": "조금만 복잡한 서비스만 되어도 이런 전략이 필수인걸 요즘 많이 느낀다. 리뷰에이전트에 컨트롤러 변경시 expand and cont...",
+          "excerpt": "### 1 https://martinfowler.com/bliki/ParallelChange.html 조금만 복잡한 서비스만 되어도 이런 전략이 필수인걸 요즘 많이 느낀다. 리뷰에이전트에 컨트롤러 변경시 expand and contract가 충분히 고려되어 있는지 확인하라는 인스트럭션을 추가했다. 이걸 반년을 고생하고서야"
+        }
+      ]
+    },
+    {
+      "priority": 3,
+      "topic_id": "backend-integration-debt",
+      "title": "Integration and state pressure",
+      "angle": "Emphasize login sprawl, brokered integrations, and data-state decisions that surface when systems outgrow the happy path.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 9.0,
+        "community": 8.4
+      },
+      "selection_rationale": "The developer and community outputs both point at the same pressure points: scattered auth flows, external integrations, and storage choices that stop being theoretical. This is the cleanest architecture post in the set because it stays on real operational tradeoffs.",
+      "tweet_ids": [
+        "2031313587936112754",
+        "2036790998886711545",
+        "2041786167897813228",
+        "2042083645754937499",
+        "2042590193379873188"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2031313587936112754",
+          "pubDate": "2026-03-10",
+          "file": "blog/src/content/blog/20260412-025-backend-architecture.md",
+          "title": "아… 된다… 거지같던 팀즈 앱에 디버깅 포트로 스크립트 인젝션 쑤셔넣어서 내 맘대로 레이아웃 바꾸고 채팅 채널 오른쪽에 팀이 같이...",
+          "excerpt": "아… 된다… 거지같던 팀즈 앱에 디버깅 포트로 스크립트 인젝션 쑤셔넣어서 내 맘대로 레이아웃 바꾸고 채팅 채널 오른쪽에 팀이 같이 볼 실시간 액티비티로그 서버에서 가져다 뿌리게 넣었다. 원하는 디자인으로 검색 자동완성 즐겨찾기 멘션 다 넣었다. 일렉트론에 감사하는 날이 왔군."
+        },
+        {
+          "tweet_id": "2036790998886711545",
+          "pubDate": "2026-03-25",
+          "file": "blog/src/content/blog/20260412-043-frontend-web.md",
+          "title": "메시지브로커를 이용해 파트너사들이 쓸 웹훅 붙이는 일을 시키고 있다. 카프카 서비스에 안넣는건팀원들한테 미안한일 같아서 넣기로😆...",
+          "excerpt": "메시지브로커를 이용해 파트너사들이 쓸 웹훅 붙이는 일을 시키고 있다. 카프카 서비스에 안넣는건팀원들한테 미안한일 같아서 넣기로😆 개발 다 되었다길래 혹시 고객사 서버가 리퀘스트를 붙들고 30초씩 있을때 계속해서 메세지가 쌓이고 이게 DLQ 들락날락하면 어떻게 될지 생각해오라고했다😁"
+        },
+        {
+          "tweet_id": "2041786167897813228",
+          "pubDate": "2026-04-08",
+          "file": "blog/src/content/blog/20260412-061-backend-architecture.md",
+          "title": "이거 실패했다. 찬성이 절반이 채 안되었다. 여기가 첫회사로 장기근속하며 팀즈만 계속 써온 분들이 많이 계시다보니 굳이? 라는 분...",
+          "excerpt": "이거 실패했다. 찬성이 절반이 채 안되었다. 여기가 첫회사로 장기근속하며 팀즈만 계속 써온 분들이 많이 계시다보니 굳이? 라는 분이 많았다. 구글캘린더와 드라이브보다 쓰던 아웃룩과 쉐어포인트가 좋다고.. 적응해야지(라고 말하며 teams graph api를 뚫어 슬랙 대체제 깎는중😇)"
+        },
+        {
+          "tweet_id": "2042083645754937499",
+          "pubDate": "2026-04-09",
+          "file": "blog/src/content/blog/20260412-064-backend-architecture.md",
+          "title": "괜히 api 비용 200달라를 준게 아니었구만.. 저번에 fast모드 출시때도 그러더니!! 자꾸 사료주고 픽업가챠내고!!!!",
+          "excerpt": "괜히 api 비용 200달라를 준게 아니었구만.. 저번에 fast모드 출시때도 그러더니!! 자꾸 사료주고 픽업가챠내고!!!!"
+        },
+        {
+          "tweet_id": "2042590193379873188",
+          "pubDate": "2026-04-10",
+          "file": "blog/src/content/blog/20260412-067-ai-agent-automation.md",
+          "title": "컨텍스트 관리용으로 SQLite쓰다가 3일만에 Postgres로 마이그레이션 했다. 사내에서 일어나는 분당 100개쯤 되는 이벤트...",
+          "excerpt": "컨텍스트 관리용으로 SQLite쓰다가 3일만에 Postgres로 마이그레이션 했다. 사내에서 일어나는 분당 100개쯤 되는 이벤트 수집, 그걸 읽어서 LLM으로 서머리 만들어 넣기, 그걸 대시보드에서 집계쿼리 5초 폴링 이정도 구성했는데 동시쓰기가 조금만 얽혀도 너무 쉽게 깨졌다. 쓰기 어렵더라"
+        }
+      ]
+    },
+    {
+      "priority": 4,
+      "topic_id": "career-signals-changing-market",
+      "title": "Career signals in a changing market",
+      "angle": "Emphasize how generalists read credentials, flexibility, and company messaging when deciding where they fit.",
+      "target_reader": "community",
+      "scores": {
+        "developer": 8.2,
+        "community": 7.9
+      },
+      "selection_rationale": "These tweets are better as a career-market post than as a general life note because they focus on the signals people actually use to evaluate roles. That keeps it practical without drifting into generic advice.",
+      "tweet_ids": [
+        "2025604870217334900",
+        "2029035424799396343",
+        "2029889538693419493",
+        "2041130534651449698",
+        "2042579546021728310"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2025604870217334900",
+          "pubDate": "2026-02-22",
+          "file": "blog/src/content/blog/20260412-008-book-reading-insights.md",
+          "title": "주요 책임, 우대사항 다 기깔나게 채워줄 수 있는데 기본자격에서 1차컷 당하는 비전공자의 설움이란.. 진짜.. 개발자분들 지금 다...",
+          "excerpt": "주요 책임, 우대사항 다 기깔나게 채워줄 수 있는데 기본자격에서 1차컷 당하는 비전공자의 설움이란..  진짜.. 개발자분들 지금 다니는 회사가 워라밸이 좋고 자기가 비전공자이다 싶으면 꼭.. 컴공학사를 취득하시길 강력 추천합니다..  [media]"
+        },
+        {
+          "tweet_id": "2029035424799396343",
+          "pubDate": "2026-03-04",
+          "file": "blog/src/content/blog/20260412-017-career-job-transition.md",
+          "title": "오늘 리더미팅에서 옆팀으로부터 우리팀 덕분에 이제 개발이 정상화되어서 원래 로드맵으로 돌아갈 수 있을것 같다는 이야기를 들었다....",
+          "excerpt": "오늘 리더미팅에서 옆팀으로부터 우리팀 덕분에 이제 개발이 정상화되어서 원래 로드맵으로 돌아갈 수 있을것 같다는 이야기를 들었다. 이거 목표로 6개월, 팀원분들 열심히 달려줬고 마일스톤 달성한것 같다. 뿌듯하다. 입사1년까지 4개월 남았다. 마저 열심히 해보자."
+        },
+        {
+          "tweet_id": "2029889538693419493",
+          "pubDate": "2026-03-06",
+          "file": "blog/src/content/blog/20260412-021-career-job-transition.md",
+          "title": "몇달 모은 신뢰자산을 팀즈와 ms것들 그만쓰고 슬랙 구글워크스페이스 전환하자고 발언하는데 썼다. 예전부터 일하시던 분들은 대체로...",
+          "excerpt": "몇달 모은 신뢰자산을 팀즈와 ms것들 그만쓰고 슬랙 구글워크스페이스 전환하자고 발언하는데 썼다. 예전부터 일하시던 분들은 대체로 반대하고 젊은 분들은 반기고.. 담달리더미팅때 논의하자는데 통과되든 안되든 나는 이런 제안을 해야 되는 포지션이다. 꺾이면 한동안 또 조용히 모아야겠네.."
+        },
+        {
+          "tweet_id": "2041130534651449698",
+          "pubDate": "2026-04-06",
+          "file": "blog/src/content/blog/20260412-059-career-job-transition.md",
+          "title": "주말 너무 열심히 놀았나보다. 컨디션망.. 아.. 재택하는 회사로 이직한 전직장 동료분들 너무 부럽다.. 으.. 뜨끈한 방구석에서...",
+          "excerpt": "주말 너무 열심히 놀았나보다. 컨디션망.. 아.. 재택하는 회사로 이직한 전직장 동료분들 너무 부럽다.. 으.. 뜨끈한 방구석에서 일하고싶다..  [media]"
+        },
+        {
+          "tweet_id": "2042579546021728310",
+          "pubDate": "2026-04-10",
+          "file": "blog/src/content/blog/20260412-066-career-job-transition.md",
+          "title": "이 인간들 채용광고도 맛있게 하네 하",
+          "excerpt": "이 인간들 채용광고도 맛있게 하네 하  [media]"
+        }
+      ]
+    },
+    {
+      "priority": 5,
+      "topic_id": "team-operating-models-and-trust",
+      "title": "Team operating models and trust",
+      "angle": "Emphasize how teams divide ownership, preserve trust, and use AI or bots without losing review discipline.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 8.2,
+        "community": 8.1
+      },
+      "selection_rationale": "The merged cluster captures a real operating model: reviews, ownership, one-on-ones, and the trust needed to change how the team works. It has good blog potential because it turns org friction into concrete process choices.",
+      "tweet_ids": [
+        "2033555410129748477",
+        "2033836109034401837",
+        "2036787823874101677",
+        "2037006982708904162",
+        "2038019781849493524"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2033555410129748477",
+          "pubDate": "2026-03-16",
+          "file": "blog/src/content/blog/20260412-031-career-job-transition.md",
+          "title": "나같경 원온원의 이득을 많이 본다. 원온원으로 팀원으로 부터 많은 관점을 배우고 팀원들의 관심사를 캐내어 업무와의 연결점을 만들어...",
+          "excerpt": "나같경 원온원의 이득을 많이 본다. 원온원으로 팀원으로 부터 많은 관점을 배우고 팀원들의 관심사를 캐내어 업무와의 연결점을 만들어 꼬신다 원온원이 이득이 적다는 분들은 아마 리더나 팀원이나 충분히 잘하시고 얼라인 된 상태이실듯. 심지어 만만한 팀원분께는 읍소도 좀 하며 위안을 얻기도 😭"
+        },
+        {
+          "tweet_id": "2033836109034401837",
+          "pubDate": "2026-03-17",
+          "file": "blog/src/content/blog/20260412-034-execution-mindset.md",
+          "title": "팀의 운영방식에 좀 참고가 되었다. 한 주제에 가급적 여러사람을 투입하여 집중해서 완료시킨다가 방침이었는데 이제 각 팀원이 각 제...",
+          "excerpt": "팀의 운영방식에 좀 참고가 되었다. 한 주제에 가급적 여러사람을 투입하여 집중해서 완료시킨다가 방침이었는데 이제 각 팀원이 각 제품에 오너십을 가지고 직원을 부려라 하는 방향으로 바꾸려고 한다. 코파운더한명 정도는 괜찮지만 세명은 너무 많은것 같다."
+        },
+        {
+          "tweet_id": "2036787823874101677",
+          "pubDate": "2026-03-25",
+          "file": "blog/src/content/blog/20260412-042-ai-agent-automation.md",
+          "title": "AI이야기가 피로감을 주는 주제라 피하고 싶어도 진짜 할 이야기가 잘 없다. 요즘 팀에는 이제 코딩은 병목이 아니니까 수직통합?을...",
+          "excerpt": "### 1 AI이야기가 피로감을 주는 주제라 피하고 싶어도 진짜 할 이야기가 잘 없다. 요즘 팀에는 이제 코딩은 병목이 아니니까 수직통합?을 하자고 밀어붙이고 있다. 기획도 QA도 그냥 우리가 하자. 꺼리가 나오면 먼저 개발해서 이대로 기획해달라고 하고 개발된건 셀프로 QA하고 이대로 테스트 하세요.  ### 2 기획 디"
+        },
+        {
+          "tweet_id": "2037006982708904162",
+          "pubDate": "2026-03-26",
+          "file": "blog/src/content/blog/20260412-044-career-job-transition.md",
+          "title": "아내가 여보는 회사에서 유머 타율이 어떻게 되냐고 물었다. “여보 나 팀장이야. 타율이 낮을 수가 없어, 웃어야해” 아내는 질색하...",
+          "excerpt": "아내가 여보는 회사에서 유머 타율이 어떻게 되냐고 물었다.  “여보 나 팀장이야. 타율이 낮을 수가 없어, 웃어야해”  아내는 질색하며 이거 위계에 의한 유머는 직장내 괴롭힘 아니냐며..  [media]"
+        },
+        {
+          "tweet_id": "2038019781849493524",
+          "pubDate": "2026-03-28",
+          "file": "blog/src/content/blog/20260412-050-execution-mindset.md",
+          "title": "“봇이 질문도 하네요?” 무슨 소린가 했더니 사내업무용 cli를 만들어 쥐어준게 일하다가 기획자에게 확인한다고 메신저로 디엠을 보...",
+          "excerpt": "“봇이 질문도 하네요?” 무슨 소린가 했더니 사내업무용 cli를 만들어 쥐어준게 일하다가 기획자에게 확인한다고 메신저로 디엠을 보내버렸다..😱 결과적으로는 질문이 필요하긴 했는데 선넘는 짓이었다.. 조정해야지.."
+        }
+      ]
+    },
+    {
+      "priority": 6,
+      "topic_id": "speed-and-process-choices",
+      "title": "Speed and process choices",
+      "angle": "Emphasize the tradeoff between speed, cost, and process overhead when delivery starts to drift.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 8.5,
+        "community": 8.2
+      },
+      "selection_rationale": "Both selectors framed this as a practical speed problem, not a generic productivity rant. The tweet set is strongest when it shows how process choices affect output under new tooling and release pressure.",
+      "tweet_ids": [
+        "2025086021004845536",
+        "2026970926286528941",
+        "2032752171545247798",
+        "2037009212463866177",
+        "2037483559343329629",
+        "2037485066960732348",
+        "2039496608472252845",
+        "2042083645754937499",
+        "2042596467622473854"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2025086021004845536",
+          "pubDate": "2026-02-21",
+          "file": "blog/src/content/blog/20260412-004-execution-mindset.md",
+          "title": "만화카페 왔다.. 맥북은 왜 따라왔는지 모름😔",
+          "excerpt": "### 1 만화카페 왔다.. 맥북은 왜 따라왔는지 모름😔  [media]  ### 2 교훈을... 얻었구나.. 하루종일 돌려가면서 전체 테스트 돌리는데 가장 시간이 적게 걸리는 방식을 찾게 만들고 있다..  [media]  ### 3 강풀 타이밍 본게 십년이 넘은것 같은데 무빙을 이제야 본다. 처음 펼친 작가의 말에 울컥"
+        },
+        {
+          "tweet_id": "2026970926286528941",
+          "pubDate": "2026-02-26",
+          "file": "blog/src/content/blog/20260412-013-execution-mindset.md",
+          "title": "이틀동안 미친듯이 회사 코드 활용해서 새 앱을 만드는 poc를 했다. 평소에 아쉽다고 생각한 부분들 모조리 다 개선해봤다. 배포할...",
+          "excerpt": "### 1 이틀동안 미친듯이 회사 코드 활용해서 새 앱을 만드는 poc를 했다. 평소에 아쉽다고 생각한 부분들 모조리 다 개선해봤다. 배포할때마다 이상심박 경고가 떴다. 너무 설레서 내가 아는 프론트엔드, webgl 트릭 다 때려넣었다. 아 너무 재밌었다. 이제 현실로 돌아가야지…  ### 2 결국 아침까지 달렸다. 어쩌"
+        },
+        {
+          "tweet_id": "2032752171545247798",
+          "pubDate": "2026-03-14",
+          "file": "blog/src/content/blog/20260412-027-execution-mindset.md",
+          "title": "오늘의 공사. 대문 초인종 갈았다. 다이소에서 오천원 트레이 사다가 대충 프레임으로 활용 뿌듯",
+          "excerpt": "오늘의 공사. 대문 초인종 갈았다.  다이소에서 오천원 트레이 사다가 대충 프레임으로 활용 뿌듯  [media]  [media]"
+        },
+        {
+          "tweet_id": "2037009212463866177",
+          "pubDate": "2026-03-26",
+          "file": "blog/src/content/blog/20260412-045-execution-mindset.md",
+          "title": "다다음 배포때 없애기로 한 기능이 다음 배포에는 피쳐 개선이 기획으로 들어가서 QA가 시작되었고 기획대로 개발이 안되었다는 QA이...",
+          "excerpt": "다다음 배포때 없애기로 한 기능이 다음 배포에는 피쳐 개선이 기획으로 들어가서 QA가 시작되었고 기획대로 개발이 안되었다는 QA이슈가 두세개 생겼고 고치는 작업을 하고 있다. 이거 하지 말자고 입술을 달싹이려다 디테일에 너무 관여하지 않는게 덕목이라는 글이 뒷덜미를 잡는다. 어렵다."
+        },
+        {
+          "tweet_id": "2037483559343329629",
+          "pubDate": "2026-03-27",
+          "file": "blog/src/content/blog/20260412-046-ai-agent-automation.md",
+          "title": "opus fast mode를 메인으로 쓰고 있는 분이 있을까. 엔스로픽이 괜히 써보라고 50달라 넣어준게 아니었다. 6배 비싼 f...",
+          "excerpt": "opus fast mode를 메인으로 쓰고 있는 분이 있을까. 엔스로픽이 괜히 써보라고 50달라 넣어준게 아니었다. 6배 비싼 fast모드는 어어어 하는 10분만에 50달러를 소모했고 그 급가속은 정말 잊을 수 없는 경험이었다. 새 모델 소문을 듣고 문득 생각남..  [media]"
+        },
+        {
+          "tweet_id": "2037485066960732348",
+          "pubDate": "2026-03-27",
+          "file": "blog/src/content/blog/20260412-047-ai-agent-automation.md",
+          "title": "협업글을 보니 LLM이 어찌보면 협업 한계효용을 극단적으로 보여주는 사례아닌가 싶다. 최고 모델로 에이전트들을 짜도 한 효용이 오...",
+          "excerpt": "협업글을 보니 LLM이 어찌보면 협업 한계효용을 극단적으로 보여주는 사례아닌가 싶다. 최고 모델로 에이전트들을 짜도 한 효용이 오르는게 끽하니 한 10명 안쪽이다. 이건 어디 병목이 있다 그런게 아니라 아무리 인원을 부어도 일정 수준이상을 넘지 못한다. 결국 인원보다 졸라 천재가 필요한게지."
+        },
+        {
+          "tweet_id": "2039496608472252845",
+          "pubDate": "2026-04-02",
+          "file": "blog/src/content/blog/20260412-054-execution-mindset.md",
+          "title": "finding ways to go faster, rather than introducing more process. 크… 애자일에...",
+          "excerpt": "finding ways to go faster, rather than introducing more process. 크… 애자일에 취한다 🥂"
+        },
+        {
+          "tweet_id": "2042083645754937499",
+          "pubDate": "2026-04-09",
+          "file": "blog/src/content/blog/20260412-064-backend-architecture.md",
+          "title": "괜히 api 비용 200달라를 준게 아니었구만.. 저번에 fast모드 출시때도 그러더니!! 자꾸 사료주고 픽업가챠내고!!!!",
+          "excerpt": "괜히 api 비용 200달라를 준게 아니었구만.. 저번에 fast모드 출시때도 그러더니!! 자꾸 사료주고 픽업가챠내고!!!!"
+        },
+        {
+          "tweet_id": "2042596467622473854",
+          "pubDate": "2026-04-10",
+          "file": "blog/src/content/blog/20260412-069-execution-mindset.md",
+          "title": "가격제를 세분화 한다 유연한 가격을 제공한다 이런게 좋게 포장할 수도 있긴 하지만 보통은 좋은 신호가 아니다. 현재 플랜 구성 맞...",
+          "excerpt": "가격제를 세분화 한다 유연한 가격을 제공한다 이런게 좋게 포장할 수도 있긴 하지만 보통은 좋은 신호가 아니다. 현재 플랜 구성 맞는 고객을 더이상 확보하기 어려우니 플랜 사이의 갭에 있는 작은 파이라도 다 핥아먹어야 하는 상황인거다."
+        }
+      ]
+    },
+    {
+      "priority": 7,
+      "topic_id": "operational-debugging-and-recovery",
+      "title": "Operational debugging and recovery",
+      "angle": "Emphasize tracing visible failures back to the broken assumption, from hardware issues to release and login mismatches.",
+      "target_reader": "developer",
+      "scores": {
+        "developer": 8.3,
+        "community": 6.5
+      },
+      "selection_rationale": "This is the right place for the incident-style posts because they share the same shape: a symptom, a bad assumption, and the path back to the actual fault. It is a useful fallback technical topic even though it is a little less polished than the top clusters.",
+      "tweet_ids": [
+        "2030448915338998086",
+        "2034970904770617369",
+        "2037009212463866177",
+        "2039547827383398500"
+      ],
+      "sources": [
+        {
+          "tweet_id": "2030448915338998086",
+          "pubDate": "2026-03-08",
+          "file": "blog/src/content/blog/20260412-022-execution-mindset.md",
+          "title": "3D 프린터 이틀을 삽질했었다. USART연결은 계속 신호가 깨지고, USB도 잡히질 않아서 고통스러웠다. 혹시나 했는데 역시 보...",
+          "excerpt": "### 1 3D 프린터 이틀을 삽질했었다. USART연결은 계속 신호가 깨지고, USB도 잡히질 않아서 고통스러웠다. 혹시나 했는데 역시 보드가 고장났었다.. 알리서 새 보드 주문해서 교체후 드디어 연결 성공 아.. 너무 고통스러웠다. 이제... 셋팅값 하나씩 다시 잡아보자..ㅠ  [media]  [media]  ### "
+        },
+        {
+          "tweet_id": "2034970904770617369",
+          "pubDate": "2026-03-20",
+          "file": "blog/src/content/blog/20260412-038-backend-architecture.md",
+          "title": "이 회사 입사할때 요청받은게 로그인 같은 기본적인 것들 잘 되게 해달라였는데 아직도 실패하고 있다. 죽을 것 같군. 로그인 로직이...",
+          "excerpt": "### 1 이 회사 입사할때 요청받은게 로그인 같은 기본적인 것들 잘 되게 해달라였는데 아직도 실패하고 있다. 죽을 것 같군. 로그인 로직이 다섯군데 정도 있고 로그인을 해내는(?) 서버가 두세개.. 멀티리전.. 여기저기 박혀있는 직관과 다르게 동작하는 코드들, 프론트에서 생기는 레이스 컨디션들..  ### 2 차세대 프"
+        },
+        {
+          "tweet_id": "2037009212463866177",
+          "pubDate": "2026-03-26",
+          "file": "blog/src/content/blog/20260412-045-execution-mindset.md",
+          "title": "다다음 배포때 없애기로 한 기능이 다음 배포에는 피쳐 개선이 기획으로 들어가서 QA가 시작되었고 기획대로 개발이 안되었다는 QA이...",
+          "excerpt": "다다음 배포때 없애기로 한 기능이 다음 배포에는 피쳐 개선이 기획으로 들어가서 QA가 시작되었고 기획대로 개발이 안되었다는 QA이슈가 두세개 생겼고 고치는 작업을 하고 있다. 이거 하지 말자고 입술을 달싹이려다 디테일에 너무 관여하지 않는게 덕목이라는 글이 뒷덜미를 잡는다. 어렵다."
+        },
+        {
+          "tweet_id": "2039547827383398500",
+          "pubDate": "2026-04-02",
+          "file": "blog/src/content/blog/20260412-055-code-quality-review.md",
+          "title": "어제 배포한 코드에서 응답의 형태가 달라져서 장애가 하나 났고, 테스트 다 했는데 무슨일일까요? 했더니 테스트코드에 폴백이 있었다...",
+          "excerpt": "어제 배포한 코드에서 응답의 형태가 달라져서 장애가 하나 났고, 테스트 다 했는데 무슨일일까요? 했더니 테스트코드에 폴백이 있었다고🤦‍♂️"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-04-12T11:20:00+09:00",
+  "selection_method": "parallel_codex_agents_har_review",
+  "source_corpus": ".tmp/recent_har_corpus.json",
+  "source_har": "data/x_recent.har",
+  "topic_count": 7,
+  "selected_tweet_count": 43
+}

@@ -17,7 +17,7 @@ const rightPosts = posts.filter((_, idx) => idx % 2 === 1);
 <!doctype html>
 <html lang="ko">
 	<head>
-		<BaseHead title={`${SITE_TITLE} | Blog`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${SITE_TITLE} | Notes`} description={SITE_DESCRIPTION} />
 		<style>
 			.intro {
 				display: flex;
@@ -116,10 +116,10 @@ const rightPosts = posts.filter((_, idx) => idx % 2 === 1);
 		<main>
 			<section class="intro">
 				<div>
-					<h1>Blog</h1>
-					<p>실무에서 맞닥뜨린 문제를 분석하고 의사결정 근거를 남긴 기록</p>
+					<h1>Notes</h1>
+					<p>X에 남긴 실무 판단 중 다시 볼 만한 것만 선별한 기록</p>
 				</div>
-				<p>{posts.length} posts</p>
+				<p>{posts.length} notes</p>
 			</section>
 			<div class="masonry">
 				<ul class="column">

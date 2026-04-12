@@ -1,8 +1,9 @@
 # Repository Guidelines
 
 ## Project Goal
-- Turn high-signal past X/Twitter posts into blog articles that improve career visibility during job transitions.
+- Preserve high-signal X/Twitter posts as curated engineering notes that improve career visibility during job transitions.
 - Prioritize real engineering decisions, tradeoffs, and outcomes over generic commentary.
+- Keep the author's original short-form voice. Do not expand notes into generic long-form essays by default.
 
 ## Project Structure & Module Organization
 - `src/twi2blog/`: Python converter package (`cli.py`, `convert.py`).
@@ -30,10 +31,10 @@
 
 ## Content Voice & AI Usage
 - Base tone on recent X posts: concise, practical, first-person, and specific.
-- Use AI for outlining/editing only; final copy must read as personal writing.
+- Use AI for curation, grouping, tagging, and light cleanup. Do not ask AI to pad tweets into polished essays unless explicitly requested.
 - Avoid generic AI phrasing (for example, “In today’s fast-paced world”).
-- Expand tweet ideas with structure: `problem -> decision -> execution -> result -> takeaway`.
-- Target roughly 600-1200 words per post unless intentionally brief.
+- Preserve the tweet's original judgment, rhythm, and rough edges when they carry signal.
+- Prefer short note posts sourced from selected tweets. Longer synthesis posts should be rare and manually reviewed.
 
 ## Testing Guidelines
 - CI runs `twi2blog` smoke conversion and `blog` production build on PR/push.

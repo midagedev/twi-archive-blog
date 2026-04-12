@@ -11,6 +11,7 @@ drafts/
 
 data/tweets.js
 twitter-*.zip
+*.har
 blog/node_modules/
 blog/dist/
 blog/.astro/
