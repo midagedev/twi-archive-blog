@@ -87,6 +87,12 @@ def _excerpt(text: str, limit: int) -> str:
     return f"{cleaned[:limit].rstrip()}..."
 
 
+def _meaningful_text_length(text: str) -> int:
+    text = re.sub(r"https?://\S+", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return len(text)
+
+
 def _yaml_string(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
@@ -523,6 +529,20 @@ def build_post_groups(tweets: list[Tweet]) -> list[list[Tweet]]:
     return groups
 
 
+def filter_short_standalone_groups(groups: list[list[Tweet]], min_text_chars: int) -> tuple[list[list[Tweet]], int]:
+    if min_text_chars <= 0:
+        return groups, 0
+
+    selected: list[list[Tweet]] = []
+    skipped = 0
+    for group in groups:
+        if len(group) == 1 and _meaningful_text_length(group[0].text) < min_text_chars:
+            skipped += 1
+            continue
+        selected.append(group)
+    return selected, skipped
+
+
 def _next_file_index(output_dir: Path, date_prefix: str) -> int:
     highest = 0
     pattern = re.compile(rf"^{re.escape(date_prefix)}-(\d{{3}})-")
@@ -615,6 +635,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--include-replies", action="store_true", help="Include replies to other accounts")
     parser.add_argument("--min-likes", type=int, default=0, help="Minimum likes for standalone import")
     parser.add_argument("--min-retweets", type=int, default=0, help="Minimum retweets for standalone import")
+    parser.add_argument(
+        "--min-text-chars",
+        type=int,
+        default=100,
+        help="Minimum normalized text length for standalone post groups. Use 0 to keep short one-off tweets.",
+    )
     parser.add_argument("--limit", type=int, default=0, help="Maximum post groups to write after filtering")
     parser.add_argument("--dry-run", action="store_true", help="Print what would be written without creating files")
     return parser.parse_args()
@@ -638,6 +664,7 @@ def main() -> int:
         min_retweets=args.min_retweets,
     )
     groups = build_post_groups(selected_tweets)
+    groups, short_group_count = filter_short_standalone_groups(groups, args.min_text_chars)
     if args.limit > 0:
         groups = groups[: args.limit]
 
@@ -649,6 +676,7 @@ def main() -> int:
     print(f"existing_tweet_ids={len(existing_ids)}")
     print(f"since_date={since_date.isoformat() if since_date else 'none'}")
     print(f"selected_tweets={len(selected_tweets)}")
+    print(f"short_standalone_skipped={short_group_count}")
     print(f"post_groups={len(groups)}")
     print(f"dry_run={args.dry_run}")
     for path, group in zip(paths, groups):

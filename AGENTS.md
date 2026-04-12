@@ -4,6 +4,7 @@
 - Preserve high-signal X/Twitter posts as curated engineering notes that improve career visibility during job transitions.
 - Prioritize real engineering decisions, tradeoffs, and outcomes over generic commentary.
 - Keep the author's original short-form voice. Do not expand notes into generic long-form essays by default.
+- Exclude very short standalone tweets by default; one-line notes need a clear reason to be published.
 
 ## Project Structure & Module Organization
 - `src/twi2blog/`: Python converter package (`cli.py`, `convert.py`).

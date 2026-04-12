@@ -67,9 +67,11 @@ npm run build
 
 기본 동작은 `blog/src/content/blog`의 최신 `pubDate` 이후 글만 가져오고, 이미 존재하는 `originalTweetUrl`의 tweet id는 건너뜁니다. 날짜 기준을 직접 지정하려면 `--since-date 2026-02-20`, 전체를 다시 훑으려면 `--since-date none`을 사용합니다.
 
+단독 트윗은 기본적으로 URL을 제외한 본문이 100자 미만이면 건너뜁니다. 너무 짧은 한 줄 메모가 블로그 목록에 섞이지 않도록 하기 위한 발행 기준입니다. 예외적으로 모두 가져와 검토하려면 `--min-text-chars 0`을 사용합니다.
+
 `localize_tweet_media.py`는 Markdown 안의 `pbs.twimg.com` 이미지를 `blog/public/twitter-media`에 내려받고 `/twitter-media/...` 경로로 바꿉니다. X CDN 핫링크가 브라우저에서 깨지는 것을 막기 위한 단계입니다.
 
-가져온 뒤에는 병렬 selector/merger 리뷰로 발행 대상을 줄입니다. 2026-04-12 수집분은 `docs/recent_agent_shortlist_20260412.json`과 `docs/recent_agent_shortlist_20260412.md`를 기준으로 71개 중 43개만 남겼습니다.
+가져온 뒤에는 병렬 selector/merger 리뷰로 발행 대상을 줄입니다. 2026-04-12 수집분은 `docs/recent_agent_shortlist_20260412.json`과 `docs/recent_agent_shortlist_20260412.md`를 기준으로 71개 중 43개를 1차로 남겼고, 이후 100자 미만 단독 트윗을 제외해 31개를 발행했습니다.
 
 ## 4. Markdown frontmatter 규칙
 

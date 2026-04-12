@@ -86,6 +86,12 @@ def _normalize_title(text: str, fallback: str) -> str:
     return cleaned
 
 
+def _meaningful_text_length(text: str) -> int:
+    cleaned = re.sub(r"https?://\S+", "", text)
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return len(cleaned)
+
+
 def _safe_slug(text: str) -> str:
     text = text.lower().strip()
     text = re.sub(r"[^a-z0-9\s-]", "", text)
@@ -207,12 +213,14 @@ def export_markdown(
     output_dir: Path,
     min_likes: int,
     min_retweets: int,
+    min_text_chars: int = 100,
 ) -> Dict[str, int]:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     written = 0
     thread_count = 0
     single_count = 0
+    short_single_count = 0
 
     used_ids = set()
     threads = _build_threads(tweets)
@@ -239,6 +247,9 @@ def export_markdown(
             and not tweet.has_media
         ):
             continue
+        if min_text_chars > 0 and _meaningful_text_length(tweet.full_text) < min_text_chars:
+            short_single_count += 1
+            continue
 
         title = _normalize_title(tweet.full_text, "Twitter Post")
         slug = _safe_slug(title)
@@ -253,4 +264,5 @@ def export_markdown(
         "written": written,
         "threads": thread_count,
         "singles": single_count,
+        "short_singles_skipped": short_single_count,
     }

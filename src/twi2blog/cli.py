@@ -35,6 +35,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=5,
         help="Include standalone tweets when retweets >= this threshold (default: 5)",
     )
+    parser.add_argument(
+        "--min-text-chars",
+        type=int,
+        default=100,
+        help="Skip standalone tweets shorter than this after URL cleanup (default: 100, use 0 to keep all)",
+    )
     return parser
 
 
@@ -51,6 +57,7 @@ def main() -> int:
         output_dir=args.out,
         min_likes=args.min_likes,
         min_retweets=args.min_retweets,
+        min_text_chars=args.min_text_chars,
     )
 
     print(

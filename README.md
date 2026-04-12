@@ -50,6 +50,8 @@ python3 scripts/import_x_har.py \
 
 dry-run 결과를 확인한 뒤 실제 Markdown을 생성하고, 병렬 에이전트 선별 결과는 `docs/recent_agent_shortlist_YYYYMMDD.*`로 남깁니다.
 
+단독 트윗은 기본적으로 URL을 제외한 본문이 100자 이상일 때만 가져옵니다. 아주 짧은 한 줄 메모까지 보존해야 하는 경우에만 `--min-text-chars 0`을 사용합니다.
+
 X 미디어는 외부 핫링크가 깨질 수 있으므로 발행 전 로컬 asset으로 복사합니다.
 
 ```bash
