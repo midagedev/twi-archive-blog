@@ -41,6 +41,7 @@ twi2blog \
 cd /Users/hckim/Documents/twi
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20 --dry-run
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
+python3 scripts/localize_tweet_media.py
 ```
 
 ## 3. 로컬 미리보기/빌드

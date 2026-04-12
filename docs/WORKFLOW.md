@@ -60,11 +60,14 @@ python3 scripts/import_x_har.py --har data/x_recent.har --dry-run
 
 ```bash
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
+python3 scripts/localize_tweet_media.py
 cd blog
 npm run build
 ```
 
 기본 동작은 `blog/src/content/blog`의 최신 `pubDate` 이후 글만 가져오고, 이미 존재하는 `originalTweetUrl`의 tweet id는 건너뜁니다. 날짜 기준을 직접 지정하려면 `--since-date 2026-02-20`, 전체를 다시 훑으려면 `--since-date none`을 사용합니다.
+
+`localize_tweet_media.py`는 Markdown 안의 `pbs.twimg.com` 이미지를 `blog/public/twitter-media`에 내려받고 `/twitter-media/...` 경로로 바꿉니다. X CDN 핫링크가 브라우저에서 깨지는 것을 막기 위한 단계입니다.
 
 가져온 뒤에는 병렬 selector/merger 리뷰로 발행 대상을 줄입니다. 2026-04-12 수집분은 `docs/recent_agent_shortlist_20260412.json`과 `docs/recent_agent_shortlist_20260412.md`를 기준으로 71개 중 43개만 남겼습니다.
 
@@ -88,6 +91,7 @@ tags:
 - 변환기 로직: `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
 - 에이전트 선별 기반 생성 스크립트: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
 - 최근 X HAR 가져오기 스크립트: `/Users/hckim/Documents/twi/scripts/import_x_har.py`
+- X 미디어 로컬 복사 스크립트: `/Users/hckim/Documents/twi/scripts/localize_tweet_media.py`
 - 에이전트 선별 결과 ID 목록: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
 - 후보 리포트(JSON/MD): `/Users/hckim/Documents/twi/docs/topic_candidates.json`, `/Users/hckim/Documents/twi/docs/topic_candidates.md`
 - 최근 HAR 선별 결과(JSON/MD): `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.md`

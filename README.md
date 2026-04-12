@@ -50,6 +50,12 @@ python3 scripts/import_x_har.py \
 
 dry-run 결과를 확인한 뒤 실제 Markdown을 생성하고, 병렬 에이전트 선별 결과는 `docs/recent_agent_shortlist_YYYYMMDD.*`로 남깁니다.
 
+X 미디어는 외부 핫링크가 깨질 수 있으므로 발행 전 로컬 asset으로 복사합니다.
+
+```bash
+python3 scripts/localize_tweet_media.py
+```
+
 ## 로컬 검증
 
 ```bash
@@ -74,6 +80,7 @@ SITE_URL=https://blog.midagedev.com npm run build
 
 - 에이전트 파이프라인: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
 - 최근 HAR 가져오기: `/Users/hckim/Documents/twi/scripts/import_x_har.py`
+- X 미디어 로컬 복사: `/Users/hckim/Documents/twi/scripts/localize_tweet_media.py`
 - 수동 선별 ID: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
 - 후보 결과: `/Users/hckim/Documents/twi/docs/topic_candidates.json`
 - 최근 선별 결과: `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`

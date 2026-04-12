@@ -4,7 +4,7 @@ description: "6개월 전이네, 지금은 이제 자바로 왔지만 여전히 
 pubDate: 2026-02-24
 source: twitter
 originalTweetUrl: "https://x.com/i/web/status/2026180393335164946"
-thumbnail: "https://pbs.twimg.com/tweet_video_thumb/HB9WH0Ka0AAvcSC.jpg"
+thumbnail: "/twitter-media/0dcab86d82-tweet_video_thumb-HB9WH0Ka0AAvcSC.jpg"
 tags:
   - code-quality
   - review
@@ -23,9 +23,9 @@ https://github.com/midagedev/jongodb
 ### 3
 kotlin으로 짠다음에 kongodb로 지을껄 하는 생각을 멈출수가 없네
 
-<p class="tweet-image-row"><img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/HB9WH0Ka0AAvcSC.jpg" alt="tweet image" /></p>
+<p class="tweet-image-row"><img class="tweet-image-inline" src="/twitter-media/0dcab86d82-tweet_video_thumb-HB9WH0Ka0AAvcSC.jpg" alt="tweet image" /></p>
 
 ### 4
 node버전은 nongodb로 만들껄
 
-<p class="tweet-image-row"><img class="tweet-image-inline" src="https://pbs.twimg.com/tweet_video_thumb/HB9WUJlaMAIAOeh.jpg" alt="tweet image" /></p>
+<p class="tweet-image-row"><img class="tweet-image-inline" src="/twitter-media/0bda2afe26-tweet_video_thumb-HB9WUJlaMAIAOeh.jpg" alt="tweet image" /></p>
