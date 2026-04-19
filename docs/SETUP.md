@@ -42,6 +42,7 @@ cd /Users/hckim/Documents/twi
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20 --dry-run
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
 python3 scripts/localize_tweet_media.py
+python3 scripts/build_related_notes.py
 ```
 
 `import_x_har.py`는 기본적으로 URL을 제외한 본문이 100자 미만인 단독 트윗을 건너뜁니다. 아주 짧은 글까지 임시로 가져오려면 `--min-text-chars 0`을 붙입니다.

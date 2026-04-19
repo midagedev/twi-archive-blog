@@ -6,7 +6,18 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type RelatedPost = {
+	title: string;
+	description: string;
+	pubDate: Date;
+	url: string;
+	tags: string[];
+	reasons: string[];
+};
+
+type Props = CollectionEntry<'blog'>['data'] & {
+	relatedPosts?: RelatedPost[];
+};
 
 const {
 	title,
@@ -18,6 +29,7 @@ const {
 	originalTweetUrl,
 	source = 'note',
 	tags = [],
+	relatedPosts = [],
 } = Astro.props;
 
 const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://twitter.com/');
@@ -114,6 +126,52 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 				font-size: 0.86rem;
 				color: rgb(var(--ink-dim));
 			}
+			.related-notes {
+				margin-top: 0.9rem;
+			}
+			.related-notes h2 {
+				margin: 0 0 0.55rem;
+				font-size: 1rem;
+			}
+			.related-list {
+				display: grid;
+				gap: 0.65rem;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.related-link {
+				display: grid;
+				gap: 0.35rem;
+				padding: 0.85rem;
+				border: 1px solid rgba(var(--line), 0.82);
+				border-radius: 8px;
+				background: rgba(var(--surface), 0.72);
+				text-decoration: none;
+				transition: transform 140ms ease, border-color 140ms ease;
+			}
+			.related-link:hover {
+				transform: translateY(-1px);
+				border-color: rgba(var(--line), 1);
+			}
+			.related-meta {
+				display: flex;
+				gap: 0.45rem;
+				flex-wrap: wrap;
+				font-size: 0.78rem;
+				color: rgb(var(--ink-dim));
+			}
+			.related-title {
+				margin: 0;
+				font-size: 0.98rem;
+				line-height: 1.3;
+				color: rgb(var(--ink));
+			}
+			.related-description,
+			.related-reason {
+				margin: 0;
+				font-size: 0.88rem;
+			}
 		</style>
 	</head>
 
@@ -160,6 +218,32 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 						)
 					}
 				</div>
+				{
+					relatedPosts.length > 0 && (
+						<section class="related-notes" aria-labelledby="related-notes-title">
+							<h2 id="related-notes-title">관련 노트</h2>
+							<ul class="related-list">
+								{relatedPosts.map((post) => (
+									<li>
+										<a class="related-link" href={post.url}>
+											<p class="related-meta">
+												<span><FormattedDate date={post.pubDate} /></span>
+												{post.tags.slice(0, 3).map((tag) => (
+													<span>#{tag}</span>
+												))}
+											</p>
+											<h3 class="related-title">{post.title}</h3>
+											<p class="related-description">{post.description}</p>
+											{post.reasons.length > 0 && (
+												<p class="related-reason">{post.reasons[0]}</p>
+											)}
+										</a>
+									</li>
+								))}
+							</ul>
+						</section>
+					)
+				}
 			</article>
 		</main>
 		<Footer />

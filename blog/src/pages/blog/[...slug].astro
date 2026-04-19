@@ -1,21 +1,59 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
+import relatedNotes from '../../data/related-notes.json';
 import BlogPost from '../../layouts/BlogPost.astro';
-import { getPostSlug } from '../../utils/postSlug';
+import { getPostSlug, getPostUrl } from '../../utils/postSlug';
+
+type BlogPostEntry = CollectionEntry<'blog'>;
+type RelatedPost = {
+	title: string;
+	description: string;
+	pubDate: Date;
+	url: string;
+	tags: string[];
+	reasons: string[];
+};
+type RelatedNotesFile = {
+	relations: Record<string, { slug: string; reasons: string[] }[]>;
+};
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
+	const postsBySlug = new Map(posts.map((post) => [getPostSlug(post), post]));
+	const relationMap = (relatedNotes as RelatedNotesFile).relations;
+
 	return posts.map((post) => ({
 		params: { slug: getPostSlug(post) },
-		props: post,
+		props: {
+			post,
+			relatedPosts: (relationMap[getPostSlug(post)] ?? []).flatMap((row) => {
+				const relatedPost = postsBySlug.get(row.slug);
+				if (!relatedPost) {
+					return [];
+				}
+				return [
+					{
+						title: relatedPost.data.title,
+						description: relatedPost.data.description,
+						pubDate: relatedPost.data.pubDate,
+						url: getPostUrl(relatedPost),
+						tags: relatedPost.data.tags,
+						reasons: row.reasons,
+					},
+				];
+			}),
+		},
 	}));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = {
+	post: BlogPostEntry;
+	relatedPosts: RelatedPost[];
+};
 
-const post = Astro.props;
+const { post, relatedPosts } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} relatedPosts={relatedPosts}>
 	<Content />
 </BlogPost>
