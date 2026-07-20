@@ -40,7 +40,7 @@ twi2blog \
 ```bash
 cd /Users/hckim/Documents/twi
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20 --dry-run
-python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
+python3 scripts/import_x_har.py --har data/x_recent.har --selection-json docs/recent_agent_shortlist_YYYYMMDD.json
 python3 scripts/localize_tweet_media.py
 python3 scripts/build_related_notes.py
 ```

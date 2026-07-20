@@ -46,9 +46,13 @@ python3 scripts/import_x_har.py \
   --har data/x_recent.har \
   --since-date 2026-02-20 \
   --dry-run
+
+python3 scripts/import_x_har.py \
+  --har data/x_recent.har \
+  --selection-json docs/recent_agent_shortlist_YYYYMMDD.json
 ```
 
-dry-run 결과를 확인한 뒤 실제 Markdown을 생성하고, 병렬 에이전트 선별 결과는 `docs/recent_agent_shortlist_YYYYMMDD.*`로 남깁니다.
+dry-run 결과를 확인한 뒤 실제 Markdown을 생성합니다. 병렬 에이전트나 수동 큐레이션으로 남긴 shortlist는 `docs/recent_agent_shortlist_YYYYMMDD.*`로 보관하고, 실제 생성 시에는 `--selection-json`으로 그 파일을 다시 넘깁니다.
 
 단독 트윗은 기본적으로 URL을 제외한 본문이 100자 이상일 때만 가져옵니다. 아주 짧은 한 줄 메모까지 보존해야 하는 경우에만 `--min-text-chars 0`을 사용합니다.
 
@@ -92,5 +96,5 @@ SITE_URL=https://blog.midagedev.com npm run build
 - 관련 노트 관계도 갱신: `/Users/hckim/Documents/twi/scripts/build_related_notes.py`
 - 수동 선별 ID: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
 - 후보 결과: `/Users/hckim/Documents/twi/docs/topic_candidates.json`
-- 최근 선별 결과: `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`
+- 최근 선별 결과: `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.json`
 - 블로그 콘텐츠: `/Users/hckim/Documents/twi/blog/src/content/blog`

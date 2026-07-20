@@ -464,6 +464,26 @@ def resolve_since_date(value: str, content_dir: Path) -> date | None:
     return date.fromisoformat(value)
 
 
+def load_selected_tweet_ids(selection_path: Path) -> set[str]:
+    payload = json.loads(selection_path.read_text(encoding="utf-8"))
+    if isinstance(payload, dict):
+        rows = payload.get("selected") or payload.get("items") or payload.get("tweet_ids") or []
+    elif isinstance(payload, list):
+        rows = payload
+    else:
+        rows = []
+
+    selected_ids: set[str] = set()
+    for row in rows:
+        if isinstance(row, dict):
+            tweet_id = str(row.get("id") or row.get("tweet_id") or "").strip()
+        else:
+            tweet_id = str(row).strip()
+        if tweet_id:
+            selected_ids.add(tweet_id)
+    return selected_ids
+
+
 def select_new_tweets(
     tweets: list[Tweet],
     *,
@@ -541,6 +561,26 @@ def filter_short_standalone_groups(groups: list[list[Tweet]], min_text_chars: in
             continue
         selected.append(group)
     return selected, skipped
+
+
+def filter_groups_by_selection(groups: list[list[Tweet]], selected_ids: set[str]) -> tuple[list[list[Tweet]], int, set[str]]:
+    if not selected_ids:
+        return groups, 0, set()
+
+    selected_groups: list[list[Tweet]] = []
+    matched_ids: set[str] = set()
+    skipped = 0
+
+    for group in groups:
+        group_ids = {tweet.id for tweet in group}
+        matched = group_ids & selected_ids
+        if matched:
+            selected_groups.append(group)
+            matched_ids.update(matched)
+            continue
+        skipped += 1
+
+    return selected_groups, skipped, matched_ids
 
 
 def _next_file_index(output_dir: Path, date_prefix: str) -> int:
@@ -626,6 +666,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("docs/topic_candidates.json"),
         help="Existing candidate JSON with tweet_ids to skip",
     )
+    parser.add_argument(
+        "--selection-json",
+        type=Path,
+        default=None,
+        help="Optional JSON shortlist of tweet ids to keep after normal date/duplicate filtering",
+    )
     parser.add_argument("--handle", default="midagedev", help="X/Twitter handle to import, with or without @")
     parser.add_argument(
         "--since-date",
@@ -650,9 +696,12 @@ def main() -> int:
     args = parse_args()
     if not args.har.exists():
         raise FileNotFoundError(f"HAR path not found: {args.har}")
+    if args.selection_json and not args.selection_json.exists():
+        raise FileNotFoundError(f"Selection JSON path not found: {args.selection_json}")
 
     since_date = resolve_since_date(args.since_date, args.out_dir)
     existing_ids = collect_existing_tweet_ids(args.out_dir, args.existing_candidate_json)
+    selected_ids = load_selected_tweet_ids(args.selection_json) if args.selection_json else set()
     tweets, entry_count, json_payload_count = load_tweets_from_har(args.har)
     selected_tweets = select_new_tweets(
         tweets,
@@ -665,6 +714,11 @@ def main() -> int:
     )
     groups = build_post_groups(selected_tweets)
     groups, short_group_count = filter_short_standalone_groups(groups, args.min_text_chars)
+    selection_group_count = 0
+    unmatched_selection_ids = 0
+    if selected_ids:
+        groups, selection_group_count, matched_ids = filter_groups_by_selection(groups, selected_ids)
+        unmatched_selection_ids = len(selected_ids - matched_ids)
     if args.limit > 0:
         groups = groups[: args.limit]
 
@@ -677,6 +731,10 @@ def main() -> int:
     print(f"since_date={since_date.isoformat() if since_date else 'none'}")
     print(f"selected_tweets={len(selected_tweets)}")
     print(f"short_standalone_skipped={short_group_count}")
+    if selected_ids:
+        print(f"selection_ids_loaded={len(selected_ids)}")
+        print(f"selection_groups_skipped={selection_group_count}")
+        print(f"selection_ids_unmatched={unmatched_selection_ids}")
     print(f"post_groups={len(groups)}")
     print(f"dry_run={args.dry_run}")
     for path, group in zip(paths, groups):

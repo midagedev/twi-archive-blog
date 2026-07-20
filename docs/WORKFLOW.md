@@ -56,10 +56,12 @@ cd /Users/hckim/Documents/twi
 python3 scripts/import_x_har.py --har data/x_recent.har --dry-run
 ```
 
-6. 결과가 맞으면 Markdown 생성
+6. shortlist를 정리한 뒤 Markdown 생성
 
 ```bash
-python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20
+python3 scripts/import_x_har.py \
+  --har data/x_recent.har \
+  --selection-json docs/recent_agent_shortlist_YYYYMMDD.json
 python3 scripts/localize_tweet_media.py
 python3 scripts/build_related_notes.py
 cd blog
@@ -74,7 +76,7 @@ npm run build
 
 `build_related_notes.py`는 전체 Markdown을 훑어 태그, 제목/본문 단서, 작성일 근접도를 기준으로 관련 노트 관계도를 `blog/src/data/related-notes.json`에 저장합니다. 상세 페이지의 관련 노트는 이 파일을 기준으로 렌더링합니다.
 
-가져온 뒤에는 병렬 selector/merger 리뷰로 발행 대상을 줄입니다. 2026-04-12 수집분은 `docs/recent_agent_shortlist_20260412.json`과 `docs/recent_agent_shortlist_20260412.md`를 기준으로 71개 중 43개를 1차로 남겼고, 이후 100자 미만 단독 트윗을 제외해 31개를 발행했습니다.
+가져온 뒤에는 병렬 selector/merger 리뷰나 수동 큐레이션으로 발행 대상을 줄입니다. 2026-04-12 수집분은 `docs/recent_agent_shortlist_20260412.json`과 `docs/recent_agent_shortlist_20260412.md`를 기준으로 71개 중 43개를 1차로 남겼고, 이후 100자 미만 단독 트윗을 제외해 31개를 발행했습니다. 2026-07-20 수집분은 `docs/recent_agent_shortlist_20260720.json`과 `docs/recent_agent_shortlist_20260720.md`를 기준으로 81개 중 36개를 발행했습니다.
 
 ## 4. Markdown frontmatter 규칙
 
@@ -100,7 +102,7 @@ tags:
 - 관련 노트 관계도 스크립트: `/Users/hckim/Documents/twi/scripts/build_related_notes.py`
 - 에이전트 선별 결과 ID 목록: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
 - 후보 리포트(JSON/MD): `/Users/hckim/Documents/twi/docs/topic_candidates.json`, `/Users/hckim/Documents/twi/docs/topic_candidates.md`
-- 최근 HAR 선별 결과(JSON/MD): `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.md`
+- 최근 HAR 선별 결과(JSON/MD): `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.md`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.md`
 - Astro 전역 스타일: `/Users/hckim/Documents/twi/blog/src/styles/global.css`
 - 헤더: `/Users/hckim/Documents/twi/blog/src/components/Header.astro`
 - 메타 태그: `/Users/hckim/Documents/twi/blog/src/components/BaseHead.astro`

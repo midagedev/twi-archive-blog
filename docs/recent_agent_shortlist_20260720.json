@@ -1,0 +1,333 @@
+{
+  "generated_at": "2026-07-20T13:09:54+00:00",
+  "selection_method": "codex_recent_har_manual_curation",
+  "source_har": "/Users/hckim/Downloads/x.com.har",
+  "candidate_group_count": 81,
+  "selected_count": 36,
+  "selected": [
+    {
+      "id": "2045090621019619434",
+      "pubDate": "2026-04-17",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 1,
+      "title_excerpt": "덕분에 기록 세웠다. 장기작업 두려움이 많았는데 리뷰 단계를 강화하고 피드백을 받아 보완을 핑퐁하도록 구성하니 작업이 진행될수록...",
+      "reason": "리뷰 루프를 강화했을 때 장기 작업의 코드 상태가 좋아지는 경험이 구체적이다."
+    },
+    {
+      "id": "2046008816798781568",
+      "pubDate": "2026-04-19",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "와… 이 정도 되면 결국 좋은 코드의 기준이 정말 새 시대를 맞이했다고 볼 수 있겠네. 반년전만해도 인간에게 좋은 코드가 에이전트...",
+      "reason": "에이전트 시대에 좋은 코드 기준이 어떻게 이동하는지 짚는다."
+    },
+    {
+      "id": "2046812440613306689",
+      "pubDate": "2026-04-22",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 1,
+      "title_excerpt": "TIL, 코덱스에서 전체 권한으로 작업을 진행하더라도 하트비트는 무조건 샌드박스로 돌아가므로 pr을 확인해라 머지해라 이런류의 동...",
+      "reason": "하트비트 샌드박스 제약처럼 실제 자동화 운영 함정을 담고 있다."
+    },
+    {
+      "id": "2047113310395584854",
+      "pubDate": "2026-04-23",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "이걸 바랬던게 2년 전이구나. 지금 나의 욕망은 30인 규모의 개발팀이 필요한 곳에 30인 대신 나를 포함한 3인으로 클로드맥스...",
+      "reason": "소수 인원과 다수 에이전트로 팀을 재구성하는 상상이 구체적이다."
+    },
+    {
+      "id": "2047147546653651109",
+      "pubDate": "2026-04-23",
+      "topic_id": "career-job-transition",
+      "topic_label": "커리어/이직 인사이트",
+      "tweet_count": 1,
+      "title_excerpt": "오랜만에 팀장님 드릴말씀이 있습니다가 있었다. 나랑 일한 기간이 이직에 도움이 많이 되었다는 이야기를 들어서 흡족했다. 퇴사하면...",
+      "reason": "이직 대비용 성과 기록을 무엇으로 남겨야 하는지 실전 팁이 선명하다."
+    },
+    {
+      "id": "2047286664075329864",
+      "pubDate": "2026-04-23",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 1,
+      "title_excerpt": "팝업창의 다시보지 않기 체크가 자꾸 풀린다는 QA이슈에 플래그를 쿠키에서 디비 유저 스키마의 필드로 바꾸고 갱신하는 전용 api를...",
+      "reason": "사소한 QA 이슈가 과도한 변경으로 번지는 리뷰 실패를 잘 보여준다."
+    },
+    {
+      "id": "2047451398246441136",
+      "pubDate": "2026-04-23",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 1,
+      "title_excerpt": "5.5.. 써보고 싶다고. 요 며칠 코덱스 클로드 주간리밋 3번어치를 몰아쓰며 벼르던 8개 앱 환경변수정리, api의 sdk화,...",
+      "reason": "환경변수 정리부터 격리 테스트까지 레포 건강을 끌어올린 작업이 구체적이다."
+    },
+    {
+      "id": "2048748048273256627",
+      "pubDate": "2026-04-27",
+      "topic_id": "career-job-transition",
+      "topic_label": "커리어/이직 인사이트",
+      "tweet_count": 3,
+      "title_excerpt": "인터뷰어에게 정말 어려운게 얼마나 유창하게 말하는가가 다른 요소를 다 씹어먹을 정도로 압도적인 인지오류를 만들어낸다는 것이다. 나...",
+      "reason": "면접에서 유창함 편향을 걷어내고 실제 기여를 캐묻는 기준이 좋다."
+    },
+    {
+      "id": "2049104869467054196",
+      "pubDate": "2026-04-28",
+      "topic_id": "frontend-web",
+      "topic_label": "프론트엔드/웹 개발",
+      "tweet_count": 1,
+      "title_excerpt": "typescript 7 넣고 있다. 프로덕션 빌드에 쓰긴 거시기 하고 요즘 닦고 조이고 있는 ci에서라도 이득을 보고자.. cpu...",
+      "reason": "TypeScript 7을 CI에만 먼저 넣어보는 보수적 도입 판단이 실무적이다."
+    },
+    {
+      "id": "2049121831425351685",
+      "pubDate": "2026-04-28",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 2,
+      "title_excerpt": "개인기기에서의 AI사용은 높은 확률로 OS의 드라이버와 같은 형태로 수렴될꺼라고 생각한다. 웹서비스든 네이티브앱이든 OS에서 제공...",
+      "reason": "개인기기 AI가 OS 드라이버처럼 수렴한다는 전망이 구체적이다."
+    },
+    {
+      "id": "2049136469051351437",
+      "pubDate": "2026-04-28",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "리버스 터널링은 진짜 짜릿하다. 일랙트론앱을 다양한 윈도우 사양에서 테스트 하기 위해 ec2를 여러개 띄운 후, 서버구성은 로컬에...",
+      "reason": "리버스 터널링으로 테스트 매트릭스를 만든 구성 자체가 엔지니어링 노트감이다."
+    },
+    {
+      "id": "2051282725009809889",
+      "pubDate": "2026-05-04",
+      "topic_id": "frontend-web",
+      "topic_label": "프론트엔드/웹 개발",
+      "tweet_count": 1,
+      "title_excerpt": "타임세일 같은거 할때마다 막 초당 수백명씩 장바구니담고 쿠폰 포인트 써가며 결제하고 그와중에 재고관리해가며 품절체크하는게 웹개발아...",
+      "reason": "트래픽 급증과 재고·결제를 동시에 다루는 웹개발 현실을 짚는다."
+    },
+    {
+      "id": "2052056886472806657",
+      "pubDate": "2026-05-06",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "데이터기반 의사결정관점에서는 이게 진짜 병목이었는가를 봐야한다. 제약이론상 핵심병목이 아닌 곳을 최적화 한다면 더 안좋은 결과가...",
+      "reason": "병목이 아닌 곳 최적화의 위험을 제약이론으로 짧게 잘 말한다."
+    },
+    {
+      "id": "2052357353903894847",
+      "pubDate": "2026-05-07",
+      "topic_id": "backend-architecture",
+      "topic_label": "백엔드/아키텍처",
+      "tweet_count": 2,
+      "title_excerpt": "회사가 폐업했으나 서비스가 서버째 인수되어서 계속 살아가기도 한다. 프리페어드스테이트먼트 같은거 없이 sql인젝션 빵빵 뚫리는 코...",
+      "reason": "엉망인 레거시도 고객이 놓지 않는 서비스라면 가치가 있다는 시선이 좋다."
+    },
+    {
+      "id": "2052693691459133814",
+      "pubDate": "2026-05-08",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "반대로 추상화는 잘 하는데 코드가 잘 안돌아가거나 고치기 개빡세게 만드는 경우가 흔해서 단순히 후자를 구하기 쉽다기 보다 둘 다...",
+      "reason": "추상화 능력과 동작하는 코드 능력을 분리해 보는 시각이 날카롭다."
+    },
+    {
+      "id": "2052712434331435192",
+      "pubDate": "2026-05-08",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "영역구분없이 개발하자고 열명 뭉쳐서 시키다가 8개월만에 이제 짝지어서 도메인 할당했다. 적당히 자기조직화 되었으니 그 금을 따라...",
+      "reason": "도메인 오너십 재배치와 역할 경계 설정의 트레이드오프가 드러난다."
+    },
+    {
+      "id": "2053486062329274540",
+      "pubDate": "2026-05-10",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 3,
+      "title_excerpt": "주말 프로젝트1 서비스의 Observability, 특히 datadog에 대해서 구성형태를 검증하는 테스트스윗을 만들기 쉽도록 도...",
+      "reason": "Observability와 결제 연동을 샌드박스 테스트 가능한 도구로 만든 사례다."
+    },
+    {
+      "id": "2054487192630964484",
+      "pubDate": "2026-05-13",
+      "topic_id": "debugging-incident",
+      "topic_label": "디버깅/장애 대응",
+      "tweet_count": 1,
+      "title_excerpt": "택시기사가 주행거리가 2만km마다 사고가 한번씩 난다고 1년에 10만km 운행할 수 있어도 5만km뛰어야 할까? 바이브코딩으로 장...",
+      "reason": "장애 비용과 출시 속도를 확률과 가치 관점으로 보는 균형이 좋다."
+    },
+    {
+      "id": "2054768411310469591",
+      "pubDate": "2026-05-14",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "팀원들이 html문서를 적극 활용하기 시작했다. 처음엔 굳이? 싶었는데 에이전트에게 먹이로 주는 용도가 아닌 에이전트가 하는 이야...",
+      "reason": "HTML 문서가 에이전트와 비개발자 커뮤니케이션 양쪽에 유효하다는 관찰이 좋다."
+    },
+    {
+      "id": "2057127640608514236",
+      "pubDate": "2026-05-20",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "프론트엔드에서 스토리북이란걸 처음 써보고 있다. 이런게 필요할 정도로 스펙이 많은 제품은 처음 만져보는거지. 동작하는 코드와 기획...",
+      "reason": "동작하는 코드와 기획 계약을 지키는 코드의 차이를 스토리북 맥락으로 짚는다."
+    },
+    {
+      "id": "2059223061052936441",
+      "pubDate": "2026-05-26",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "장기메모리니 컨텍스트 위키니 별 서커스를 다 해볼수록 인간 뇌에 대한 경외심만 늘어난다. 이런 게 사람마다 붙어있다고 🤯 오케스트...",
+      "reason": "장기메모리 서커스 끝에 컨텍스트와 인간 집중력의 병목을 정확히 말한다."
+    },
+    {
+      "id": "2059739682242752998",
+      "pubDate": "2026-05-27",
+      "topic_id": "career-job-transition",
+      "topic_label": "커리어/이직 인사이트",
+      "tweet_count": 3,
+      "title_excerpt": "오늘의 대오각성, 안정적인 서비스를 하려면 조직구조 개편에 대해 신중해야 한다. 아키텍쳐는 조직의 형태를 따라가게 되는데 조직이...",
+      "reason": "조직개편이 아키텍처 불안정으로 번지는 메커니즘이 구체적이다."
+    },
+    {
+      "id": "2061044647791902830",
+      "pubDate": "2026-05-31",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "클로드코드 다이나믹워크플로우 써보고 있다. 6배 비싼 fast모드와 아주 궁합이 잘맞겠구나 싶다. 약간 mythos가 버그 찾을때...",
+      "reason": "다이나믹 워크플로우를 버그 탐색 용도로 바라본 실사용 감각이 있다."
+    },
+    {
+      "id": "2061605067581739349",
+      "pubDate": "2026-06-02",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 3,
+      "title_excerpt": "깃헙셀프호스티드러너로 최근 두어달 온갖 실험을 해보고 있다. 모르던때에는 그냥 컨테이너안에서 도는거 아냐? 이랬는데 일종의 웹훅을...",
+      "reason": "셀프호스티드 러너의 가능성과 보안 리스크를 한 스레드에서 같이 다룬다."
+    },
+    {
+      "id": "2061609893346615478",
+      "pubDate": "2026-06-02",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "몇달전에 자체 컨텍스트 관리 시스템 만든다고 왕창 쏟아놓은 코드를 모두 지우고 백엔드는 Hermes로 위임하게 바꿨다. 애들용으로...",
+      "reason": "직접 만든 컨텍스트 시스템을 지우고 위임한 결정이 설계 판단으로 남길 만하다."
+    },
+    {
+      "id": "2062301831376904475",
+      "pubDate": "2026-06-03",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "클로드코드 울트라코드는 지금까지 내가 반복적으로 요청했던 것을 해소해줘서 아주 만족스럽다. 스킬을 만들어써도 잘 안되던거였음 “메...",
+      "reason": "서브에이전트와 병렬 작업을 통한 토큰 관리 패턴이 매우 구체적이다."
+    },
+    {
+      "id": "2070437195438338381",
+      "pubDate": "2026-06-26",
+      "topic_id": "career-job-transition",
+      "topic_label": "커리어/이직 인사이트",
+      "tweet_count": 1,
+      "title_excerpt": "공정한 채용이라는게 너무 당연하다고 생각했는데 나도 늙으니 평판과 추천에 따른 채용이 되려 너무 평가절하되었다고 생각하게 되었다....",
+      "reason": "추천·평판 채용을 무조건 불공정으로만 보지 않는 관점이 시장 감각을 담는다."
+    },
+    {
+      "id": "2071542884420190651",
+      "pubDate": "2026-06-29",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "에이전트가 일을 수월하게 하도록 테스트코드를 갖추는게 당연히 좋다고만 생각했는데, 얼마전에 들은 신박한 AI고문법도 은근 효과가...",
+      "reason": "테스트보다 먼저 코드 읽게 만드는 AI 고문법이 재미있고 실전적이다."
+    },
+    {
+      "id": "2072134576953319469",
+      "pubDate": "2026-07-01",
+      "topic_id": "frontend-web",
+      "topic_label": "프론트엔드/웹 개발",
+      "tweet_count": 1,
+      "title_excerpt": "요즘 간단히 게임을 만들어 보면서 느끼는건데 웹개발이었으면 진즉에 과도한 추상화 들어갔을 영역인데도 게임이라는 도메인 특성인지 g...",
+      "reason": "게임 도메인과 Go 특성이 UI 코드 구조에 미치는 영향을 잘 포착한다."
+    },
+    {
+      "id": "2072451470415495424",
+      "pubDate": "2026-07-01",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 1,
+      "title_excerpt": "회사에서는 컨플루언스 쓰는데 우리팀은 클로드 아티펙트 생기자마자 컨플루언스 잘 안쓰고 있다. 마크다운 쓰지 왜 굳이 HTML? 하...",
+      "reason": "Artifacts 등장 이후 HTML과 Markdown 읽기 경험이 어떻게 바뀌는지 실무 맥락이 있다."
+    },
+    {
+      "id": "2073977036839006232",
+      "pubDate": "2026-07-06",
+      "topic_id": "frontend-web",
+      "topic_label": "프론트엔드/웹 개발",
+      "tweet_count": 1,
+      "title_excerpt": "nextjs를 써보고 싶다는 이야기에 nextjs는 구리며 우리 서비스에 득보다 실이 많다고 신랄하게 이야기해버렸다. nextjs...",
+      "reason": "Next.js 채택을 일자리 신호와 분리해 보는 현실적인 스택 판단이다."
+    },
+    {
+      "id": "2074081675081077054",
+      "pubDate": "2026-07-06",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 1,
+      "title_excerpt": "나는 반대로 아직 사용자가 없어, 아직 배포된 코드가 아니야 라는 말을 많이 쓰는 편이다. 그렇지 않으면 기껏 자기가 한시간전에...",
+      "reason": "사용자 없는 코드엔 무자비한 리팩터링이 낫다는 운영 원칙이 분명하다."
+    },
+    {
+      "id": "2074486458677907567",
+      "pubDate": "2026-07-07",
+      "topic_id": "code-quality-review",
+      "topic_label": "코드 품질/리뷰",
+      "tweet_count": 1,
+      "title_excerpt": "회사 맥에서 가끔씩 열어보던 vscode까지 지웠다. 이젠 정말 ide를 전혀 안쓰고 오직 claude code만 쓴다. 예전엔...",
+      "reason": "IDE 없이 에이전트 중심 작업환경으로 이동한 실제 워크플로우 기록이다."
+    },
+    {
+      "id": "2076297650903871763",
+      "pubDate": "2026-07-12",
+      "topic_id": "execution-mindset",
+      "topic_label": "실행력/의사결정",
+      "tweet_count": 2,
+      "title_excerpt": "현장엔지니어야 말로 한국IT의 많은 자금흐름을 담당하고 있었다. 90%가 충족되는 많은 외산솔루션이나 오픈소스가 있음에도 10%때...",
+      "reason": "현장 엔지니어링과 커스텀 수요가 한국 IT 비용 구조를 만든다는 시각이 흥미롭다."
+    },
+    {
+      "id": "2076818348961362219",
+      "pubDate": "2026-07-13",
+      "topic_id": "ai-agent-automation",
+      "topic_label": "AI 에이전트/자동화 실전",
+      "tweet_count": 2,
+      "title_excerpt": "이걸 끝으로 코덱스 안녕.. 5개월간의 사용에 대한 총평을 하자면 구체적인 지시 없이는 일정 수준 이상의 결과물을 얻기 어려웠다....",
+      "reason": "Codex와 Claude의 강약을 실제 장기 사용 경험으로 비교한다."
+    },
+    {
+      "id": "2077688841268543788",
+      "pubDate": "2026-07-16",
+      "topic_id": "backend-architecture",
+      "topic_label": "백엔드/아키텍처",
+      "tweet_count": 1,
+      "title_excerpt": "CloudFront 장애다. 이럴때에는 역시 요소를 늘리면 장애의 포인트도 많아지니 역시 CF도 최소한도로 써야지 하는 이야기도...",
+      "reason": "CloudFront 장애를 트레이드오프로 읽는 태도가 아키텍처 글감으로 좋다."
+    }
+  ]
+}
