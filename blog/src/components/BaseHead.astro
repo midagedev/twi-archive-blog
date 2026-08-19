@@ -83,3 +83,35 @@ const imageHeight = typeof image === 'string' ? undefined : image.height;
 <meta name="twitter:image:alt" content={title} />
 <meta name="twitter:site" content={X_HANDLE} />
 <meta name="twitter:creator" content={X_HANDLE} />
+
+<!-- Structured data -->
+<script
+	type="application/ld+json"
+	set:html={JSON.stringify(
+		ogType === 'article'
+			? {
+					'@context': 'https://schema.org',
+					'@type': 'BlogPosting',
+					headline: title.slice(0, 110),
+					description,
+					url: canonicalURL.toString(),
+					image: ogImage,
+					datePublished: publishedTime,
+					...(modifiedTime ? { dateModified: modifiedTime } : {}),
+					inLanguage: 'ko',
+					author: {
+						'@type': 'Person',
+						name: 'midagedev',
+						url: 'https://x.com/midagedev',
+					},
+				}
+			: {
+					'@context': 'https://schema.org',
+					'@type': 'WebSite',
+					name: SITE_TITLE,
+					description,
+					url: new URL('/', Astro.site).toString(),
+					inLanguage: 'ko',
+				},
+	)}
+/>
