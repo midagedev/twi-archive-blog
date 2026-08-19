@@ -1,13 +1,49 @@
+/*
+ * Midage Dev Notes — design tokens & base styles.
+ * Direction: 정제된 에디토리얼 미니멀. 종이 질감의 배경, 잉크 타이포,
+ * 저채도 액센트 하나, 메타 정보는 모노스페이스.
+ */
+
 :root {
-	--bg: 250, 250, 250;
-	--surface: 255, 255, 255;
-	--ink: 30, 30, 30;
-	--ink-dim: 92, 92, 92;
-	--line: 224, 224, 224;
-	--accent-rgb: 44, 44, 44;
-	--accent: rgb(var(--accent-rgb));
-	--accent-dark: #1d1d1d;
+	/* light */
+	--bg: #faf9f7;
+	--surface: #ffffff;
+	--surface-dim: #f3f1ed;
+	--ink: #1f1e1c;
+	--ink-dim: #5f5c56;
+	--ink-faint: #8a867e;
+	--line: #e5e2dc;
+	--line-strong: #d3cfc7;
+	--accent: #a8542e;
+	--accent-soft: rgba(168, 84, 46, 0.09);
+	--shadow: 0 1px 2px rgba(31, 30, 28, 0.04), 0 4px 16px rgba(31, 30, 28, 0.05);
+	--shadow-lift: 0 2px 4px rgba(31, 30, 28, 0.05), 0 10px 28px rgba(31, 30, 28, 0.09);
+
+	--font-body: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+	--font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
 	--max-content: 1080px;
+	--max-prose: 44rem;
+
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #171614;
+		--surface: #201f1c;
+		--surface-dim: #262521;
+		--ink: #eae7e1;
+		--ink-dim: #a8a49b;
+		--ink-faint: #7c786f;
+		--line: #33312c;
+		--line-strong: #454239;
+		--accent: #d98a5f;
+		--accent-soft: rgba(217, 138, 95, 0.13);
+		--shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 4px 16px rgba(0, 0, 0, 0.28);
+		--shadow-lift: 0 2px 4px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.42);
+
+		color-scheme: dark;
+	}
 }
 
 @font-face {
@@ -23,20 +59,27 @@
 	box-sizing: border-box;
 }
 
+html {
+	background: var(--bg);
+}
+
 body {
 	margin: 0;
-	color: rgb(var(--ink));
-	font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+	color: var(--ink);
+	font-family: var(--font-body);
 	font-size: 16px;
-	line-height: 1.62;
-	background: rgb(var(--bg));
-	animation: fade-in 380ms ease-out;
+	line-height: 1.68;
+	background: var(--bg);
+	word-break: keep-all;
+	overflow-wrap: anywhere;
+	-webkit-font-smoothing: antialiased;
+	animation: fade-in 420ms ease-out;
 }
 
 main {
 	max-width: var(--max-content);
 	margin: 0 auto;
-	padding: 1.3rem 1rem 2.2rem;
+	padding: 2rem 1.25rem 3rem;
 }
 
 h1,
@@ -45,16 +88,16 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-	letter-spacing: -0.01em;
-	line-height: 1.22;
+	letter-spacing: -0.015em;
+	line-height: 1.25;
 	margin: 0 0 0.55rem;
-	color: rgb(var(--ink));
+	color: var(--ink);
+	text-wrap: balance;
 }
 
 h1 {
-	font-size: clamp(1.4rem, 4vw, 1.9rem);
-	font-weight: 760;
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	font-weight: 780;
 }
 
 h2 {
@@ -70,52 +113,99 @@ h3 {
 p,
 li,
 blockquote {
-	color: rgb(var(--ink-dim));
+	color: var(--ink-dim);
 }
 
 a {
-	color: var(--accent-dark);
-	text-underline-offset: 0.2em;
+	color: var(--ink);
+	text-decoration-color: var(--line-strong);
+	text-underline-offset: 0.22em;
+	transition: color 130ms ease, text-decoration-color 130ms ease;
 }
 
 a:hover {
+	color: var(--accent);
+	text-decoration-color: var(--accent);
+}
+
+::selection {
+	background: var(--accent-soft);
 	color: var(--accent);
 }
 
 img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 12px;
+	border-radius: 10px;
 }
 
 code {
-	padding: 0.12rem 0.35rem;
+	padding: 0.14rem 0.38rem;
 	border-radius: 0.35rem;
-	background: rgba(var(--line), 0.9);
-	font-size: 0.95em;
+	background: var(--surface-dim);
+	border: 1px solid var(--line);
+	font-family: var(--font-mono);
+	font-size: 0.88em;
 }
 
 pre {
 	padding: 1.1rem;
 	border-radius: 0.8rem;
-	border: 1px solid rgba(var(--line), 0.9);
-	overflow: auto;
-	background: rgb(var(--surface));
+	border: 1px solid var(--line);
+	overflow-x: auto;
+	background: var(--surface);
+	font-size: 0.9rem;
 }
 
 pre > code {
 	all: unset;
+	font-family: var(--font-mono);
 }
 
 blockquote {
 	margin: 1.1rem 0;
 	padding-left: 1rem;
-	border-left: 3px solid rgba(var(--line), 1);
+	border-left: 3px solid var(--accent);
 }
 
 hr {
 	border: 0;
-	border-top: 1px solid rgba(var(--line), 0.85);
+	border-top: 1px solid var(--line);
+}
+
+/* 메타 라벨(날짜·출처·태그) 공용 스타일 */
+.mono {
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	letter-spacing: 0.02em;
+	color: var(--ink-faint);
+}
+
+.tag {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.01em;
+	border-radius: 999px;
+	padding: 0.14rem 0.55rem;
+	background: var(--surface-dim);
+	border: 1px solid var(--line);
+	color: var(--ink-dim);
+	white-space: nowrap;
+}
+
+/* 노트 목록 그리드 — 마크업 한 벌로 데스크톱 2열/모바일 1열 */
+.feed {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
+	gap: 0.9rem;
+	align-items: start;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.feed > li {
+	min-width: 0;
+	display: grid;
 }
 
 .sr-only {
@@ -126,7 +216,6 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	white-space: nowrap;
@@ -135,7 +224,7 @@ hr {
 @keyframes fade-in {
 	from {
 		opacity: 0;
-		transform: translateY(8px);
+		transform: translateY(6px);
 	}
 	to {
 		opacity: 1;
@@ -143,11 +232,20 @@ hr {
 	}
 }
 
+@media (prefers-reduced-motion: reduce) {
+	body {
+		animation: none;
+	}
+	* {
+		transition-duration: 0.01ms !important;
+	}
+}
+
 @media (max-width: 760px) {
 	body {
-		font-size: 15px;
+		font-size: 15.5px;
 	}
 	main {
-		padding: 1rem 0.8rem 1.6rem;
+		padding: 1.1rem 1rem 2rem;
 	}
 }

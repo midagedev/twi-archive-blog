@@ -5,76 +5,107 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
+		<a class="brand" href="/">
+			<span class="brand-mark" aria-hidden="true"></span>
+			{SITE_TITLE}
+		</a>
+		<div class="links">
 			<HeaderLink href="/blog">Notes</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+			<a class="x-link" href={X_URL} target="_blank" rel="noreferrer" aria-label="X @midagedev">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+					<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+				</svg>
+				<span class="handle">@midagedev</span>
+			</a>
 		</div>
-		<a class="x-link" href={X_URL} target="_blank" rel="noreferrer">X @midagedev</a>
 	</nav>
 </header>
+
 <style>
 	header {
 		position: sticky;
 		top: 0;
 		z-index: 20;
-		margin: 0;
-		padding: 0.75rem 1.1rem;
-		background: rgba(255, 255, 255, 0.85);
-		backdrop-filter: blur(8px);
-		border-bottom: 1px solid rgba(var(--line), 0.5);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1rem;
-		letter-spacing: 0.03em;
-	}
-	h2 a {
-		text-decoration: none;
-		color: rgb(var(--ink));
+		padding: 0.6rem 1.25rem;
+		background: color-mix(in srgb, var(--bg) 82%, transparent);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-bottom: 1px solid var(--line);
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 0.8rem;
-		max-width: 1080px;
+		gap: 0.75rem;
+		max-width: var(--max-content);
 		margin: 0 auto;
 	}
-	.internal-links {
-		display: flex;
-		gap: 0.25rem;
+	.brand {
+		display: inline-flex;
 		align-items: center;
-	}
-	nav a {
-		padding: 0.42rem 0.62rem;
-		color: rgb(var(--ink-dim));
-		border-bottom: 2px solid transparent;
+		gap: 0.5rem;
+		font-size: 0.95rem;
+		font-weight: 760;
+		letter-spacing: -0.01em;
+		color: var(--ink);
 		text-decoration: none;
-		border-radius: 0.5rem;
-		font-size: 0.9rem;
+		white-space: nowrap;
 	}
-	nav a.active {
-		border-bottom-color: var(--accent);
-		color: rgb(var(--ink));
-		background: rgba(var(--line), 0.6);
+	.brand-mark {
+		width: 9px;
+		height: 9px;
+		border-radius: 2.5px;
+		background: var(--accent);
+		flex: none;
+		transform: rotate(45deg);
+		transition: transform 300ms ease;
+	}
+	.brand:hover .brand-mark {
+		transform: rotate(225deg);
+	}
+	.links {
+		display: flex;
+		gap: 0.15rem;
+		align-items: center;
+		min-width: 0;
+	}
+	.links :global(a) {
+		padding: 0.36rem 0.6rem;
+		color: var(--ink-dim);
+		text-decoration: none;
+		border-radius: 0.55rem;
+		font-size: 0.88rem;
+		white-space: nowrap;
+	}
+	.links :global(a:hover) {
+		color: var(--ink);
+		background: var(--surface-dim);
+	}
+	.links :global(a.active) {
+		color: var(--accent);
+		background: var(--accent-soft);
+		font-weight: 650;
 	}
 	.x-link {
-		font-size: 0.82rem;
-		font-weight: 650;
-		white-space: nowrap;
-		border: 1px solid rgba(var(--line), 0.9);
-		background: rgb(var(--surface));
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		margin-left: 0.35rem;
+		font-family: var(--font-mono);
+		font-size: 0.78rem !important;
+		border: 1px solid var(--line);
+		background: var(--surface);
 	}
-	.x-link:hover {
-		transform: translateY(-1px);
-	}
-	@media (max-width: 760px) {
-		nav {
-			flex-wrap: wrap;
+	@media (max-width: 560px) {
+		header {
+			padding: 0.55rem 0.85rem;
+		}
+		.handle {
+			display: none;
 		}
 		.x-link {
-			margin-left: auto;
+			padding: 0.42rem 0.5rem;
 		}
 	}
 </style>
