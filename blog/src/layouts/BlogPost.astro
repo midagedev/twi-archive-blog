@@ -233,6 +233,11 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 							<blockquote class="twitter-tweet" data-dnt="true">
 								<a href={embedTweetUrl}>{embedTweetUrl}</a>
 							</blockquote>
+							<script is:inline>
+								if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+									document.querySelector('.twitter-tweet')?.setAttribute('data-theme', 'dark');
+								}
+							</script>
 							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 						</div>
 					)
