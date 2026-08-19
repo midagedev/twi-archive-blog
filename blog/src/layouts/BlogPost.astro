@@ -33,6 +33,8 @@ const {
 } = Astro.props;
 
 const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://twitter.com/');
+// 트윗 노트는 title이 본문 발췌라 h1을 시각적으로 숨기고 본문을 주인공으로 둔다.
+const isTweetNote = source === 'twitter';
 ---
 
 <html lang="ko">
@@ -85,6 +87,21 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 			.prose {
 				color: var(--ink-dim);
 				font-size: 1.02rem;
+			}
+			.prose.lead {
+				color: var(--ink);
+				font-size: 1.13rem;
+				line-height: 1.78;
+			}
+			.prose.lead :global(p) {
+				color: inherit;
+			}
+			.tags a {
+				text-decoration: none;
+			}
+			.tags a:hover {
+				border-color: var(--accent);
+				color: var(--accent);
 			}
 			.prose :global(a) {
 				color: var(--accent);
@@ -181,14 +198,6 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 			.related-link:hover .related-title {
 				color: var(--accent);
 			}
-			.related-description {
-				margin: 0;
-				font-size: 0.87rem;
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				-webkit-box-orient: vertical;
-				overflow: hidden;
-			}
 		</style>
 	</head>
 
@@ -212,18 +221,22 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 						</>
 					)}
 				</p>
-				<div class="title">
-					<h1>{title}</h1>
-				</div>
+				{isTweetNote ? (
+					<h1 class="sr-only">{title}</h1>
+				) : (
+					<div class="title">
+						<h1>{title}</h1>
+					</div>
+				)}
 				{tags.length > 0 && (
 					<div class="tags">
 						{tags.map((tag) => (
-							<span class="tag">{tag}</span>
+							<a class="tag" href={`/tags/${tag}/`}>{tag}</a>
 						))}
 					</div>
 				)}
 				<hr class="divider" />
-				<div class="prose">
+				<div class={isTweetNote ? 'prose lead' : 'prose'}>
 					<slot />
 				</div>
 				{
@@ -257,7 +270,6 @@ const embedTweetUrl = originalTweetUrl?.replace(/^https:\/\/x\.com\//, 'https://
 												))}
 											</p>
 											<h3 class="related-title">{post.title}</h3>
-											<p class="related-description">{post.description}</p>
 										</a>
 									</li>
 								))}

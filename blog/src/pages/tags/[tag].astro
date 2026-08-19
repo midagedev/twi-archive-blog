@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE_TITLE } from '../../consts';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+	return tags.map((tag) => ({
+		params: { tag },
+		props: {
+			posts: posts
+				.filter((post) => post.data.tags.includes(tag))
+				.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()),
+		},
+	}));
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={`#${tag} | ${SITE_TITLE}`} description={`${tag} 태그가 붙은 노트 ${posts.length}개`} />
+		<style>
+			.intro {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				gap: 1rem;
+				margin: 0.4rem 0 1.4rem;
+			}
+			.intro h1 {
+				margin-bottom: 0.3rem;
+			}
+			.intro h1 span {
+				color: var(--accent);
+			}
+			.intro p {
+				margin: 0;
+				font-size: 0.94rem;
+			}
+			.count {
+				flex: none;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="intro">
+				<div>
+					<h1><span>#</span>{tag}</h1>
+					<p><a href="/blog/">← 모든 노트</a></p>
+				</div>
+				<span class="mono count">{posts.length} notes</span>
+			</section>
+			<ul class="feed">
+				{posts.map((post) => (
+					<li><PostCard post={post} /></li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

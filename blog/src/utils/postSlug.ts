@@ -28,3 +28,13 @@ export const getPostSlug = (post: BlogPostLike) => {
 };
 
 export const getPostUrl = (post: BlogPostLike) => `/blog/${getPostSlug(post)}/`;
+
+// 트윗 노트는 title이 본문 발췌라 description과 중복되기 쉽다.
+// 중복이면 null을 반환해 카드/목록에서 설명 줄을 생략한다.
+export const dedupeDescription = (title: string, description?: string) => {
+	if (!description) return null;
+	const stem = title.replace(/(\.\.\.|…)\s*$/, '').replace(/\s+/g, ' ').trim();
+	const desc = description.replace(/\s+/g, ' ').trim();
+	if (stem.length >= 12 && desc.includes(stem.slice(0, Math.min(stem.length, 40)))) return null;
+	return description;
+};

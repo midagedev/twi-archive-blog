@@ -6,9 +6,10 @@ import Header from '../components/Header.astro';
 import PostCard from '../components/PostCard.astro';
 import { SITE_DESCRIPTION, SITE_TITLE, X_URL } from '../consts';
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const posts = allPosts.slice(0, 12);
 ---
 
 <!doctype html>
@@ -71,6 +72,33 @@ const posts = (await getCollection('blog')).sort(
 				margin: 0;
 				font-size: 1.05rem;
 			}
+			.all-link {
+				text-decoration: none;
+				color: var(--ink-faint);
+			}
+			.all-link:hover {
+				color: var(--accent);
+			}
+			.more {
+				display: flex;
+				justify-content: center;
+				margin-top: 1.6rem;
+			}
+			.more a {
+				font-family: var(--font-mono);
+				font-size: 0.85rem;
+				padding: 0.6rem 1.4rem;
+				border-radius: 999px;
+				border: 1px solid var(--line);
+				background: var(--surface);
+				color: var(--ink-dim);
+				text-decoration: none;
+				transition: border-color 140ms ease, color 140ms ease;
+			}
+			.more a:hover {
+				border-color: var(--accent);
+				color: var(--accent);
+			}
 			@media (max-width: 760px) {
 				.hero {
 					margin: 0.6rem 0 1.7rem;
@@ -93,13 +121,16 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 			<div class="section-head">
 				<h2>최근 노트</h2>
-				<span class="mono">{posts.length} notes</span>
+				<a class="mono all-link" href="/blog/">{allPosts.length} notes 모두 보기 →</a>
 			</div>
 			<ul class="feed">
 				{posts.map((post) => (
 					<li><PostCard post={post} /></li>
 				))}
 			</ul>
+			<div class="more">
+				<a href="/blog/">모든 노트 보기 ({allPosts.length})</a>
+			</div>
 		</main>
 		<Footer />
 	</body>
