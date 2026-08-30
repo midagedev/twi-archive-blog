@@ -25,7 +25,7 @@
 2. 아래 명령으로 후보/노트 재생성
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 scripts/agent_curation_pipeline.py \
   --archive twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip \
   --selection-json docs/manual_agent_selected_100.json \
@@ -52,7 +52,7 @@ python3 scripts/agent_curation_pipeline.py \
 5. 먼저 dry-run으로 확인
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 scripts/import_x_har.py --har data/x_recent.har --dry-run
 ```
 
@@ -94,21 +94,21 @@ tags:
 
 ## 5. 주요 파일 맵
 
-- 변환기 CLI: `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
-- 변환기 로직: `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
-- 에이전트 선별 기반 생성 스크립트: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
-- 최근 X HAR 가져오기 스크립트: `/Users/hckim/Documents/twi/scripts/import_x_har.py`
-- X 미디어 로컬 복사 스크립트: `/Users/hckim/Documents/twi/scripts/localize_tweet_media.py`
-- 관련 노트 관계도 스크립트: `/Users/hckim/Documents/twi/scripts/build_related_notes.py`
-- 에이전트 선별 결과 ID 목록: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
-- 후보 리포트(JSON/MD): `/Users/hckim/Documents/twi/docs/topic_candidates.json`, `/Users/hckim/Documents/twi/docs/topic_candidates.md`
-- 최근 HAR 선별 결과(JSON/MD): `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.md`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.md`
-- Astro 전역 스타일: `/Users/hckim/Documents/twi/blog/src/styles/global.css`
-- 헤더: `/Users/hckim/Documents/twi/blog/src/components/Header.astro`
-- 메타 태그: `/Users/hckim/Documents/twi/blog/src/components/BaseHead.astro`
-- 홈(글 목록): `/Users/hckim/Documents/twi/blog/src/pages/index.astro`
-- 블로그 인덱스: `/Users/hckim/Documents/twi/blog/src/pages/blog/index.astro`
-- 포스트 레이아웃: `/Users/hckim/Documents/twi/blog/src/layouts/BlogPost.astro`
+- 변환기 CLI: `src/twi2blog/cli.py`
+- 변환기 로직: `src/twi2blog/convert.py`
+- 에이전트 선별 기반 생성 스크립트: `scripts/agent_curation_pipeline.py`
+- 최근 X HAR 가져오기 스크립트: `scripts/import_x_har.py`
+- X 미디어 로컬 복사 스크립트: `scripts/localize_tweet_media.py`
+- 관련 노트 관계도 스크립트: `scripts/build_related_notes.py`
+- 에이전트 선별 결과 ID 목록: `docs/manual_agent_selected_100.json`
+- 후보 리포트(JSON/MD): `docs/topic_candidates.json`, `docs/topic_candidates.md`
+- 최근 HAR 선별 결과(JSON/MD): `docs/recent_agent_shortlist_20260412.json`, `docs/recent_agent_shortlist_20260412.md`, `docs/recent_agent_shortlist_20260720.json`, `docs/recent_agent_shortlist_20260720.md`
+- Astro 전역 스타일: `blog/src/styles/global.css`
+- 헤더: `blog/src/components/Header.astro`
+- 메타 태그: `blog/src/components/BaseHead.astro`
+- 홈(글 목록): `blog/src/pages/index.astro`
+- 블로그 인덱스: `blog/src/pages/blog/index.astro`
+- 포스트 레이아웃: `blog/src/layouts/BlogPost.astro`
 
 ## 6. 제거된 구 선별 흐름
 
@@ -122,8 +122,8 @@ tags:
 
 ## 7. 테마/브랜딩 수정 포인트
 
-- 사이트명/설명/X 링크: `/Users/hckim/Documents/twi/blog/src/consts.ts`
-- 색/타이포/간격: `/Users/hckim/Documents/twi/blog/src/styles/global.css`
+- 사이트명/설명/X 링크: `blog/src/consts.ts`
+- 색/타이포/간격: `blog/src/styles/global.css`
 
 ## 8. CI/CD 체크리스트
 

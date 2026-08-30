@@ -20,26 +20,26 @@
 ### 2) Legacy selection path removed
 
 - Deleted scripts:
-  - `/Users/hckim/Documents/twi/scripts/prepare_tweet_corpus.py`
-  - `/Users/hckim/Documents/twi/scripts/run_codex_subagents.sh`
-  - `/Users/hckim/Documents/twi/scripts/agent_blog_pipeline.py`
+  - `scripts/prepare_tweet_corpus.py`
+  - `scripts/run_codex_subagents.sh`
+  - `scripts/agent_blog_pipeline.py`
 - Deleted old artifacts:
-  - `/Users/hckim/Documents/twi/docs/manual_include_tweet_ids.json`
-  - `/Users/hckim/Documents/twi/docs/topic_shortlist.json`
-  - `/Users/hckim/Documents/twi/docs/topic_shortlist.md`
-  - `/Users/hckim/Documents/twi/docs/topic_candidates_manual_agent80.json`
-  - `/Users/hckim/Documents/twi/docs/manual_agent_selected_80_ids.json`
+  - `docs/manual_include_tweet_ids.json`
+  - `docs/topic_shortlist.json`
+  - `docs/topic_shortlist.md`
+  - `docs/topic_candidates_manual_agent80.json`
+  - `docs/manual_agent_selected_80_ids.json`
 - Removed old include-ID option from:
-  - `/Users/hckim/Documents/twi/src/twi2blog/cli.py`
-  - `/Users/hckim/Documents/twi/src/twi2blog/convert.py`
+  - `src/twi2blog/cli.py`
+  - `src/twi2blog/convert.py`
 
 ### 3) Regenerated outputs
 
 - Candidate files:
-  - `/Users/hckim/Documents/twi/docs/topic_candidates.json`
-  - `/Users/hckim/Documents/twi/docs/topic_candidates.md`
+  - `docs/topic_candidates.json`
+  - `docs/topic_candidates.md`
 - Blog markdown:
-  - `/Users/hckim/Documents/twi/blog/src/content/blog/*.md` (thread dedupe applied)
+  - `blog/src/content/blog/*.md` (thread dedupe applied)
 
 ### 4) Quality-oriented curation update
 

@@ -6,7 +6,7 @@
 
 ### Python (twi2blog)
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
@@ -14,7 +14,7 @@ python -m pip install -e .
 
 ### Node (Astro)
 ```bash
-cd /Users/hckim/Documents/twi/blog
+cd blog
 npm install
 ```
 
@@ -23,7 +23,7 @@ npm install
 과거 X 아카이브 파일(`data/tweets.js`)을 준비한 후:
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 source .venv/bin/activate
 twi2blog \
   --archive data/tweets.js \
@@ -33,12 +33,12 @@ twi2blog \
 ```
 
 생성 파일 위치:
-- `/Users/hckim/Documents/twi/blog/src/content/blog`
+- `blog/src/content/blog`
 
 최근 공개 X 글은 브라우저 HAR로 가져옵니다. HAR에는 세션 정보가 포함될 수 있으므로 커밋하지 않습니다.
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 scripts/import_x_har.py --har data/x_recent.har --since-date 2026-02-20 --dry-run
 python3 scripts/import_x_har.py --har data/x_recent.har --selection-json docs/recent_agent_shortlist_YYYYMMDD.json
 python3 scripts/localize_tweet_media.py
@@ -50,7 +50,7 @@ python3 scripts/build_related_notes.py
 ## 3. 로컬 미리보기/빌드
 
 ```bash
-cd /Users/hckim/Documents/twi/blog
+cd blog
 npm run dev
 SITE_URL=https://blog.midagedev.com npm run build
 ```
@@ -65,7 +65,7 @@ SITE_URL=https://blog.midagedev.com npm run build
 `gh` CLI로 설정:
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 gh secret set CLOUDFLARE_API_KEY --body "<global_or_api_key>"
 gh secret set CLOUDFLARE_EMAIL --body "<cloudflare_account_email>"
 gh secret set CLOUDFLARE_ACCOUNT_ID --body "<cloudflare_account_id>"

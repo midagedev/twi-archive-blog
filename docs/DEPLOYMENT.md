@@ -46,9 +46,9 @@ curl -I -L https://blog.midagedev.com/
 ## 4. 수동 배포(비상)
 
 ```bash
-cd /Users/hckim/Documents/twi/blog
+cd blog
 SITE_URL=https://blog.midagedev.com npm run build
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 npx wrangler@4.65.0 pages deploy blog/dist --project-name twi-archive-blog --branch main
 ```
 

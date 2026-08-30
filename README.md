@@ -1,6 +1,6 @@
 # Midage Dev Notes - Repository Guide
 
-`/Users/hckim/Documents/twi`는 X/Twitter 아카이브와 최근 공개 글에서 고신호 글을 선별해 짧은 엔지니어링 노트로 보존하는 저장소입니다.
+이 저장소는 X/Twitter 아카이브와 최근 공개 글에서 고신호 글을 선별해 짧은 엔지니어링 노트로 보존합니다.
 
 ## 현재 운영 방식 (에이전트 선별 전용)
 
@@ -12,7 +12,7 @@
 ## 빠른 시작
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e .
@@ -25,7 +25,7 @@ npm run dev
 ## 과거 아카이브 생성 (100개 기준)
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 scripts/agent_curation_pipeline.py \
   --archive twitter-2026-02-14-1222227abadceeb048d368042ea1c9a5fb39fa3bb74113fbf40e59755047273a.zip \
   --selection-json docs/manual_agent_selected_100.json \
@@ -41,7 +41,7 @@ python3 scripts/agent_curation_pipeline.py \
 브라우저에서 X 검색 결과를 `Save all as HAR with content`로 저장한 뒤 가져옵니다. HAR에는 쿠키가 들어갈 수 있으므로 커밋하지 않습니다.
 
 ```bash
-cd /Users/hckim/Documents/twi
+cd <저장소 루트>
 python3 scripts/import_x_har.py \
   --har data/x_recent.har \
   --since-date 2026-02-20 \
@@ -71,7 +71,7 @@ python3 scripts/build_related_notes.py
 ## 로컬 검증
 
 ```bash
-cd /Users/hckim/Documents/twi/blog
+cd blog
 npm run dev
 SITE_URL=https://blog.midagedev.com npm run build
 ```
@@ -83,18 +83,18 @@ SITE_URL=https://blog.midagedev.com npm run build
 
 ## 문서 인덱스
 
-- 설정/배포: `/Users/hckim/Documents/twi/docs/SETUP.md`
-- 배포 런북: `/Users/hckim/Documents/twi/docs/DEPLOYMENT.md`
-- 콘텐츠 운영: `/Users/hckim/Documents/twi/docs/WORKFLOW.md`
-- 이번 정리 로그: `/Users/hckim/Documents/twi/docs/2026-02-20-candidate-refresh.md`
+- 설정/배포: `docs/SETUP.md`
+- 배포 런북: `docs/DEPLOYMENT.md`
+- 콘텐츠 운영: `docs/WORKFLOW.md`
+- 이번 정리 로그: `docs/2026-02-20-candidate-refresh.md`
 
 ## 핵심 경로
 
-- 에이전트 파이프라인: `/Users/hckim/Documents/twi/scripts/agent_curation_pipeline.py`
-- 최근 HAR 가져오기: `/Users/hckim/Documents/twi/scripts/import_x_har.py`
-- X 미디어 로컬 복사: `/Users/hckim/Documents/twi/scripts/localize_tweet_media.py`
-- 관련 노트 관계도 갱신: `/Users/hckim/Documents/twi/scripts/build_related_notes.py`
-- 수동 선별 ID: `/Users/hckim/Documents/twi/docs/manual_agent_selected_100.json`
-- 후보 결과: `/Users/hckim/Documents/twi/docs/topic_candidates.json`
-- 최근 선별 결과: `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260412.json`, `/Users/hckim/Documents/twi/docs/recent_agent_shortlist_20260720.json`
-- 블로그 콘텐츠: `/Users/hckim/Documents/twi/blog/src/content/blog`
+- 에이전트 파이프라인: `scripts/agent_curation_pipeline.py`
+- 최근 HAR 가져오기: `scripts/import_x_har.py`
+- X 미디어 로컬 복사: `scripts/localize_tweet_media.py`
+- 관련 노트 관계도 갱신: `scripts/build_related_notes.py`
+- 수동 선별 ID: `docs/manual_agent_selected_100.json`
+- 후보 결과: `docs/topic_candidates.json`
+- 최근 선별 결과: `docs/recent_agent_shortlist_20260412.json`, `docs/recent_agent_shortlist_20260720.json`
+- 블로그 콘텐츠: `blog/src/content/blog`
